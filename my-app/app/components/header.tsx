@@ -23,7 +23,7 @@ export function Header() {
                 <NavigationMenuItem className="flex gap-10 text-[18px] items-center">
                   <NavigationMenuLink href="/">Quem somos</NavigationMenuLink>
                   <NavigationMenuLink href="/">Shield Pay</NavigationMenuLink>
-                  <NavigationMenuLink href="/">Blog</NavigationMenuLink>
+                  <NavigationMenuLink href="/blog">Blog</NavigationMenuLink>
                   <NavigationMenuLink href="/">Carreiras</NavigationMenuLink>
                   <NavigationMenuLink href="/">Contato</NavigationMenuLink>
                   <div className="flex ml-20 gap-10">

@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Header } from "../components/header";
-
+import React, { useState, useEffect } from 'react';
+import { CurrentDate } from "../components/date";
 
 
 
@@ -16,7 +17,7 @@ const PageBlog = () => {
             <h2 className="text-[20px]">
               Últimas Notícias
               <br />
-              
+              <CurrentDate />
               <br />
             </h2>
           </div>

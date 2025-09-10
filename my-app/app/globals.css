@@ -50,7 +50,7 @@ body {
 /* 001124 */
 :root {
   --radius: 0.625rem;
-  --background: #00012b;
+  --background: #001124;
   --text: oklch(1 0 0);
 
   --foreground: oklch(1 0 0);
