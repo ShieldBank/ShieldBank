@@ -20,7 +20,7 @@ export function Header() {
           <div>
             <NavigationMenu>
               <NavigationMenuList>
-                <NavigationMenuItem className="flex gap-10 text-[16px] items-center">
+                <NavigationMenuItem className="flex gap-10 text-[18px] items-center">
                   <NavigationMenuLink href="/">Quem somos</NavigationMenuLink>
                   <NavigationMenuLink href="/">Shield Pay</NavigationMenuLink>
                   <NavigationMenuLink href="/">Blog</NavigationMenuLink>
