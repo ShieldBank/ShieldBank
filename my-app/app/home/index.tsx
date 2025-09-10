@@ -6,19 +6,19 @@ import { Header } from "../components/header";
 export function App() {
   return (
     <>
-      <div className="px-20">
-        <motion.div>
-          <div className="w-60">
-            <h2>
+      <div className=" w-full  h-full bg-[url('/home.png')] overflow-hidden bg-cover bg-center ">
+        <motion.div className="h-full flex items-center p-20 ">
+          <div className="w-3xl">
+            <h2 className="text-[48px]">
               Elevamos o padrão no setor de
-              <b> private banking</b>
+              <strong> private banking </strong>
+              <br />
               proporcionando uma
-              <b>experiência única</b>
+              <br />
+              <strong>experiência única</strong>
             </h2>
           </div>
         </motion.div>
-        <motion.div>Hello</motion.div>
-        <motion.div>Hello</motion.div>
       </div>
     </>
   );
