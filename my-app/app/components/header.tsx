@@ -20,12 +20,12 @@ export function Header() {
           <div>
             <NavigationMenu>
               <NavigationMenuList>
-                <NavigationMenuItem className="flex gap-10 text-[18px] items-center">
-                  <NavigationMenuLink href="/">Quem somos</NavigationMenuLink>
-                  <NavigationMenuLink href="/">Shield Pay</NavigationMenuLink>
-                  <NavigationMenuLink href="/blog">Blog</NavigationMenuLink>
-                  <NavigationMenuLink href="/">Carreiras</NavigationMenuLink>
-                  <NavigationMenuLink href="/">Contato</NavigationMenuLink>
+                <NavigationMenuItem className="flex gap-10 text-[18px] items-center group">
+                  <NavigationMenuLink href="/" className="group-hover:text-gray-400 hover:text-white transition-colors">Quem somos</NavigationMenuLink>
+                  <NavigationMenuLink href="/" className="group-hover:text-gray-400 hover:text-white transition-colors">Shield Pay</NavigationMenuLink>
+                  <NavigationMenuLink href="/blog" className="group-hover:text-gray-400 hover:text-white transition-colors">Blog</NavigationMenuLink>
+                  <NavigationMenuLink href="/" className="group-hover:text-gray-400 hover:text-white transition-colors">Carreiras</NavigationMenuLink>
+                  <NavigationMenuLink href="/" className="group-hover:text-gray-400 hover:text-white transition-colors">Contato</NavigationMenuLink>
                   <div className="flex ml-20 gap-10">
                     <Button
                       asChild
