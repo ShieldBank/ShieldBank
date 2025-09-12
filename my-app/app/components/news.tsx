@@ -1,9 +1,11 @@
 import axios from 'axios';
 
-const token = '771874c73ae34339a1c902b70d93c978'; 
+// const token = '771874c73ae34339a1c902b70d93c978'; 
+// const token = '2e43869325e04a5cbc4d8cf9b8188684'; 
+const token = '72340279fa7d4d229ccedbf7be3fb190'
 const urlBase = "https://newsapi.org/v2/everything";
 const language = 'pt';
-const matter = 'relevancy';
+const matter = 'publishedAt';
 
 const news = async (query) => {
 
@@ -11,6 +13,7 @@ const news = async (query) => {
 
   try {
     const response = await axios.get(url);
+    console.log("Passei aqui ",response)
     return response.data.articles;
   } catch (error) {
     console.log("Erro: ", error.response.data , error.response.status, error.message);
@@ -21,6 +24,11 @@ const news = async (query) => {
 export const fetchTechnologyNews = () => {
   return news("tecnologia financeira");
 };
+
+export const fetchShieldBankNews = () => {
+  return news("Shield Bank");
+};
+
 
 export const fetchEconomyNews = () => {
   return news("economia Brasil");
