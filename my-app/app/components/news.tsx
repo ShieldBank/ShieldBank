@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // const token = '771874c73ae34339a1c902b70d93c978'; 
-// const token = '2e43869325e04a5cbc4d8cf9b8188684'; 
-const token = '72340279fa7d4d229ccedbf7be3fb190'
+const token = '2e43869325e04a5cbc4d8cf9b8188684'; 
+// const token = '72340279fa7d4d229ccedbf7be3fb190'
 const urlBase = "https://newsapi.org/v2/everything";
 const language = 'pt';
 const matter = 'publishedAt';
@@ -22,16 +22,16 @@ const news = async (query) => {
 }
 
 export const fetchTechnologyNews = () => {
-  return news("tecnologia financeira");
+  return news("Tecnologia Financeira");
 };
 
-export const fetchShieldBankNews = () => {
-  return news("Shield Bank");
+export const fetchPixNews = () => {
+  return news("Pix");
 };
 
 
 export const fetchEconomyNews = () => {
-  return news("economia Brasil");
+  return news("economia");
 };
 
 export const fetchB3News = () => {
