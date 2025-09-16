@@ -8,7 +8,19 @@ import { AnimationCota } from "../components/animationCota";
 import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader } from "@/app/components/ui/card";
 import shieldbank from "../assets/shieldbank.png";
-import blogEscritorio from "../assets/blogEscritorio.png";
+import blogInstagram from "../assets/blogInstagram.jpg";
+import blogLinkedin from "../assets/blogLinkedin.png";
+import blogTiktok from "../assets/blogTiktok.png";
+import blogYoutube from "../assets/blogYoutube.png";  
+import blogInteligenciaTributaria from "../assets/blogInteligenciaTributaria.jpg"; 
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "../components/ui/carousel"
 
 import {
   fetchTechnologyNews,
@@ -36,7 +48,6 @@ const NewsCard = ({ title, description, image, date, category, url }) => {
       )}
 
       <div className="flex gap-5 items-center justify-center py-2">
-        <h4 className="uppercase">{category}</h4>
         <p className="text-gray-400">{date}</p>
       </div>
 
@@ -54,6 +65,33 @@ const NewsCard = ({ title, description, image, date, category, url }) => {
     </div>
   );
 };
+
+function CarouselSize() {
+  return (
+    <Carousel
+      opts={{
+        align: "start",
+      }}
+      className="w-full max-w-sm"
+    >
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-3xl font-semibold">{index + 1}</span>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  )
+}
 
 
 const PageBlog = () => {
@@ -115,6 +153,7 @@ const PageBlog = () => {
     });
   };
 
+  
 
 
   return (
@@ -127,7 +166,7 @@ const PageBlog = () => {
 
         
         <div className="bg-background text-white">
-          <motion.div className="max-w-7xl mx-auto text-center mb-10 mt-10">
+          <motion.div className="max-w-7xl mx-auto text-center mb-10 ">
             <motion.p
               initial={{ opacity: -50, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -167,7 +206,7 @@ const PageBlog = () => {
                     href={headlines.tech[0]?.url}
                     className="inline-block text-white font-semibold py-2 hover:text-[#CCAA76] border-b border-white pb-1 hover:border-[#CCAA76]"
                   >
-                    Saiba Mais
+                    Ler mais
                   </motion.a>
                 </motion.div>
 
@@ -192,7 +231,7 @@ const PageBlog = () => {
               </>
             )}
           </div>
-        </div>
+        </div>    
 
         
         <div className="bg-background text-white py-20">
@@ -204,7 +243,6 @@ const PageBlog = () => {
                 description={item.description}
                 image={item.urlToImage}
                 date={formatarData(item.publishedAt)}
-                category="BOLSA DE VALORES"
                 url={item.url}
               />
             ))}
@@ -213,14 +251,13 @@ const PageBlog = () => {
                 
         <div className="bg-background text-white">
           <div className="max-w-7xl mx-auto grid md:grid-cols-3 items-center">
-            {headlines.pix?.slice(0, 3).map((item, index) => (
+            {headlines.tech?.slice(1, 4).map((item, index) => (
               <NewsCard
                 key={index}
                 title={item.title}
                 description={item.description}
                 image={item.urlToImage}
                 date={formatarData(item.publishedAt)}
-                category="PIX"
                 url={item.url}
               />
             ))}
@@ -233,91 +270,109 @@ const PageBlog = () => {
   </h2>
 
   <motion.div
-    className="max-w-7xl mx-auto grid md:grid-cols-5 gap-6"
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-  >
-    
-    <Card className="relative overflow-hidden rounded-lg shadow-lg bg-background">
-      <div className="absolute top-2 left-2 text-sm font-medium text-white flex gap-2 ">
-        <span className="text-[#CCAA76]">|</span> ESG
-      </div>
-      <CardContent className="p-0">
-        <Image
-          src={blogEscritorio}
-          alt="Mulher segurando a Máquina da Shield Bank"
-          width={300}
-          height={600}
-          className="object-cover w-full h-full"
-        />
-      </CardContent>
-    </Card>
+      className="max-w-7xl mx-auto"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <Carousel className="w-full"
+      opts={{
+        loop: true, 
+      }}
+    >
+  <CarouselContent>
+    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
 
-      <Card className="relative overflow-hidden rounded-lg shadow-lg bg-background">
-      <div className="absolute top-2 left-2 text-sm font-medium text-white flex gap-2 ">
-        <span className="text-[#CCAA76]">|</span> ESG
-      </div>
-      <CardContent className="p-0">
-        <Image
-          src={blogEscritorio}
-          alt="Mulher segurando a Máquina da Shield Bank"
-          width={300}
-          height={600}
-          className="object-cover w-full h-full"
-        />
-      </CardContent>
-    </Card>
+      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+        <a href="https://www.instagram.com/shield_bank" target="_blank">
+    <Image
+      src={blogInstagram}
+      alt="Finanças"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+    </a>
+    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+      <span className="text-[#CCAA76]">|</span> Instagram
+    </div>
+  </Card>
 
-    
-    <Card className="relative overflow-hidden rounded-lg shadow-lg bg-background">
-      <div className="absolute top-2 left-2 text-sm font-medium text-white flex gap-2 ">
-        <span className="text-[#CCAA76]">|</span> ESG
-      </div>
-      <CardContent className="p-0">
-        <Image
-          src={blogEscritorio}
-          alt="Mulher segurando a Máquina da Shield Bank"
-          width={300}
-          height={500}
-          className="object-cover w-full h-full"
-        />
-      </CardContent>
-    </Card>
+    </CarouselItem>
+    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+
+      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+        <a href="https://www.linkedin.com/company/shield-bank/posts/?feedView=all" target="_blank">
+    <Image
+      src={blogLinkedin}
+      alt="Finanças"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+    </a>
+    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+      <span className="text-[#CCAA76]">|</span> Linkedin
+    </div>
+  </Card>
+
+    </CarouselItem>
 
     
-    <Card className="relative overflow-hidden rounded-lg shadow-lg bg-background">
-      <div className="absolute top-2 left-2 text-sm font-medium text-white flex gap-2 ">
-        <span className="text-[#CCAA76]">|</span> ESG
-      </div>
-      <CardContent className="p-0">
-        <Image
-          src={blogEscritorio}
-          alt="Mulher segurando a Máquina da Shield Bank"
-          width={300}
-          height={600}
-          className="object-cover w-full h-full"
-        />
-      </CardContent>
-    </Card>
+    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+      
+      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+        <a href="https://www.tiktok.com/search?q=shield%20bank&t=1758038399624" target="_blank">
+    <Image
+      src={blogTiktok}
+      alt="Finanças"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+     </a>
+    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+      <span className="text-[#CCAA76]">|</span> TikTok
+    </div>
+  </Card>
+
+    </CarouselItem>
 
     
-    <Card className="relative overflow-hidden rounded-lg shadow-lg bg-background">
-      <div className="absolute top-2 left-2 z-10 text-sm font-medium text-white flex gap-2">
-        <span className="text-[#CCAA76]">|</span> ESG
-      </div>
-      <CardContent className="p-0">
-        <Image
-          src={blogEscritorio}
-          alt="Mulher segurando a Máquina da Shield Bank"
-          width={300}
-          height={600}
-          className="object-cover w-full h-full"
-        />
-      </CardContent>
-     </Card>
+    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+        
+    <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+      <a href="https://www.youtube.com/@shield_bank" target="_blank">
+    <Image
+      src={blogYoutube}
+      alt="Finanças"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+    </a>
+    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+      <span className="text-[#CCAA76]">|</span> YouTube
+    </div>
+  </Card>
+
+    </CarouselItem>
+
+    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+        
+    <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+      <a href="https://efici-ncia-tribut-ria.vercel.app" target="_blank">
+    <Image
+      src={blogInteligenciaTributaria}
+      alt="Finanças"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+    </a>
+    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+      <span className="text-[#CCAA76]">|</span> Inteligência Tributária
+    </div>
+  </Card>
+
+    </CarouselItem>
     
-  </motion.div>
+  </CarouselContent>
+
+  <CarouselPrevious />
+  <CarouselNext />
+</Carousel>
+    </motion.div>
 </div>
 
       </body>

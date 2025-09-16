@@ -16,7 +16,7 @@ export function Header() {
     <>
       <header className="  opacity-80">
         <div className="flex items-center justify-between max-w-7xl mx-auto px-4">
-          <Image src={shieldbank} alt="Shieldbank" width={130} height={50} />
+          <Image src={shieldbank} alt="Shieldbank" width={160} height={60} />
 
           <NavigationMenu>
             <NavigationMenuList className="flex items-center gap-10 text-[18px]">
