@@ -4,6 +4,9 @@ import { Header } from "./components/header";
 import { Content } from "./shieldbank";
 import { App } from "./home";
 import { ContaDigital } from "./conta-digital";
+import { Bank } from "./bank";
+import { Footer } from "./components/footer";
+import PageBlog from "./blog/page";
 
 export default function Home() {
   return (
@@ -11,7 +14,9 @@ export default function Home() {
       <Header />
       <App />
       <Content />
+      <Bank />
       <ContaDigital />
+      <Footer />
     </div>
   );
 }

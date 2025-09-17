@@ -11,8 +11,8 @@ import shieldbank from "../assets/shieldbank.png";
 import blogInstagram from "../assets/blogInstagram.jpg";
 import blogLinkedin from "../assets/blogLinkedin.png";
 import blogTiktok from "../assets/blogTiktok.png";
-import blogYoutube from "../assets/blogYoutube.png";  
-import blogInteligenciaTributaria from "../assets/blogInteligenciaTributaria.jpg"; 
+import blogYoutube from "../assets/blogYoutube.png";
+import blogInteligenciaTributaria from "../assets/blogInteligenciaTributaria.jpg";
 
 import {
   Carousel,
@@ -20,7 +20,7 @@ import {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
-} from "../components/ui/carousel"
+} from "../components/ui/carousel";
 
 import {
   fetchTechnologyNews,
@@ -90,9 +90,8 @@ function CarouselSize() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  )
+  );
 }
-
 
 const PageBlog = () => {
   const [headlines, setHeadlines] = useState({
@@ -153,25 +152,19 @@ const PageBlog = () => {
     });
   };
 
-  
-
-
   return (
     <>
-      <body>
-
-
-        <Header />
+      <Header />
+      <div className="w-full h-full">
         <AnimationCota moneyDay={headlines.moneyDay} />
 
-        
-        <div className="bg-background text-white">
+        <div className="bg-background text-white ">
           <motion.div className="max-w-7xl mx-auto text-center mb-10 ">
             <motion.p
               initial={{ opacity: -50, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.0, ease: "easeOut" }}
-              className="text-center mb-20"
+              className="text-center mb-20 "
             >
               Domine o mercado financeiro: Informações que dão a{" "}
               <strong>sua empresa</strong> a vantagem competitiva que ela{" "}
@@ -231,9 +224,8 @@ const PageBlog = () => {
               </>
             )}
           </div>
-        </div>    
+        </div>
 
-        
         <div className="bg-background text-white py-20">
           <div className="max-w-7xl mx-auto grid md:grid-cols-3 items-center">
             {headlines.b3?.slice(0, 3).map((item, index) => (
@@ -248,7 +240,7 @@ const PageBlog = () => {
             ))}
           </div>
         </div>
-                
+
         <div className="bg-background text-white">
           <div className="max-w-7xl mx-auto grid md:grid-cols-3 items-center">
             {headlines.tech?.slice(1, 4).map((item, index) => (
@@ -265,120 +257,120 @@ const PageBlog = () => {
         </div>
 
         <div className="bg-background text-white py-20">
-  <h2 className="text-3xl font-semibold max-w-7xl mx-auto mb-10">
-    Conheça Nossos Conteúdos
-  </h2>
+          <h2 className="text-3xl font-semibold max-w-7xl mx-auto mb-10">
+            Conheça Nossos Conteúdos
+          </h2>
 
-  <motion.div
-      className="max-w-7xl mx-auto"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <Carousel className="w-full"
-      opts={{
-        loop: true, 
-      }}
-    >
-  <CarouselContent>
-    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+          <motion.div
+            className="max-w-7xl mx-auto"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <Carousel
+              className="w-full"
+              opts={{
+                loop: true,
+              }}
+            >
+              <CarouselContent>
+                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                    <a
+                      href="https://www.instagram.com/shield_bank"
+                      target="_blank"
+                    >
+                      <Image
+                        src={blogInstagram}
+                        alt="Finanças"
+                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                      />
+                    </a>
+                    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+                      <span className="text-[#CCAA76]">|</span> Instagram
+                    </div>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                    <a
+                      href="https://www.linkedin.com/company/shield-bank/posts/?feedView=all"
+                      target="_blank"
+                    >
+                      <Image
+                        src={blogLinkedin}
+                        alt="Finanças"
+                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                      />
+                    </a>
+                    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+                      <span className="text-[#CCAA76]">|</span> Linkedin
+                    </div>
+                  </Card>
+                </CarouselItem>
 
-      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
-        <a href="https://www.instagram.com/shield_bank" target="_blank">
-    <Image
-      src={blogInstagram}
-      alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
-    />
+                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                    <a
+                      href="https://www.tiktok.com/search?q=shield%20bank&t=1758038399624"
+                      target="_blank"
+                    >
+                      <Image
+                        src={blogTiktok}
+                        alt="Finanças"
+                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                      />
+                    </a>
+                    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+                      <span className="text-[#CCAA76]">|</span> TikTok
+                    </div>
+                  </Card>
+                </CarouselItem>
 
-    </a>
-    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
-      <span className="text-[#CCAA76]">|</span> Instagram
-    </div>
-    
-    
-  </Card>
+                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                    <a
+                      href="https://www.youtube.com/@shield_bank"
+                      target="_blank"
+                    >
+                      <Image
+                        src={blogYoutube}
+                        alt="Finanças"
+                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                      />
+                    </a>
+                    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+                      <span className="text-[#CCAA76]">|</span> YouTube
+                    </div>
+                  </Card>
+                </CarouselItem>
 
-    </CarouselItem>
-    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                    <a
+                      href="https://efici-ncia-tribut-ria.vercel.app"
+                      target="_blank"
+                    >
+                      <Image
+                        src={blogInteligenciaTributaria}
+                        alt="Finanças"
+                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                      />
+                    </a>
+                    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
+                      <span className="text-[#CCAA76]">|</span> Inteligência
+                      Tributária
+                    </div>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
 
-      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
-        <a href="https://www.linkedin.com/company/shield-bank/posts/?feedView=all" target="_blank">
-    <Image
-      src={blogLinkedin}
-      alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
-    />
-    </a>
-    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
-      <span className="text-[#CCAA76]">|</span> Linkedin
-    </div>
-  </Card>
-
-    </CarouselItem>
-
-    
-    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
-      
-      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
-        <a href="https://www.tiktok.com/search?q=shield%20bank&t=1758038399624" target="_blank">
-    <Image
-      src={blogTiktok}
-      alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
-    />
-     </a>
-    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
-      <span className="text-[#CCAA76]">|</span> TikTok
-    </div>
-  </Card>
-
-    </CarouselItem>
-
-    
-    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
-        
-    <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
-      <a href="https://www.youtube.com/@shield_bank" target="_blank">
-    <Image
-      src={blogYoutube}
-      alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
-    />
-    </a>
-    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
-      <span className="text-[#CCAA76]">|</span> YouTube
-    </div>
-  </Card>
-
-    </CarouselItem>
-
-    <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
-        
-    <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
-      <a href="https://efici-ncia-tribut-ria.vercel.app" target="_blank">
-    <Image
-      src={blogInteligenciaTributaria}
-      alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
-    />
-    </a>
-    <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
-      <span className="text-[#CCAA76]">|</span> Inteligência Tributária
-    </div>
-  </Card>
-
-    </CarouselItem>
-    
-  </CarouselContent>
-
-  <CarouselPrevious />
-  <CarouselNext />
-</Carousel>
-    </motion.div>
-</div>
-
-      </body>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </motion.div>
+        </div>
+      </div>
     </>
   );
 };

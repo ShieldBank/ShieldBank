@@ -14,22 +14,46 @@ import { Button } from "@/app/components/ui/button";
 export function Header() {
   return (
     <>
-      <header className="  opacity-80">
-        <div className="flex items-center justify-between max-w-7xl mx-auto px-4">
+      <header className="  opacity-80  -mt-5">
+        <div className="flex px-20 items-center gap-50 bg-transparent absolute">
           <Image src={shieldbank} alt="Shieldbank" width={160} height={60} />
 
           <NavigationMenu>
             <NavigationMenuList className="flex items-center gap-10 text-[18px]">
-              
               <div className="flex gap-10">
-                <NavigationMenuLink href="/" className="hover:text-gray-400 text-white transition-colors">Quem somos</NavigationMenuLink>
-                <NavigationMenuLink href="/" className="hover:text-gray-400 text-white transition-colors">Shield Pay</NavigationMenuLink>
-                <NavigationMenuLink href="/blog" className="hover:text-gray-400 text-white transition-colors">Blog</NavigationMenuLink>
-                <NavigationMenuLink href="https://shieldbank.vagas.solides.com.br/" target="_blank" className="hover:text-gray-400 text-white transition-colors " >Carreiras</NavigationMenuLink>
-                <NavigationMenuLink href="/" className="hover:text-gray-400 text-white transition-colors">Contato</NavigationMenuLink>
+                <NavigationMenuLink
+                  href="/"
+                  className="hover:text-gray-400 text-white transition-colors"
+                >
+                  Quem somos
+                </NavigationMenuLink>
+                <NavigationMenuLink
+                  href="/"
+                  className="hover:text-gray-400 text-white transition-colors"
+                >
+                  Shield Pay
+                </NavigationMenuLink>
+                <NavigationMenuLink
+                  href="/blog"
+                  className="hover:text-gray-400 text-white transition-colors"
+                >
+                  Blog
+                </NavigationMenuLink>
+                <NavigationMenuLink
+                  href="https://shieldbank.vagas.solides.com.br/"
+                  target="_blank"
+                  className="hover:text-gray-400 text-white transition-colors "
+                >
+                  Carreiras
+                </NavigationMenuLink>
+                <NavigationMenuLink
+                  href="/"
+                  className="hover:text-gray-400 text-white transition-colors"
+                >
+                  Contato
+                </NavigationMenuLink>
               </div>
 
-              
               <div className="flex gap-4">
                 <Button
                   asChild
@@ -43,7 +67,12 @@ export function Header() {
                   variant={"outline"}
                   className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground"
                 >
-                  <a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!" target="_blank">Abra sua conta</a>
+                  <a
+                    href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
+                    target="_blank"
+                  >
+                    Abra sua conta
+                  </a>
                 </Button>
               </div>
             </NavigationMenuList>
