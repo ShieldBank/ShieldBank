@@ -283,28 +283,31 @@ const PageBlog = () => {
   <CarouselContent>
     <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
 
-      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
         <a href="https://www.instagram.com/shield_bank" target="_blank">
     <Image
       src={blogInstagram}
       alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
     />
+
     </a>
     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
       <span className="text-[#CCAA76]">|</span> Instagram
     </div>
+    
+    
   </Card>
 
     </CarouselItem>
     <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
 
-      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
         <a href="https://www.linkedin.com/company/shield-bank/posts/?feedView=all" target="_blank">
     <Image
       src={blogLinkedin}
       alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
     />
     </a>
     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -317,12 +320,12 @@ const PageBlog = () => {
     
     <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
       
-      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+      <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
         <a href="https://www.tiktok.com/search?q=shield%20bank&t=1758038399624" target="_blank">
     <Image
       src={blogTiktok}
       alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
     />
      </a>
     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -335,12 +338,12 @@ const PageBlog = () => {
     
     <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
         
-    <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+    <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
       <a href="https://www.youtube.com/@shield_bank" target="_blank">
     <Image
       src={blogYoutube}
       alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
     />
     </a>
     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -352,12 +355,12 @@ const PageBlog = () => {
 
     <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
         
-    <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0">
+    <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
       <a href="https://efici-ncia-tribut-ria.vercel.app" target="_blank">
     <Image
       src={blogInteligenciaTributaria}
       alt="Finanças"
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
     />
     </a>
     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">

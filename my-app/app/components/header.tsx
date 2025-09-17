@@ -25,7 +25,7 @@ export function Header() {
                 <NavigationMenuLink href="/" className="hover:text-gray-400 text-white transition-colors">Quem somos</NavigationMenuLink>
                 <NavigationMenuLink href="/" className="hover:text-gray-400 text-white transition-colors">Shield Pay</NavigationMenuLink>
                 <NavigationMenuLink href="/blog" className="hover:text-gray-400 text-white transition-colors">Blog</NavigationMenuLink>
-                <NavigationMenuLink href="/" className="hover:text-gray-400 text-white transition-colors">Carreiras</NavigationMenuLink>
+                <NavigationMenuLink href="https://shieldbank.vagas.solides.com.br/" target="_blank" className="hover:text-gray-400 text-white transition-colors " >Carreiras</NavigationMenuLink>
                 <NavigationMenuLink href="/" className="hover:text-gray-400 text-white transition-colors">Contato</NavigationMenuLink>
               </div>
 
@@ -36,14 +36,14 @@ export function Header() {
                   variant={"outline"}
                   className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground"
                 >
-                  <a href="/login">Acessar conta</a>
+                  <a href="/acessar-conta">Acessar conta</a>
                 </Button>
                 <Button
                   asChild
                   variant={"outline"}
                   className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground"
                 >
-                  <a href="/login">Abra sua conta</a>
+                  <a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!" target="_blank">Abra sua conta</a>
                 </Button>
               </div>
             </NavigationMenuList>
