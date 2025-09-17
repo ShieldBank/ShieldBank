@@ -69,13 +69,13 @@ export function ContaDigital() {
             </h2>
           </div>
           <div className="items-baseline col-start-2 col-end-4">
-            <div className="  z-1 ">
-              <Carousel opts={{ align: "start" }} className="w-[80rem]">
-                <CarouselContent className=" h-auto w-full">
+            <div className=" overflow-hidden">
+              <Carousel opts={{ align: "start" }} className="w-[70rem] z-1 ">
+                <CarouselContent className=" h-auto w-full ">
                   {servicos.map((item, index) => (
                     <CarouselItem key={index} className="basis-1/3 ">
                       <Image
-                        className="w-[30rem]"
+                        className="w-[90rem]"
                         src={shieldbank}
                         alt="shield bank"
                       />
@@ -106,9 +106,9 @@ export function ContaDigital() {
                 <CarouselPrevious className="hover:bg-[#CCAA76] hover:text-amber-50" />
                 <CarouselNext className="hover:bg-[#CCAA76] hover:text-amber-50 mr-10" />
               </Carousel>
-            </div>
-            <div className="flex justify-end absolute ml-[50rem] ">
-              <Image src={shieldbackground} alt="" />
+              <div className="flex justify-end absolute ml-[40rem] -mt-[30rem] z-0 ">
+                <Image src={shieldbackground} alt="" />
+              </div>
             </div>
           </div>
         </div>
