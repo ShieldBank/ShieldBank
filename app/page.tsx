@@ -6,6 +6,7 @@ import { App } from "./home";
 import { ContaDigital } from "./conta-digital";
 import { Bank } from "./bank";
 import { Footer } from "./components/footer";
+import PageBlog from "./blog/page";
 
 export default function Home() {
   return (
