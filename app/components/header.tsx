@@ -14,18 +14,31 @@ import { Button } from "@/app/components/ui/button";
 export function Header() {
   return (
     <>
-      <header className="  opacity-80  -mt-5">
-        <div className="flex px-20 items-center gap-50 bg-transparent absolute">
-          <Image src={shieldbank} alt="Shieldbank" width={160} height={60} />
+      <header className=" w-full  z-10  fixed ">
+        <div className="w-full h-[5rem] flex justify-around  items-center   bg-[#001124]  ">
+          <Image
+            className="ml-10"
+            width={150}
+            quality={90}
+            src={shieldbank}
+            alt="Shieldbank"
+          />
 
-          <NavigationMenu>
-            <NavigationMenuList className="flex items-center gap-10 text-[18px]">
-              <div className="flex gap-10">
+          <NavigationMenu className="max-sm:hidden">
+            <NavigationMenuList className="flex items-center gap-12 text-[18px] ">
+              <div className="flex gap-15">
                 <NavigationMenuLink
                   href="/"
-                  className="hover:text-gray-400 text-white transition-colors"
+                  className="hover:text-gray-400 text-white transition-colors   "
                 >
                   Quem somos
+                </NavigationMenuLink>
+
+                <NavigationMenuLink
+                  href="/"
+                  className="hover:text-gray-400 text-white transition-colors   "
+                >
+                  Shield Bank
                 </NavigationMenuLink>
                 <NavigationMenuLink
                   href="/"
@@ -39,13 +52,7 @@ export function Header() {
                 >
                   Blog
                 </NavigationMenuLink>
-                <NavigationMenuLink
-                  href="https://shieldbank.vagas.solides.com.br/"
-                  target="_blank"
-                  className="hover:text-gray-400 text-white transition-colors "
-                >
-                  Carreiras
-                </NavigationMenuLink>
+
                 <NavigationMenuLink
                   href="/"
                   className="hover:text-gray-400 text-white transition-colors"

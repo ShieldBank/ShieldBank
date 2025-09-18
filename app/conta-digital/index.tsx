@@ -70,24 +70,29 @@ export function ContaDigital() {
   return (
     <>
       <div className="w-[100%] bg-amber-50  max-h-auto text-black  ">
-        <div className="p-28 grid grid-rows-2 grid-cols-3  ">
+        <div className="p-28 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8 ">
           <div className="row-start-1">
             {/* <p className=" text-[#CCAA76]  text-xl tracking-wider ">SERVIÇOS</p> */}
-            <h2 className="text-5xl font-light w- mt-2">Nossos Produtos</h2>
+            <h2 className="text-5xl font-light w- mt-2 max-sm:text-3xl">
+              Nossos Produtos
+            </h2>
           </div>
-          <div className="items-baseline col-start-2 col-end-4">
+          <div className="items-baseline col-start-2 col-end-4 max-sm:col-start-1  max-sm:mt-10">
             <div className=" overflow-hidden">
               <Carousel
                 opts={{ align: "start" }}
                 plugins={[plugin.current]}
                 orientation="horizontal"
-                className="w-[60rem] h-[40rem] z-1  "
+                className="w-[60rem] h-[40rem] z-1 max-sm:w-full  "
               >
-                <CarouselContent className="  ">
+                <CarouselContent className="  max-sm:w-full">
                   {servicos.map((item, index) => (
-                    <CarouselItem key={index} className="basis-1/3 ">
+                    <CarouselItem
+                      key={index}
+                      className="basis-1/3  max-sm:basis-1/2 "
+                    >
                       <Card
-                        className="  shadow-lg p-0 bg-cover  border-0 h-[30rem]  "
+                        className="  shadow-lg p-0 bg-cover  bg-center border-0 h-[30rem] max-sm:h-[30rem]   "
                         style={{ backgroundImage: `url(${item.img})` }}
                       >
                         {/* <Image
@@ -99,7 +104,7 @@ export function ContaDigital() {
                         /> */}
                         <CardContent className="text-amber-50">
                           <div className="">
-                            <div className="font-light m-1 text-2xl">
+                            <div className="font-light m-1 text-2xl max-sm:text-xl">
                               {item.name}
                             </div>
                             {/* <p className="text-gray-700 text-base line-clamp-1">
@@ -121,7 +126,7 @@ export function ContaDigital() {
                   ))}
                 </CarouselContent>
               </Carousel>
-              <div className="flex justify-end absolute ml-[40rem] -mt-[30rem] z-0 ">
+              <div className="flex justify-end absolute ml-[40rem] -mt-[30rem] z-0  ">
                 <Image src={shieldbackground} alt="" />
               </div>
             </div>

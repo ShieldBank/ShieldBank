@@ -6,14 +6,14 @@ import { Button } from "../components/ui/button";
 export function App() {
   return (
     <>
-      <div className=" w-full  h-[75%]  overflow-hidden flex  ">
-        <motion.div className="h-full flex items-center p-20 ">
+      <div className=" w-full  h-[75%] max-sm:h-[62%]  overflow-hidden flex  ">
+        <motion.div className="h-full flex items-center p-20 max-sm:p-0">
           <div className="w-full mt-10 flex flex-col  items-center">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="text-center mb-10 mt-25"
+              className="text-center mb-10 mt-25 max-sm:mb-2  max-sm:text-[0.8rem] "
             >
               Potencialize suas finanças: descubra quanto sua empresa pode{" "}
               <strong>economiza </strong>
@@ -23,19 +23,26 @@ export function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="text-8xl text-center font-light"
+              className="text-8xl text-center font-light max-sm:text-6xl"
             >
               Tecnologia{" "}
               <strong className="text-[#CCAA76]"> personalizada</strong> em
               inteligência financeira
             </motion.h1>
-            <motion.button className="text-center mt-10 ">
+            <motion.button className="text-center mt-10 flex gap-12 max-sm:gap-8">
               <Button
                 asChild
                 variant={"outline"}
-                className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground"
+                className="w-44 p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground "
               >
                 <a href="/login">Abra sua conta</a>
+              </Button>
+              <Button
+                asChild
+                variant={"outline"}
+                className="w-60 bg-[#CCAA76] border-0 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-45 "
+              >
+                <a href="/login">Conheça nossos produtos</a>
               </Button>
             </motion.button>
           </div>

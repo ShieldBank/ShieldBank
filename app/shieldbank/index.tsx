@@ -95,40 +95,39 @@ export function Content() {
   ];
   return (
     <>
-      <div className=" w-[100%] bg-amber-50  h-auto  ">
-        <motion.div className="">
-          <div className="text-black grid grid-cols-2 place-content-center place-items-center px-30  ">
+      <div className=" w-full bg-amber-50  h-auto max-sm:h-[35rem]    ">
+        <motion.div className=" ">
+          <div className="text-black grid grid-cols-2  place-content-center place-items-center  max-sm:place-content-start max-sm:place-items-center max-sm:px-0 px-30   ">
             <div
-              className="flex flex-col  p-16 font-normal gap-1
+              className="flex flex-col  p-16 font-normal gap-1 max-sm:p-5 max-sm:mt-20
             "
             >
               <div className="mb-20">
-                <p className="text-[#CCAA76]  text-xl tracking-wider">
+                <p className="text-[#CCAA76] font-semibold text-xl tracking-wider">
                   SHIELD BANK
                 </p>
-                <h2 className="text-4xl font-light"></h2>
-                <p className="font-light text-xl ">
+                <p className="font-light text-xl  ">
                   Como podemos potencializar seus <strong> resultados</strong> e
                   simplificar sua vida empresarial.
                 </p>
               </div>
               <div>
-                <p className=" text-[#CCAA76]  text-xl tracking-wider ">
-                  SERVIÇOS
+                <p className=" text-[#CCAA76] font-semibold text-xl tracking-wider ">
+                  CONTA DIGITAL
                 </p>
                 <h2 className="text-xl font-light  mt-2">
-                  Conheça nossos serviços
+                  Conheça nossos <strong> serviços</strong>
                 </h2>
-                <div className=" grid place-items-center place-content-center z-1 ">
+                <div className=" grid place-items-center place-content-center z-1 max-sm:hidden">
                   <Carousel
                     opts={{
                       align: "center",
                       loop: true,
                     }}
                     setApi={setApi}
-                    className=" max-w-[50rem]  "
+                    className=" max-w-[50rem] max-sm:w-[20rem]    "
                   >
-                    <CarouselContent className=" h-[20rem] ">
+                    <CarouselContent className=" h-[20rem]  ">
                       {servicos.map((item, index) => (
                         <CarouselItem
                           key={index}
@@ -136,20 +135,20 @@ export function Content() {
                         >
                           <div className="mt-10 -m-[1rem]">
                             <Card
-                              className={`transition-transform duration-300  ${
+                              className={`transition-transform duration-300 bg-[#001124] text-amber-50    ${
                                 current === index
-                                  ? "scale-80 shadow-lg"
-                                  : "scale-60 opacity-60"
+                                  ? "scale-80 shadow-lg  "
+                                  : "scale-60 opacity-60 z-0"
                               }`}
                             >
                               <CardContent className="flex flex-col aspect-square p-2 ">
-                                <span className="text-[2.5rem] text-[#CCAA76] font-semibold   flex justify-start px-2">
+                                <span className="text-[2.8rem] text-[#CCAA76] font-semibold  max-sm:text-[2rem]  flex justify-start px-2">
                                   {item.icons}
                                 </span>
-                                <span className="text-[1.6rem] font-semibold text-center mt-5 ">
+                                <span className="text-[1.6rem] max-sm:text-[1.2rem] font-semibold text-center mt-5 ">
                                   {item.name}
                                 </span>
-                                <p className="text-[1.2rem] text-center  mt-10">
+                                <p className="text-[1.2rem] text-center max-sm:text-[1rem] mt-10">
                                   {item.content}
                                 </p>
                               </CardContent>
@@ -164,8 +163,8 @@ export function Content() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center w-[25rem] h-[40rem]  ">
-              <VideoPlayer className="overflow-hidden rounded-lg border mt-10 ">
+            <div className="flex justify-center w-[25rem] h-[40rem] max-sm:w-[12rem] max-sm:h-[25rem]   ">
+              <VideoPlayer className="overflow-hidden rounded-lg border mt-10 max-sm:mt-0  ">
                 <VideoPlayerContent
                   crossOrigin=""
                   muted
@@ -175,6 +174,7 @@ export function Content() {
                 />
                 <VideoPlayerControlBar>
                   <VideoPlayerPlayButton />
+
                   <VideoPlayerSeekBackwardButton />
                   <VideoPlayerSeekForwardButton />
                   <VideoPlayerTimeRange />
