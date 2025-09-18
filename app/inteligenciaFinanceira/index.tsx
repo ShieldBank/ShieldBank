@@ -24,18 +24,17 @@ export function Bank() {
     <div className=" h-[25rem] grid grid-cols-2 bg-[url('/home.png')] bg-cover bg-center ">
       <div className="">
         <h1 className="text-5xl text-center font-light mt-20 px-20">
-          O poder da{" "}
-          <strong className="text-[#CCAA76]">inteligência financeira.</strong>{" "}
-          Em suas mãos.
+          A <strong className="text-[#CCAA76]">Inteligência Financeira:</strong>{" "}
+          O poder em suas mãos.
         </h1>
         <div className="flex justify-center mt-20 ">
           <Button
             asChild
             variant={"outline"}
-            className="text-3xl p-8 hover:bg-[#CCAA76] hover:border-0 hover:animate-pulse  hover:text-foreground"
+            className="text-2xl p-6 hover:bg-[#CCAA76] hover:border-0 hover:animate-pulse  hover:text-foreground"
           >
             <a href="https://efici-ncia-tribut-ria.vercel.app/" target="_blank">
-              Simule sua nova realidade
+              Sua nova realidade
             </a>
           </Button>
         </div>

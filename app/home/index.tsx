@@ -15,7 +15,7 @@ export function App() {
               transition={{ duration: 1 }}
               className="text-center mb-10 mt-25"
             >
-              Potencialize suas finanças: veja quanto sua empresa{" "}
+              Potencialize suas finanças: descubra quanto sua empresa pode{" "}
               <strong>economiza </strong>
               mensalmente com a <strong>ShieldBank</strong>
             </motion.p>

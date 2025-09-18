@@ -4,7 +4,7 @@ import { Header } from "./components/header";
 import { Content } from "./shieldbank";
 import { App } from "./home";
 import { ContaDigital } from "./conta-digital";
-import { Bank } from "./bank";
+import { Bank } from "./inteligenciaFinanceira";
 import { Footer } from "./components/footer";
 import PageBlog from "./blog/page";
 

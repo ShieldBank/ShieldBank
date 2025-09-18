@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import logoAppStore from "../assets/apple.svg";
-// import logoGooglePLay from "../assets/google-play.svg";
+import logoGooglePLay from "../assets/google-play.svg";
 import { FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
 
 export function Footer() {
@@ -29,7 +29,7 @@ export function Footer() {
             <motion.p>Carreiras</motion.p>
           </div>
           <div className=" flex flex-col gap-5">
-            {/* <Image className="w-[15rem]" src={logoGooglePLay} alt="" /> */}
+            <Image className="w-[15rem]" src={logoGooglePLay} alt="" />
             <Image className="w-[15rem]" src={logoAppStore} alt="" />
             <div className="flex gap-10 justify-center">
               <FaInstagram />
