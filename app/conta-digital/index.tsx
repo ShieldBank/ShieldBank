@@ -7,43 +7,52 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../components/ui/carousel";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import shieldbank from "../assets/homebeneficios.png";
 import shieldbackground from "../assets/shield-bank-servicos.svg";
+import inteligenciaTributaria from "../assets/blogInteligenciaTributaria.jpg";
+import maquininha from "../assets/blogTiktok.png";
+import investimentos from "../assets/blogYoutube.png";
+import teste from "../assets/blogInstagram.jpg";
+
 import { ChevronRight } from "lucide-react";
 import { Card, CardContent } from "../components/ui/card";
 
+import Autoplay from "embla-carousel-autoplay";
+
 export function ContaDigital() {
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const servicos = [
     {
-      img: shieldbank,
-      name: "Recebimentos",
+      img: "/teste.png",
+      name: "Inteligencia",
+      content:
+        "Impulsione a eficiência da sua empresa de forma simples e prática.",
+    },
+    {
+      img: "shutterstock_2459023597.jpg",
+      name: "Investimentos",
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
     },
     {
-      img: shieldbank,
-      name: "Recebimentos",
+      img: "/Tiktok.png",
+      name: "ShieldPay",
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
     },
     {
-      img: shieldbank,
-      name: "Recebimentos",
+      img: "/Linkedin.png",
+      name: "ShielBank",
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
     },
     {
-      img: shieldbank,
-      name: "Recebimentos",
-      content:
-        "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
-    },
-    {
-      img: shieldbank,
+      img: "/Youtube.png",
       name: "Recebimentos",
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
@@ -61,52 +70,63 @@ export function ContaDigital() {
   return (
     <>
       <div className="w-[100%] bg-amber-50  max-h-auto text-black  ">
-        <div className="p-28 grid grid-rows-2 grid-cols-3  ">
+        <div className="p-28 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8 ">
           <div className="row-start-1">
-            <p className=" text-[#CCAA76]  text-xl tracking-wider ">SERVIÇOS</p>
-            <h2 className="text-5xl font-light w-100 mt-2">
-              Veja alguns dos<strong> nossos serviços</strong>
+            {/* <p className=" text-[#CCAA76]  text-xl tracking-wider ">SERVIÇOS</p> */}
+            <h2 className="text-5xl font-light w- mt-2 max-sm:text-3xl">
+              Nossos Produtos
             </h2>
           </div>
-          <div className="items-baseline col-start-2 col-end-4">
+          <div className="items-baseline col-start-2 col-end-4 max-sm:col-start-1  max-sm:mt-10">
             <div className=" overflow-hidden">
-              <Carousel opts={{ align: "start" }} className="w-[70rem] z-1 ">
-                <CarouselContent className=" h-auto w-full ">
+              <Carousel
+                opts={{ align: "start" }}
+                plugins={[plugin.current]}
+                orientation="horizontal"
+                className="w-[60rem] h-[40rem] z-1 max-sm:w-full  "
+              >
+                <CarouselContent className="  max-sm:w-full">
                   {servicos.map((item, index) => (
-                    <CarouselItem key={index} className="basis-1/3 ">
-                      <Image
-                        className="w-[90rem]"
-                        src={shieldbank}
-                        alt="shield bank"
-                      />
-                      <Card className=" shadow-lg">
-                        <CardContent className="">
+                    <CarouselItem
+                      key={index}
+                      className="basis-1/3  max-sm:basis-1/2 "
+                    >
+                      <Card
+                        className="  shadow-lg p-0 bg-cover  bg-center border-0 h-[30rem] max-sm:h-[30rem]   "
+                        style={{ backgroundImage: `url(${item.img})` }}
+                      >
+                        {/* <Image
+                          className="w-[40rem] h-[25rem] rounded-2xl"
+                          src={item.img}
+                          alt="shield bank"
+                          quality={90}
+                          objectFit="cover"
+                        /> */}
+                        <CardContent className="text-amber-50">
                           <div className="">
-                            <div className="font-normal text-3xl mb-2">
-                              Conta Shield Bank
+                            <div className="font-light m-1 text-2xl max-sm:text-xl">
+                              {item.name}
                             </div>
-                            <p className="text-gray-700 text-base line-clamp-1">
+                            {/* <p className="text-gray-700 text-base line-clamp-1">
                               Lorem ipsum dolor sit amet, consectetur
                               adipisicing elit. Voluptatibus quia, nulla!
                               Maiores et perferendis eaque, exercitationem
                               praesentium nihil.
-                            </p>
+                            </p> */}
                           </div>
-                          <div className="px-6 pt-4 pb-2">
+                          {/* <div className="px-6 pt-4 pb-2">
                             <a className="flex hover:animate-bounce cursor-pointer  rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                               <ChevronRight />
                               Conheça o produto
                             </a>
-                          </div>
+                          </div> */}
                         </CardContent>
                       </Card>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious className="hover:bg-[#CCAA76] hover:text-amber-50" />
-                <CarouselNext className="hover:bg-[#CCAA76] hover:text-amber-50 mr-10" />
               </Carousel>
-              <div className="flex justify-end absolute ml-[40rem] -mt-[30rem] z-0 ">
+              <div className="flex justify-end absolute ml-[40rem] -mt-[30rem] z-0  ">
                 <Image src={shieldbackground} alt="" />
               </div>
             </div>
