@@ -4,6 +4,8 @@ import loboShield from "../assets/loboShield.png";
 import { motion } from "framer-motion";
 import { FaDollarSign, FaEuroSign, FaBitcoin } from "react-icons/fa";
 
+
+// component that shows a bottom animation with currency values
 export function AnimationCota({ moneyDay }) {
   const marqueeVariants = {
     animate: {
@@ -19,6 +21,7 @@ export function AnimationCota({ moneyDay }) {
     },
   };
 
+  // function to format currency values
   const formatarDinheiro = (valor) => {
     if (valor === null || valor === undefined) return "N/A";
     const valorNumerico = parseFloat(valor);
@@ -28,8 +31,9 @@ export function AnimationCota({ moneyDay }) {
     });
   };
 
+  // content of the component
   return (
-    <div className="fixed bottom-0 left-0 w-full z-50 bg-background text-white font-light text-[15px] px-8 py-3 flex justify-center items-center overflow-hidden">
+    <div className="fixed bottom-0 left-0 w-full z-50 bg-background text-white font-light text-[10px] md:text-[15px] px-8 py-3 flex justify-center items-center overflow-hidden">
       <motion.div
         variants={marqueeVariants}
         animate="animate"
