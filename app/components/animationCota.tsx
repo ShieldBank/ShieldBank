@@ -7,7 +7,7 @@ import { FaDollarSign, FaEuroSign, FaBitcoin } from "react-icons/fa";
 export function AnimationCota({ moneyDay }) {
   const marqueeVariants = {
     animate: {
-      x: ["0%", "-40%"],
+      x: ["0%", "-50%"],
       transition: {
         x: {
           repeat: Infinity,
@@ -29,39 +29,39 @@ export function AnimationCota({ moneyDay }) {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 w-full z-50 bg-background text-white font-light text-[15px] px-8 py-3 flex justify-center items-center overflow-hidden">
+    <div className="fixed bottom-0 left-0 w-full z-50 bg-background text-white font-light text-[10px] md:text-[15px] py-1 md:py-3 flex justify-center items-center overflow-hidden">
       <motion.div
         variants={marqueeVariants}
         animate="animate"
         className="flex w-full min-w-[200%] justify-between"
       >
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <FaDollarSign className="text-[#CCAA76]" size={15} />
           <p className="font-light">
             {formatarDinheiro(moneyDay?.USDBRL?.bid)}
           </p>
         </div>
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <Image src={loboShield} alt="lobo Shield" width={20} height={20} />
           <p className="font-light">Shield Bank</p>
         </div>
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <FaEuroSign className="text-[#CCAA76]" size={15} />
           <p className="font-light">
             {formatarDinheiro(moneyDay?.EURBRL?.bid)}
           </p>
         </div>
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <Image src={loboShield} alt="lobo Shield" width={20} height={20} />
           <p className="font-light">Shield Bank</p>
         </div>
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <FaBitcoin className="text-[#CCAA76]" size={15} />
           <p className="font-light">
             {formatarDinheiro(moneyDay?.BTCBRL?.bid)}
           </p>
         </div>
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <Image src={loboShield} alt="lobo Shield" width={20} height={20} />
           <p className="font-light">Shield Bank</p>
         </div>

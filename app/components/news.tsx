@@ -1,12 +1,13 @@
 import axios from "axios";
 
 // const token = '771874c73ae34339a1c902b70d93c978';
-const token = "2e43869325e04a5cbc4d8cf9b8188684";
-// const token = '72340279fa7d4d229ccedbf7be3fb190'
+// const token = "2e43869325e04a5cbc4d8cf9b8188684";
+const token = '72340279fa7d4d229ccedbf7be3fb190'
 const urlBase = "https://newsapi.org/v2/everything";
 const language = "pt";
 const matter = "publishedAt";
 
+// function to fetch news based on a query
 const news = async (query) => {
   const url = `${urlBase}?q=${query}&language=${language}&sortBy=${matter}&apiKey=${token}`;
 
@@ -22,18 +23,9 @@ const news = async (query) => {
       error.message
     );
   }
-};
-
+};// export functions to fetch specific categories of news
 export const fetchTechnologyNews = () => {
   return news("Tecnologia Financeira");
-};
-
-export const fetchPixNews = () => {
-  return news("Pix");
-};
-
-export const fetchEconomyNews = () => {
-  return news("economia");
 };
 
 export const fetchB3News = () => {
