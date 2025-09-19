@@ -13,10 +13,16 @@ export function Bank() {
         <motion.div className="">
           <div>
             <h1 className="text-4xl   font-light text-start ml-100 mt-20 ">
-              <strong className="text-[#CCAA76]"> Banco completo</strong>{" "}
+              <strong className="text-[#CCAA76]">
+                {" "}
+                Inteligência Financeira{" "}
+              </strong>{" "}
+              ao alcance de um toque{" "}
             </h1>
             <p className="text-3xl text-start ml-100 font-light">
-              na palma da sua mão.
+              Tudo que você precisa para{" "}
+              <strong className="text-[#CCAA76]"> gerir suas finanças </strong>,
+              na palma da mão{" "}
             </p>
           </div>
           <div className="justify-center items-center flex -mt-50">
@@ -25,25 +31,25 @@ export function Bank() {
           <div className="flex items-center justify-center gap-10  mb-30 -mt-50 ">
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3 ">
               <FaCreditCard size={25} />
-              <p className="text-2xl text-center font-light ">
+              <p className="text-3xl text-center font-light ">
                 Cartão de crédito (sujeito a análise)
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[25rem] gap-3">
               <FaMobileAlt size={25} />
-              <p className="text-2xl text-center font-light ">
+              <p className="text-3xl text-center font-light ">
                 {" "}
                 Conta completa: pagamentos, recibemntos, pix e mais
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3">
               <IoStatsChart size={25} />
-              <p className="text-2xl text-center font-light ">
+              <p className="text-3xl text-center font-light ">
                 Plataforma de investimentos
               </p>{" "}
             </div>
           </div>
-          <div className="flex justify-center mb-10">
+          <div className="flex justify-center mb-10 -mt-20 ">
             <Button
               asChild
               variant={"outline"}
