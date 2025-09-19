@@ -39,13 +39,16 @@ export function Header() {
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
                 >
                   Shield Bank
+
                 </NavigationMenuLink>
+
                 <NavigationMenuLink
                   href="/"
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Shield Pay
                 </NavigationMenuLink>
+                
                 <NavigationMenuLink
                   href="/blog"
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
@@ -54,7 +57,7 @@ export function Header() {
                 </NavigationMenuLink>
 
                 <NavigationMenuLink
-                  href="/"
+                  href="/#contatos"
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Contato
@@ -67,7 +70,7 @@ export function Header() {
                   variant={"outline"}
                   className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground group-hover:text-gray-400"
                 >
-                  <a href="/acessar-conta">Acessar conta</a>
+                  <a href="/acessar-conta">Acessar Conta</a>
                 </Button>
                 <Button
                   asChild
@@ -78,7 +81,7 @@ export function Header() {
                     href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
                     target="_blank"
                   >
-                    Abra sua conta
+                    Seja Shield
                   </a>
                 </Button>
               </div>

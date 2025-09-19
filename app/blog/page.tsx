@@ -197,7 +197,7 @@ const PageBlog = () => {
 
         
 
-        {/* Home Two session News  */}
+        {/* Two session News  */}
         <div className="bg-background text-white mt-20 mb-10"> 
           <div className="max-w-7xl md:max-w-7xl mx-auto items-start py-10 px-5 text-3xl font-semibold md:font-light text-[#CCAA76]" >| Destaques </div>
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center">
@@ -214,7 +214,7 @@ const PageBlog = () => {
           </div>
         </div>
 
-        {/* Home Three session News  */}
+        {/* Three session News  */}
         <div className="bg-background text-white">
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center">
             {headlines.tech?.slice(1, 4).map((item, index) => (

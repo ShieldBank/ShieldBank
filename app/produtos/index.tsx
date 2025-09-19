@@ -23,15 +23,15 @@ export function Produtos() {
   const servicos = [
     {
       img: "/teste.png",
-      name: "Inteligencia",
+      name: "Inteligência",
       url: "/produtos/inteligencia",
       content:
         "Impulsione a eficiência da sua empresa de forma simples e prática.",
     },
     {
       img: "shutterstock_2459023597.jpg",
-      name: "Investimentos",
-      url: "/produtos/inteligencia",
+      name: "Rendimentos",
+      url: "/produtos/rendimentos",
 
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
