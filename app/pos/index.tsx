@@ -6,6 +6,7 @@ import pos from "../assets/maquina-de-cartao-shield.png";
 import Image from "next/image";
 import { FaCreditCard, FaHeadset } from "react-icons/fa";
 import { HiOutlineReceiptTax } from "react-icons/hi";
+import shieldbackground from "../assets/shield-bank-servicos.svg";
 
 export function Pos() {
   return (
@@ -75,6 +76,9 @@ export function Pos() {
                 </a>
               </Button>
             </div>
+          </div>
+          <div className="flex justify-end absolute ml-[80rem]  z-0  ">
+            <Image width={700} src={shieldbackground} alt="" />
           </div>
         </motion.div>
       </div>

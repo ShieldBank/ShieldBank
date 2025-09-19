@@ -1,5 +1,6 @@
-import { motion } from "motion/react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 import logoAppStore from "../assets/apple.svg";
 import logoGooglePLay from "../assets/google-play.svg";
 import { FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";

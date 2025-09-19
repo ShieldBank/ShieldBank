@@ -3,7 +3,7 @@
 import { Header } from "./components/header";
 import { Content } from "./shieldbank";
 import { App } from "./home";
-import { ContaDigital } from "./conta-digital";
+import { Produtos } from "./produtos";
 import { Inteligencia } from "./inteligenciaFinanceira";
 import { Footer } from "./components/footer";
 import PageBlog from "./blog/page";
@@ -19,7 +19,7 @@ export default function Home() {
       <Bank />
       <Content />
       <Pos />
-      <ContaDigital />
+      <Produtos />
       <Footer />
     </div>
   );
