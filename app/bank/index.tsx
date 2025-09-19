@@ -32,14 +32,14 @@ export function Bank() {
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3 ">
               <FaCreditCard size={25} />
               <p className="text-3xl text-center font-light ">
-                Cartão de crédito (sujeito a análise)
+                Cartão de Débito
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[25rem] gap-3">
               <FaMobileAlt size={25} />
               <p className="text-3xl text-center font-light ">
                 {" "}
-                Conta completa: pagamentos, recibemntos, pix e mais
+                Conta Completa: Pagamentos, Recebimentos, Pix e Mais
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3">
@@ -56,7 +56,7 @@ export function Bank() {
               className="w-60 bg-[#001124] text-amber-50 border-1 p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-[#001124] max-sm:w-45 "
             >
               <a className="text-[1.4rem]" href="/login">
-                Abra sua conta
+                Seja Shield
               </a>
             </Button>
           </div>

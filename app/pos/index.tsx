@@ -36,16 +36,16 @@ export function Pos() {
             <div className="flex gap-2 mt-12">
               <p className="flex gap-2 text-[1rem]">
                 <FaCreditCard size={25} color="#CCAA76" />
-                Conta digital gratuita
+                Conta Digital Gratuita
               </p>
               <p className="flex gap-2 text-[1rem]">
                 {" "}
                 <HiOutlineReceiptTax size={25} color="#CCAA76" />
-                Taxas sob medida
+                Taxas Personalizadas
               </p>
               <p className="flex gap-2 text-[1rem]">
                 <FaHeadset size={25} color="#CCAA76" />
-                Atendimento rápido e eficiente
+                Atendimento Rápido e Eficiente
               </p>
             </div>
             <div className="mt-10 justify-center flex gap-10">
