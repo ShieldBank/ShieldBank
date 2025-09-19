@@ -17,7 +17,7 @@ export function Header() {
       <header className=" w-full  z-10  fixed ">
         <div className="w-full h-[5rem] flex justify-around  items-center   bg-[#001124]  ">
           <Image
-            className="ml-10"
+            className="ml-10 brightness-105"
             width={150}
             quality={90}
             src={shieldbank}
@@ -25,37 +25,37 @@ export function Header() {
           />
 
           <NavigationMenu className="max-sm:hidden">
-            <NavigationMenuList className="flex items-center gap-12 text-[18px] ">
+            <NavigationMenuList className="flex items-center gap-12 text-[18px] group">
               <div className="flex gap-15">
                 <NavigationMenuLink
                   href="/"
-                  className="hover:text-gray-400 text-white transition-colors   "
+                  className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
                 >
-                  Quem somos
+                  Quem Somos
                 </NavigationMenuLink>
 
                 <NavigationMenuLink
                   href="/"
-                  className="hover:text-gray-400 text-white transition-colors   "
+                  className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
                 >
                   Shield Bank
                 </NavigationMenuLink>
                 <NavigationMenuLink
                   href="/"
-                  className="hover:text-gray-400 text-white transition-colors"
+                  className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Shield Pay
                 </NavigationMenuLink>
                 <NavigationMenuLink
                   href="/blog"
-                  className="hover:text-gray-400 text-white transition-colors"
+                  className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Blog
                 </NavigationMenuLink>
 
                 <NavigationMenuLink
                   href="/"
-                  className="hover:text-gray-400 text-white transition-colors"
+                  className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Contato
                 </NavigationMenuLink>
@@ -65,14 +65,14 @@ export function Header() {
                 <Button
                   asChild
                   variant={"outline"}
-                  className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground"
+                  className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground group-hover:text-gray-400"
                 >
                   <a href="/acessar-conta">Acessar conta</a>
                 </Button>
                 <Button
                   asChild
                   variant={"outline"}
-                  className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground"
+                  className="p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground group-hover:text-gray-400"
                 >
                   <a
                     href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"

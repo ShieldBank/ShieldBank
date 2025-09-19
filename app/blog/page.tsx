@@ -40,7 +40,7 @@ const NewsCard = ({ title, description, image, date, category, url }) => {
             alt={title}
             fill
             unoptimized
-            className="object-cover rounded-sm brightness-105 hover:brightness-90"
+            className="object-cover rounded-sm brightness-105 hover:brightness-90 hover:rounded-none"
           />
         </div>
       ) : (
@@ -54,14 +54,7 @@ const NewsCard = ({ title, description, image, date, category, url }) => {
 
       <p className="text-xl md:text-[15px] line-clamp-2 text-start">{title}</p>
       {url && (
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-md md:text-[15px] text-[#CCAA76] hover:underline mt-2"
-        >
-          Ler mais
-        </a>
+        <a href={url} target="_blank" rel="noopener noreferrer" className="text-md md:text-[15px] text-[#CCAA76] hover:underline mt-2">Ler mais</a>
       )}
     </div>
   );
@@ -129,7 +122,7 @@ const PageBlog = () => {
       <Header />
 
       <div className="w-full h-full py-42">
-        <AnimationCota moneyDay={headlines.moneyDay} />
+        
 
         {/* Mensage Home */}
         <div className="bg-background text-white ">
@@ -171,7 +164,7 @@ const PageBlog = () => {
                     {headlines.tech[0]?.description}
                 </p>
                 <motion.a
-                    href={headlines.tech[0]?.url}
+                    href={headlines.tech[0]?.url} target="_blank"
                     className="inline-block text-md md:text-[20px] text-white font-semibold py-2 hover:text-[#CCAA76] border-b border-white pb-1 hover:border-[#CCAA76]"
                 >
                     Ler mais
@@ -182,7 +175,7 @@ const PageBlog = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.0, ease: "easeOut" }}
-                className="relative w-full md:w-150 h-[200px] md:h-[300px] rounded-sm overflow-hidden shadow-lg hover:scale-99 transition-all order-1 md:order-2"
+                className="relative w-full md:w-150 h-[200px] md:h-[300px] rounded-sm overflow-hidden shadow-lg hover:scale-99 transition-all order-1 md:order-2 hover:rounded-none"
             >
                 {headlines.tech[0]?.urlToImage ? (
                     <Image
@@ -190,7 +183,7 @@ const PageBlog = () => {
                         alt={headlines.tech[0].title}
                         fill
                         unoptimized
-                        className="object-cover brightness-105 hover:brightness-90"
+                        className="object-cover brightness-105 hover:brightness-90 "
                     />
                 ) : (
                     <p>Sem imagem</p>
@@ -206,7 +199,7 @@ const PageBlog = () => {
 
         {/* Home Two session News  */}
         <div className="bg-background text-white mt-20 mb-10"> 
-          <div className="max-w-7xl md:max-w-7xl mx-auto items-start py-10 px-5 text-xl font-semibold text-[#CCAA76]" >| DESTAQUES</div>
+          <div className="max-w-7xl md:max-w-7xl mx-auto items-start py-10 px-5 text-3xl font-semibold md:font-light text-[#CCAA76]" >| Destaques </div>
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center">
             {headlines.b3?.slice(0, 3).map((item, index) => (
               <NewsCard
@@ -238,26 +231,26 @@ const PageBlog = () => {
         </div>
 
         {/* Carousel - Discover Our Content */}
-        <div className="max-w-[414] md:max-w-7xl mx-auto items-center px-4 mt-20">
-          <h2 className="text-xl font-semibold text-[#CCAA76] md:text-white md:text-3xl md:font-light max-w-7xl mx-auto mb-10">
-            NOSSOS CONTEÚDOS
+        <div className="max-w-[414] md:max-w-7xl mx-auto items-center px-5 mt-20">
+          <h2 className="text-3xl font-semibold text-[#CCAA76]  md:text-3xl md:font-light max-w-7xl mx-auto mb-10">
+           | Nossos Conteúdos
           </h2>
 
           <motion.div
-            className="max-w-7xl mx-auto"
+            className="max-w-[414] md:max-w-7xl mx-auto"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <Carousel
-              className="w-full"
+              className="max-w-[300] md:max-w-full  mx-auto  "
               opts={{
                 loop: true,
               }}
             >
-              <CarouselContent className="max-w-7xl">
+              <CarouselContent className="max-w-[414] mx-auto md:max-w-7xl r">
                 <CarouselItem className=" basis-1/1 sm:basis-1/1 lg:basis-1/4">
-                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none items-cente">
                     <a
                       href="https://www.instagram.com/shield_bank"
                       target="_blank"
@@ -265,7 +258,7 @@ const PageBlog = () => {
                       <Image
                         src={blogInstagram}
                         alt="Finanças"
-                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -282,7 +275,7 @@ const PageBlog = () => {
                       <Image
                         src={blogLinkedin}
                         alt="Finanças"
-                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -300,7 +293,7 @@ const PageBlog = () => {
                       <Image
                         src={blogTiktok}
                         alt="Finanças"
-                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -318,7 +311,7 @@ const PageBlog = () => {
                       <Image
                         src={blogYoutube}
                         alt="Finanças"
-                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -336,7 +329,7 @@ const PageBlog = () => {
                       <Image
                         src={blogInteligenciaTributaria}
                         alt="Finanças"
-                        className="absolute inset-0 w-full h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -347,14 +340,17 @@ const PageBlog = () => {
                 </CarouselItem>
               </CarouselContent>
 
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background" />
+              <CarouselNext className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background"/>
             </Carousel>
           </motion.div>
         </div>
+
+        
         {/* Footer */}
         <Footer />
       </div>
+      <AnimationCota moneyDay={headlines.moneyDay} />
       
     </>
   );
