@@ -1,15 +1,22 @@
 import {
-  Link,
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
+
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/app/components/ui/dropdown-menu";
+
+
 import shieldbank from "../assets/shieldbank.png";
 import Image from "next/image";
 import { Button } from "@/app/components/ui/button";
+import { Menu } from "lucide-react";
 
 export function Header() {
   return (
@@ -18,9 +25,9 @@ export function Header() {
         <div className="w-full h-[5rem] flex justify-around  items-center   bg-[#001124]  ">
           <a href="/">
             <Image
+              priority
               className="ml-10 max-sm:ml-0 brightness-105"
               width={150}
-              quality={90}
               src={shieldbank}
               alt="Shieldbank"
             />
@@ -56,7 +63,7 @@ export function Header() {
                 >
                   Blog
                 </NavigationMenuLink>
-
+               
                 <NavigationMenuLink
                   href="/#contatos"
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
@@ -88,6 +95,29 @@ export function Header() {
               </div>
             </NavigationMenuList>
           </NavigationMenu>
+
+          
+          <div className="sm:hidden flex items-center">
+            
+            <DropdownMenu>
+
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon"><Menu className="h-6 w-6 text-white " /></Button>
+              </DropdownMenuTrigger>
+
+              <DropdownMenuContent className="w-30 bg-background border-[#CCAA76] text-white flex flex-col items-center" align="end">
+                <DropdownMenuItem asChild><a href="/">Quem Somos</a></DropdownMenuItem>
+                <DropdownMenuItem asChild><a href="/produtos/bank">Shield Bank</a></DropdownMenuItem>
+                <DropdownMenuItem asChild><a href="/produtos/shieldpay">Shield Pay</a></DropdownMenuItem>
+                <DropdownMenuItem asChild><a href="/blog">Blog</a></DropdownMenuItem>
+                <DropdownMenuItem asChild><a href="/#contatos">Contatos</a></DropdownMenuItem>
+                <DropdownMenuItem asChild><a href="/acessar-conta" >Acessar Conta</a></DropdownMenuItem>
+                <DropdownMenuItem asChild><a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!" target="_blank" >Seja Shield</a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+              
+            </DropdownMenu>
+          </div>
         </div>
       </header>
     </>
