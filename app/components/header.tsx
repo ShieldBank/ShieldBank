@@ -18,7 +18,7 @@ export function Header() {
         <div className="w-full h-[5rem] flex justify-around  items-center   bg-[#001124]  ">
           <a href="/">
             <Image
-              className="ml-10 brightness-105"
+              className="ml-10 max-sm:ml-0 brightness-105"
               width={150}
               quality={90}
               src={shieldbank}
@@ -38,21 +38,17 @@ export function Header() {
 
                 <NavigationMenuLink
                   href="/produtos/bank"
-
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
                 >
                   Shield Bank
-
                 </NavigationMenuLink>
 
                 <NavigationMenuLink
                   href="/produtos/shieldpay"
-
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Shield Pay
                 </NavigationMenuLink>
-
 
                 <NavigationMenuLink
                   href="/blog"
@@ -63,7 +59,6 @@ export function Header() {
 
                 <NavigationMenuLink
                   href="/#contatos"
-
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Contato

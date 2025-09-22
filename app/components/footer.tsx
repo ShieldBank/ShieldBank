@@ -8,7 +8,7 @@ import shieldbank from "../assets//shieldbank.png";
 export function Footer() {
   return (
     <>
-      <div className="w-full grid grid-cols-3 grid-rows-3 max-md:grid-cols-1  p-20  max-sm:m-0">
+      <div className="w-full grid grid-cols-3 grid-rows-3 max-md:grid-cols-1  p-20  max-sm:m-0 max-sm:p-10">
         <div className=" flex justify-center max-md:gap-12 gap-70 col-start-1 col-end-4 row-start-1 row-end-1 max-sm:flex-col-reverse  ">
           <div className="flex flex-col gap-2 font-light max-sm:text-[0.9rem] ">
             <motion.h1 className="font-light text-2xl">
@@ -59,13 +59,12 @@ export function Footer() {
           id="contatos"
           className=" flex justify-center gap-10 items-center  col-start-1 col-end-3 row-start-2 row-end-2 max-md:col-start-1 max-sm:items-start  max-sm:mt-20 max-sm:row-start-2 max-sm:row-end-2 "
         >
-
-          <div className="  grid gap-2 ">
+          <div className="  grid gap-2  max-sm:grid-cols-1">
             <motion.h1 className="font-light text-2xl">ATENDIMENTO</motion.h1>
             <p>Segunda a sexta das 9h às 18h (horário de Brasília)</p>
 
-            <div className="flex  border-[0.5px] w-[20rem] mt-2 mb-4 border-['##FFFFFF52'] opacity-30"></div>
-            <div className="flex gap-20">
+            <div className="flex   border-[0.5px] w-[20rem] mt-2 mb-4 border-['##FFFFFF52'] opacity-30"></div>
+            <div className="flex max-sm:flex-col gap-20">
               <div className="">
                 <p>Whatsapp</p>
                 <a href="tel:11978802370">(11) 97880-2370 </a>

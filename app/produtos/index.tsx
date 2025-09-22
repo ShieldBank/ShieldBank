@@ -27,7 +27,6 @@ export function Produtos() {
       img: "/teste.png",
       name: "Inteligência",
 
-
       url: "/produtos/inteligencia",
       content:
         "Impulsione a eficiência da sua empresa de forma simples e prática.",
@@ -37,7 +36,6 @@ export function Produtos() {
       name: "Rendimentos",
       url: "/produtos/rendimentos",
 
-
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
     },
@@ -46,7 +44,6 @@ export function Produtos() {
       name: "ShieldPay",
       url: "/produtos/shieldpay",
 
-
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
     },
@@ -54,7 +51,6 @@ export function Produtos() {
       img: "/Linkedin.png",
       name: "ShielBank",
       url: "/produtos/bank",
-
 
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
@@ -81,13 +77,17 @@ export function Produtos() {
     <>
       <div className="w-[100%] bg-amber-50  h-auto text-black  ">
         <div className="p-12 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8 ">
-
-          <div className="row-start-1 place-items-center">
+          <div className="row-start-1 place-items-center ">
             {/* <p className=" text-[#CCAA76]  text-xl tracking-wider ">SERVIÇOS</p> */}
-            <h2 className="text-5xl font-light w- mt-2 max-sm:text-3xl">
+            <h2 className="text-5xl font-light w- mt-2 max-sm:text-4xl max-sm:mb-20">
               Nossos Produtos
             </h2>
-            <Image width={500} src={shield} alt="" />
+            <Image
+              className="max-sm:w-45 max-sm:absolute max-sm:-mt-20 max-sm:mr-4 max-sm:z-0 max-sm:opacity-90"
+              width={500}
+              src={shield}
+              alt=""
+            />
           </div>
           <div className="items-baseline col-start-2 col-end-4 max-sm:col-start-1  max-sm:mt-10">
             <div className=" overflow-hidden">
@@ -105,7 +105,7 @@ export function Produtos() {
                     >
                       <motion.div whileHover={{ scale: 0.9 }}>
                         <Card
-                          className="  shadow-lg p-0 bg-cover  bg-center border-0 h-[30rem] max-sm:h-[30rem]   "
+                          className="  shadow-lg p-0 bg-cover  bg-center border-0 h-[30rem] max-sm:h-[25rem]   "
                           style={{
                             backgroundImage: `url(${item.img})`,
                           }}
@@ -138,7 +138,7 @@ export function Produtos() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <div className=" absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-4 mt-10">
+                <div className=" absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-4 mt-10 max-sm:bottom-20">
                   <CarouselNext />
 
                   <CarouselPrevious />

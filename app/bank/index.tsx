@@ -9,55 +9,53 @@ import { Button } from "../components/ui/button";
 export function Bank() {
   return (
     <>
-      <div className=" w-full bg-amber-50  text-black mt-50 h-auto max-sm:h-[62%]  overflow-hidden flex justify-center items-center ">
-        <motion.div className="">
-          <div>
-            <h1 className="text-4xl   font-light text-start ml-100 mt-20 ">
+      <div className=" w-full bg-amber-50   text-black mt-30 h-auto max-sm:h-auto  overflow-hidden   flex justify-center items-center ">
+        <motion.div className="max-sm:w-full max-sm:h-auto">
+          <div className="   ">
+            <h1 className="text-4xl max-sm:text-4xl  max-sm:text-center max-sm:ml-0 font-light text-start ml-100 mt-20 ">
               <strong className="text-[#CCAA76]">
                 {" "}
                 Inteligência Financeira{" "}
               </strong>{" "}
               ao alcance de um toque{" "}
             </h1>
-            <p className="text-3xl text-start ml-100 font-light">
+            <p className="text-3xl text-start ml-100 font-light   max-sm:ml-0 max-sm:mt-5  max-sm:text-2xl  max-sm:text-center ">
               Tudo que você precisa para{" "}
               <strong className="text-[#CCAA76]"> gerir suas finanças </strong>,
               na palma da mão{" "}
             </p>
           </div>
-          <div className="justify-center items-center flex -mt-50">
-            <Image width={2000} src={mobile} alt="" />
+          <div className="max-sm:w-[65rem] max-sm:-ml-[19rem] max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25  ">
+            <Image className="flex  " width={2000} src={mobile} alt="" />
           </div>
-          <div className="flex items-center justify-center gap-10  mb-30 -mt-50 ">
-            <div className=" flex flex-col items-center justify-center w-[15rem] gap-3 ">
+          <div className="flex items-center justify-center gap-10  mb-30 -mt-50 max-sm:-mt-25   max-sm:gap-0  ">
+            <div className=" flex flex-col items-center justify-center w-[15rem] gap-3  ">
               <FaCreditCard size={25} />
-              <p className="text-3xl text-center font-light ">
+              <p className="text-3xl text-center font-light max-sm:text-[1rem]">
                 Cartão de Débito
-
-
               </p>
             </div>
-            <div className=" flex flex-col items-center justify-center w-[25rem] gap-3">
+            <div className=" flex flex-col items-center justify-center w-[25rem] gap-3  ">
               <FaMobileAlt size={25} />
-              <p className="text-3xl text-center font-light ">
+              <p className="text-3xl text-center font-light max-sm:text-[1rem] ">
                 {" "}
                 Conta Completa: Pagamentos, Recebimentos, Pix e Mais
               </p>
             </div>
-            <div className=" flex flex-col items-center justify-center w-[15rem] gap-3">
+            <div className=" flex flex-col items-center justify-center w-[15rem] gap-3 ">
               <IoStatsChart size={25} />
-              <p className="text-3xl text-center font-light ">
+              <p className="text-3xl text-center font-light max-sm:text-[1rem]">
                 Plataforma de investimentos
               </p>{" "}
             </div>
           </div>
-          <div className="flex justify-center mb-10 -mt-20 ">
+          <div className="flex justify-center mb-10 -mt-20 max-sm: ">
             <Button
               asChild
               variant={"outline"}
-              className="w-60 bg-[#001124] text-amber-50 border-1 p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-[#001124] max-sm:w-45 "
+              className="w-60 bg-[#001124] text-amber-50 border-1 p-6 max-sm:p-4.5 hover:bg-[#CCAA76] hover:border-0 hover:text-[#001124] max-sm:w-40 "
             >
-              <a className="text-[1.4rem]" href="/login">
+              <a className="text-[1.4rem] max-sm:text-xl" href="/login">
                 Seja Shield
               </a>
             </Button>

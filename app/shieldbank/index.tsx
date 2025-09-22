@@ -97,7 +97,7 @@ export function Content() {
     <>
       <div className=" w-full bg-amber-50  h-auto max-sm:h-[35rem]    ">
         <motion.div className=" ">
-          <div className="text-black grid grid-cols-2  place-content-center place-items-center  max-sm:place-content-start max-sm:place-items-center max-sm:px-0 px-30   ">
+          <div className="text-black grid grid-cols-2   place-content-center place-items-center  max-sm:place-self-end  max-sm:px-0 px-30   ">
             <div
               className="flex flex-col  p-16 font-normal gap-1 max-sm:p-5 max-sm:mt-20
             "
@@ -163,7 +163,7 @@ export function Content() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center w-[25rem] mb-30 h-[40rem] max-sm:w-[12rem] max-sm:h-[25rem]   ">
+            <div className="flex justify-center  w-[25rem] mb-30 h-[40rem] max-sm:w-[12rem] max-sm:h-[20rem]  max-sm:-mb-10  ">
               <VideoPlayer className="overflow-hidden rounded-lg border mt-10 max-sm:mt-0  ">
                 <VideoPlayerContent
                   crossOrigin=""
