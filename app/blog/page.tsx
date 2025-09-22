@@ -30,7 +30,92 @@ import {
 
 import { Footer } from "../components/footer";
 
-const NewsCard = ({ title, description, image, date, category, url }) => {
+interface BlogArray {
+  b3: [
+    {
+      author: string;
+      content: string;
+      description: string;
+      publishedAt: string;
+      source: {
+        id: number | null;
+        name: string;
+      };
+      title: string;
+      url: string;
+      urlToImage: string;
+    }
+  ];
+  tech: [
+    {
+      author: string;
+      content: string;
+      description: string;
+      publishedAt: string;
+      source: {
+        id: number | null;
+        name: string;
+      };
+      title: string;
+      url: string;
+      urlToImage: string;
+    }
+  ];
+  moneyDay: [
+    {
+      BTCBRL: {
+        ask: string;
+        bid: string;
+        code: string;
+        codein: string;
+        create_date: string;
+        high: string;
+        low: string;
+        name: string;
+        pctChange: string;
+        timestamp: string;
+        varBid: string;
+      };
+      EURBRL: {
+        ask: string;
+        bid: string;
+        code: string;
+        codein: string;
+        create_date: string;
+        high: string;
+        low: string;
+        name: string;
+        pctChange: string;
+        timestamp: string;
+        varBid: string;
+      };
+      USDBRL: {
+        ask: string;
+        bid: string;
+        code: string;
+        codein: string;
+        create_date: string;
+        high: string;
+        low: string;
+        name: string;
+        pctChange: string;
+        timestamp: string;
+        varBid: string;
+      };
+    }
+  ];
+}
+[];
+
+interface TypeCard {
+  title: string;
+  description: string;
+  image: string;
+  date: string;
+  url: string;
+}
+
+const NewsCard = ({ title, description, image, date, url }: TypeCard) => {
   return (
     <div className="flex flex-col items-start justify-center text-center px-5">
       {image ? (
@@ -73,22 +158,88 @@ const NewsCard = ({ title, description, image, date, category, url }) => {
 };
 
 const PageBlog = () => {
-  const [headlines, setHeadlines] = useState({
-    tech: [],
-    b3: [],
-    trends: [],
-    moneyDay: null,
+  const [headlines, setHeadlines] = useState<BlogArray>({
+    tech: [
+      {
+        author: "",
+        content: "",
+        description: "",
+        publishedAt: "",
+        source: {
+          id: 0 || null,
+          name: "",
+        },
+        title: "",
+        url: "",
+        urlToImage: "",
+      },
+    ],
+    b3: [
+      {
+        author: "",
+        content: "",
+        description: "",
+        publishedAt: "",
+        source: {
+          id: 0 || null,
+          name: "",
+        },
+        title: "",
+        url: "",
+        urlToImage: "",
+      },
+    ],
+
+    moneyDay: [
+      {
+        BTCBRL: {
+          ask: "",
+          bid: "",
+          code: "",
+          codein: "",
+          create_date: "",
+          high: "",
+          low: "",
+          name: "",
+          pctChange: "",
+          timestamp: "",
+          varBid: "",
+        },
+        EURBRL: {
+          ask: "",
+          bid: "",
+          code: "",
+          codein: "",
+          create_date: "",
+          high: "",
+          low: "",
+          name: "",
+          pctChange: "",
+          timestamp: "",
+          varBid: "",
+        },
+        USDBRL: {
+          ask: "",
+          bid: "",
+          code: "",
+          codein: "",
+          create_date: "",
+          high: "",
+          low: "",
+          name: "",
+          pctChange: "",
+          timestamp: "",
+          varBid: "",
+        },
+      },
+    ],
   });
   const [loading, setLoading] = useState(true);
-
-  {
-    /* api data */
-  }
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [tech, b3, trends, moneyDay] = await Promise.all([
+        const [tech, b3, moneyDay] = await Promise.all([
           fetchTechnologyNews(),
           fetchB3News(),
           fetchMarketTrendsNews(),
@@ -98,7 +249,6 @@ const PageBlog = () => {
         setHeadlines({
           tech: tech || [],
           b3: b3 || [],
-          trends: trends || [],
           moneyDay: moneyDay || null,
         });
       } catch (error) {
@@ -126,7 +276,7 @@ const PageBlog = () => {
     );
   }
 
-  const formatarData = (dataString) => {
+  const formatarData = (dataString: string | number) => {
     if (!dataString) return "";
     const data = new Date(dataString);
     return data.toLocaleDateString("pt-BR", {
@@ -156,7 +306,6 @@ const PageBlog = () => {
             </motion.p>
           </motion.div>
 
-          {/* Home One session News  */}
           <div className="max-w-[414] md:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[40px] items-center px-4">
             {headlines.tech?.[0] && (
               <>
@@ -217,7 +366,6 @@ const PageBlog = () => {
           <div className="max-w-7xl md:max-w-7xl mx-auto items-start py-10 px-5 text-3xl font-semibold md:font-light text-[#CCAA76]">
             | Destaques{" "}
           </div>
-
 
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center">
             {headlines.b3?.slice(0, 3).map((item, index) => (

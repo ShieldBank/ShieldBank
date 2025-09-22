@@ -2,7 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
-import pos from "../assets/maquina-de-cartao-shield.png";
+import pos from "../assets/pos1.png";
+import pos1 from "../assets/pos2.png";
+import pos2 from "../assets/pos3.png";
+
 import Image from "next/image";
 import { FaCreditCard, FaHeadset } from "react-icons/fa";
 import { HiOutlineReceiptTax } from "react-icons/hi";
@@ -13,25 +16,82 @@ export function Pos() {
     <>
       <div className=" w-full  h-auto  max-sm:h-[62%]  overflow-hidden flex  ">
         <motion.div className="h-full grid grid-cols-2 place-content-center place-items-center p-20 max-sm:grid-cols-1   max-sm:p-0 w-[100%]">
-          <div className="ml-50 max-sm:hidden ">
-            <motion.div
-              style={{ backgroundColor: "transparent" }}
-              initial={{ rotateX: 0, rotateY: 0, y: 0, opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              animate={{
-                rotateX: [0, 10, -10, 0],
-                rotateY: [0, 10, -10, 0],
-                y: [0, -20, 20, 0],
-              }}
-              transition={{
-                duration: 6,
-                // repeat: Infinity,
-                repeatType: "loop",
-                ease: "easeInOut",
-              }}
-            >
-              <Image width={400} height={200} src={pos} alt="" />
-            </motion.div>
+          <div className=" max-sm:hidden ">
+            <div className="flex gap-10 w-full overflow-hidden">
+              <motion.div
+                className="flex gap-10 w-full overflow-hidden"
+                initial="hidden"
+                whileInView="visible"
+                variants={{
+                  hidden: {},
+                  visible: {
+                    transition: {
+                      staggerChildren: 0.2,
+                    },
+                  },
+                }}
+              >
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  animate={{
+                    rotateX: [0, 10, -10, 0],
+                    rotateY: [0, 10, -10, 0],
+                    y: [0, -20, 20, 0],
+                  }}
+                  transition={{
+                    duration: 12,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    ease: "linear",
+                  }}
+                >
+                  <Image width={200} height={200} src={pos1} alt="pos1" />
+                </motion.div>
+
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  animate={{
+                    rotateX: [0, 10, -10, 0],
+                    rotateY: [0, 10, -10, 0],
+                    y: [0, -20, 20, 0],
+                  }}
+                  transition={{
+                    duration: 12,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    ease: "easeInOut",
+                  }}
+                >
+                  <Image width={200} height={200} src={pos} alt="pos" />
+                </motion.div>
+
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  animate={{
+                    rotateX: [0, 10, -10, 0],
+                    rotateY: [0, 10, -10, 0],
+                    y: [0, -20, 20, 0],
+                  }}
+                  transition={{
+                    duration: 12,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    ease: "easeInOut",
+                  }}
+                >
+                  <Image width={200} height={200} src={pos2} alt="pos2" />
+                </motion.div>
+              </motion.div>
+            </div>
           </div>
           <div className="text-amber-50 w-xl max-sm:w-auto max-sm:place-items-start max-sm:p-10 ">
             <p className=" text-[#CCAA76]   text-xl tracking-wider font-semibold mb-10 max-sm:mb-2 ">

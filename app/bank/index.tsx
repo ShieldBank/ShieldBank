@@ -21,8 +21,8 @@ export function Bank() {
             </h1>
             <p className="text-3xl text-start ml-100 font-light   max-sm:ml-0 max-sm:mt-5  max-sm:text-2xl  max-sm:text-center ">
               Tudo que você precisa para{" "}
-              <strong className="text-[#CCAA76]"> gerir suas finanças </strong>,
-              na palma da mão{" "}
+              <strong className="text-[#CCAA76]"> gerir suas finanças</strong>,
+              na palma da sua mão.{" "}
             </p>
           </div>
           <div className="max-sm:w-[68rem] max-sm:-ml-[21rem] max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25  ">
@@ -31,20 +31,20 @@ export function Bank() {
           <div className="flex items-center justify-center gap-10  mb-30 -mt-50 max-sm:-mt-25   max-sm:gap-0  ">
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3  ">
               <FaCreditCard size={25} />
-              <p className="text-3xl text-center font-light max-sm:text-[1rem]">
+              <p className="text-xl text-center font-light max-sm:text-[1rem]">
                 Cartão de Débito
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[25rem] gap-3  ">
               <FaMobileAlt size={25} />
-              <p className="text-3xl text-center font-light max-sm:text-[1rem] ">
+              <p className="text-xl text-center font-light max-sm:text-[1rem] ">
                 {" "}
                 Conta Completa: Pagamentos, Recebimentos, Pix e Mais
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3 ">
               <IoStatsChart size={25} />
-              <p className="text-3xl text-center font-light max-sm:text-[1rem]">
+              <p className="text-xl text-center font-light max-sm:text-[1rem]">
                 Plataforma de investimentos
               </p>{" "}
             </div>

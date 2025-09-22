@@ -15,8 +15,8 @@ export function App() {
               transition={{ duration: 0.4 }}
               className="text-center mb-10 mt-25 max-sm:mb-2  max-sm:text-[0.8rem] "
             >
-              Potencialize suas finanças: descubra quanto sua empresa pode{" "}
-              <strong>economiza </strong>
+              Potencialize suas finanças: descubra o quanto sua empresa pode{" "}
+              <strong>economizar </strong>
               mensalmente com a <strong>ShieldBank</strong>
             </motion.p>
             <motion.h1
@@ -33,20 +33,22 @@ export function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="text-center mt-10 flex gap-12 max-sm:gap-8"
-              >
+            >
               <Button
                 asChild
                 variant={"outline"}
                 className="w-auto p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground text-2xl max-sm:text-[1rem] max-sm:w-30"
               >
-                <a href="/login">Seja Shield</a>
+                <a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!">
+                  Seja Shield
+                </a>
               </Button>
               <Button
                 asChild
                 variant={"outline"}
                 className="w-auto bg-[#CCAA76] border-0 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-50 text-2xl max-sm:text-[1rem] "
               >
-                <a href="/login">Conheça Nossos Produtos</a>
+                <a href="#produtos">Conheça Nossos Produtos</a>
               </Button>
             </motion.button>
           </div>
