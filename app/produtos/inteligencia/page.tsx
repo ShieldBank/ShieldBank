@@ -65,7 +65,6 @@ export default function Inteligencia() {
             <Image
               className="rounded-4xl mt-10"
               width={500}
-              quality={90}
               src={inteligenciaIMG}
               alt=""
             />

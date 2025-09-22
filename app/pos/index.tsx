@@ -30,7 +30,7 @@ export function Pos() {
                 ease: "easeInOut",
               }}
             >
-              <Image width={400} height={200} quality={90} src={pos} alt="" />
+              <Image width={400} height={200} src={pos} alt="" />
             </motion.div>
           </div>
           <div className="text-amber-50 w-xl max-sm:w-auto max-sm:place-items-start max-sm:p-10 ">

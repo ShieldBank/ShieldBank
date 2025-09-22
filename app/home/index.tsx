@@ -33,7 +33,7 @@ export function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="text-center mt-10 flex gap-12 max-sm:gap-8"
-            >
+              >
               <Button
                 asChild
                 variant={"outline"}
