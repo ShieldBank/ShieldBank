@@ -1,11 +1,57 @@
 "use client";
 import Image from "next/image";
 import loboShield from "../assets/loboShield.png";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { FaDollarSign, FaEuroSign, FaBitcoin } from "react-icons/fa";
 
-export function AnimationCota({ moneyDay }) {
-  const marqueeVariants = {
+interface AnimationCotaProps {
+  moneyDay: [
+    {
+      BTCBRL: {
+        ask: string;
+        bid: string;
+        code: string;
+        codein: string;
+        create_date: string;
+        high: string;
+        low: string;
+        name: string;
+        pctChange: string;
+        timestamp: string;
+        varBid: string;
+      };
+      EURBRL: {
+        ask: string;
+        bid: string;
+        code: string;
+        codein: string;
+        create_date: string;
+        high: string;
+        low: string;
+        name: string;
+        pctChange: string;
+        timestamp: string;
+        varBid: string;
+      };
+      USDBRL: {
+        ask: string;
+        bid: string;
+        code: string;
+        codein: string;
+        create_date: string;
+        high: string;
+        low: string;
+        name: string;
+        pctChange: string;
+        timestamp: string;
+        varBid: string;
+      };
+    }
+  ];
+}
+
+export function AnimationCota({ moneyDay }: AnimationCotaProps) {
+  const marqueeVariants: Variants = {
     animate: {
       x: ["0%", "-50%"],
       transition: {
@@ -19,7 +65,7 @@ export function AnimationCota({ moneyDay }) {
     },
   };
 
-  const formatarDinheiro = (valor) => {
+  const formatarDinheiro = (valor: any) => {
     if (valor === null || valor === undefined) return "N/A";
     const valorNumerico = parseFloat(valor);
     return valorNumerico.toLocaleString("pt-BR", {
@@ -38,7 +84,7 @@ export function AnimationCota({ moneyDay }) {
         <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <FaDollarSign className="text-[#CCAA76]" size={15} />
           <p className="font-light">
-            {formatarDinheiro(moneyDay?.USDBRL?.bid)}
+            {formatarDinheiro(moneyDay[0].USDBRL.bid)}
           </p>
         </div>
         <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
@@ -48,7 +94,7 @@ export function AnimationCota({ moneyDay }) {
         <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <FaEuroSign className="text-[#CCAA76]" size={15} />
           <p className="font-light">
-            {formatarDinheiro(moneyDay?.EURBRL?.bid)}
+            {formatarDinheiro(moneyDay[0].EURBRL?.bid)}
           </p>
         </div>
         <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
@@ -58,7 +104,7 @@ export function AnimationCota({ moneyDay }) {
         <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
           <FaBitcoin className="text-[#CCAA76]" size={15} />
           <p className="font-light">
-            {formatarDinheiro(moneyDay?.BTCBRL?.bid)}
+            {formatarDinheiro(moneyDay[0].BTCBRL?.bid)}
           </p>
         </div>
         <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
