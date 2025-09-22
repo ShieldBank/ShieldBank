@@ -55,7 +55,6 @@ const NewsCard = ({ title, description, image, date, category, url }) => {
         <p className="text-[15px] md:text-[15px] text-white font-semibold">
           {date}
         </p>
-
       </div>
 
       <p className="text-xl md:text-[15px] line-clamp-2 text-start">{title}</p>
@@ -68,12 +67,10 @@ const NewsCard = ({ title, description, image, date, category, url }) => {
         >
           Ler mais
         </a>
-
       )}
     </div>
   );
 };
-
 
 const PageBlog = () => {
   const [headlines, setHeadlines] = useState({
@@ -125,19 +122,8 @@ const PageBlog = () => {
           alt="Shieldbank"
           className="w-50 h-50  md:w-[250] md:h-[250]"
         />
-
-  {/* screen of loading */}
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen bg-background animate-pulse ">
-        <Image src={shieldbank} alt="Shieldbank" className="w-50 h-50  md:w-[250] md:h-[250]"/>
-
       </div>
     );
-  }
-
-  {
-    /* function formatar date */
   }
 
   const formatarData = (dataString) => {
@@ -155,7 +141,6 @@ const PageBlog = () => {
       <Header />
 
       <div className="w-full h-full py-42">
-
         {/* Mensage Home */}
         <div className="bg-background text-white ">
           <motion.div className="max-w-7xl mx-auto text-center mb-10 ">
@@ -200,10 +185,9 @@ const PageBlog = () => {
                     target="_blank"
                     className="inline-block text-md md:text-[20px] text-white font-semibold py-2 hover:text-[#CCAA76] border-b border-white pb-1 hover:border-[#CCAA76]"
                   >
-
                     Ler mais
-                </motion.a>
-            </motion.div>
+                  </motion.a>
+                </motion.div>
 
                 <motion.div
                   initial={{ opacity: 0, x: 50 }}
@@ -218,16 +202,14 @@ const PageBlog = () => {
                       fill
                       unoptimized
                       className="object-cover brightness-105 hover:brightness-90 "
-
                     />
-                ) : (
+                  ) : (
                     <p>Sem imagem</p>
-                )}
-            </motion.div>
-        </>
-    )}
+                  )}
+                </motion.div>
+              </>
+            )}
           </div>
-
         </div>
 
         {/* Two session News  */}
@@ -271,7 +253,6 @@ const PageBlog = () => {
         <div className="max-w-[414] md:max-w-7xl mx-auto items-center px-5 mt-20">
           <h2 className="text-3xl font-semibold text-[#CCAA76]  md:text-3xl md:font-light max-w-7xl mx-auto mb-10">
             | Nossos Conteúdos
-
           </h2>
 
           <motion.div
@@ -380,7 +361,6 @@ const PageBlog = () => {
 
               <CarouselPrevious className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background" />
               <CarouselNext className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background" />
-
             </Carousel>
           </motion.div>
         </div>
@@ -389,7 +369,6 @@ const PageBlog = () => {
         <Footer />
       </div>
       <AnimationCota moneyDay={headlines.moneyDay} />
-
     </>
   );
 };
