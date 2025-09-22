@@ -9,14 +9,14 @@ const language = "pt";
 const matter = "publishedAt";
 
 // function to fetch news based on a query
-const news = async (query) => {
+const news = async (query: string) => {
   const url = `${urlBase}?q=${query}&language=${language}&sortBy=${matter}&apiKey=${token}`;
 
   try {
     const response = await axios.get(url);
     console.log("Passei aqui ", response);
     return response.data.articles;
-  } catch (error) {
+  } catch (error: any) {
     console.log(
       "Erro: ",
       error.response.data,
@@ -25,7 +25,6 @@ const news = async (query) => {
     );
   }
 }; // export functions to fetch specific categories of news
-
 
 export const fetchTechnologyNews = () => {
   return news("Tecnologia Financeira");

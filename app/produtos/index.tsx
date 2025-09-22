@@ -75,8 +75,8 @@ export function Produtos() {
   }, [api]);
   return (
     <>
-      <div className="w-[100%] bg-amber-50  h-auto text-black  ">
-        <div className="p-12 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8 ">
+      <div id="produtos" className="w-[100%] bg-amber-50  h-auto text-black  ">
+        <div className="p-12 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8   ">
           <div className="row-start-1 place-items-center ">
             {/* <p className=" text-[#CCAA76]  text-xl tracking-wider ">SERVIÇOS</p> */}
             <h2 className="text-5xl font-light w- mt-2 max-sm:text-4xl max-sm:mt-1 max-sm:mb-20">
@@ -103,38 +103,41 @@ export function Produtos() {
                       key={index}
                       className="basis-1/3  max-sm:basis-1/2 "
                     >
-                      <motion.div whileHover={{ scale: 0.9 }}>
-                        <Card
-                          className="  shadow-lg p-0 bg-cover  bg-center border-0 h-[30rem] max-sm:h-[25rem]   "
-                          style={{
-                            backgroundImage: `url(${item.img})`,
-                          }}
+                      <a
+                        href={item.url}
+                        className="  text-amber-50 flex cursor-pointer  rounded-full   text-sm font-semibold  mr-2 mb-2"
+                      >
+                        <motion.div
+                          whileHover={{ scale: 0.9 }}
+                          className="w-full "
                         >
-                          <CardContent className="text-amber-50">
-                            <div className="">
-                              <div className="font-light m-1 text-2xl max-sm:text-xl">
-                                {item.name}
-                              </div>
+                          <Card
+                            className="  shadow-lg p-0 bg-cover  bg-center border-0 h-[30rem] max-sm:h-[25rem]   "
+                            style={{
+                              backgroundImage: `url(${item.img})`,
+                            }}
+                          >
+                            <CardContent className="text-amber-50">
+                              <div className="">
+                                <div className="font-light m-1 text-2xl max-sm:text-xl">
+                                  {item.name}
+                                </div>
 
-                              {/* <p className="text-gray-700 text-base line-clamp-1">
+                                {/* <p className="text-gray-700 text-base line-clamp-1">
                               Lorem ipsum dolor sit amet, consectetur
                               adipisicing elit. Voluptatibus quia, nulla!
                               Maiores et perferendis eaque, exercitationem
                               praesentium nihil.
                             </p> */}
-                            </div>
-                            <div className=" ">
-                              <a
-                                href={item.url}
-                                className="  text-amber-50 flex hover:animate-bounce cursor-pointer  rounded-full   text-sm font-semibold  mr-2 mb-2"
-                              >
+                              </div>
+                              <div className="flex ">
                                 <ChevronRight />
                                 Conheça o produto
-                              </a>
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </motion.div>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </motion.div>
+                      </a>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
