@@ -49,6 +49,7 @@ export default function AcessarContaPage() {
           />
           <div className="flex gap-5">
             <div>
+
               <a
                 href="https://apps.apple.com/br/app/shield-bank/id6739310287"
                 target="_blank"
@@ -102,7 +103,10 @@ export default function AcessarContaPage() {
             className="mb-10 bg-background rounded-xl shadow-lg shadow-black py-4 px-4 mt-3"
           />
           <div className="flex gap-5">
-            <div>
+
+           <div>
+
+
               <a
                 href="https://apps.apple.com/br/app/shield-pay-conta-digital/id6444707849"
                 target="_blank"

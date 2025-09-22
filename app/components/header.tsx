@@ -16,13 +16,15 @@ export function Header() {
     <>
       <header className=" w-full  z-10  fixed ">
         <div className="w-full h-[5rem] flex justify-around  items-center   bg-[#001124]  ">
-          <Image
-            className="ml-10 brightness-105"
-            width={150}
-            quality={90}
-            src={shieldbank}
-            alt="Shieldbank"
-          />
+          <a href="/">
+            <Image
+              className="ml-10 brightness-105"
+              width={150}
+              quality={90}
+              src={shieldbank}
+              alt="Shieldbank"
+            />
+          </a>
 
           <NavigationMenu className="max-sm:hidden">
             <NavigationMenuList className="flex items-center gap-12 text-[18px] group">
@@ -35,7 +37,8 @@ export function Header() {
                 </NavigationMenuLink>
 
                 <NavigationMenuLink
-                  href="/"
+                  href="/produtos/bank"
+
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
                 >
                   Shield Bank
@@ -43,12 +46,14 @@ export function Header() {
                 </NavigationMenuLink>
 
                 <NavigationMenuLink
-                  href="/"
+                  href="/produtos/shieldpay"
+
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Shield Pay
                 </NavigationMenuLink>
-                
+
+
                 <NavigationMenuLink
                   href="/blog"
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
@@ -58,6 +63,7 @@ export function Header() {
 
                 <NavigationMenuLink
                   href="/#contatos"
+
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Contato

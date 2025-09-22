@@ -12,7 +12,7 @@ export default function Inteligencia() {
       <Header />
       <div className=" w-full bg-amber-50 h-auto grid place-items-center  ">
         <div className="w-[60%] z-1  ">
-          <p className="mt-50  font-semibold text-[#CCAA22]   text-start text-xl tracking-wider  mb-5  ">
+          <p className="mt-50  font-semibold text-[#CCAA76]   text-start text-xl tracking-wider  mb-5  ">
             CONTA SHIELD
           </p>
           <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start ">
@@ -47,9 +47,16 @@ export default function Inteligencia() {
             <Button
               asChild
               variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:text-[#CCAA76] hover:bg-background "
             >
-              <a href="/acessar-conta">conheça nosso app</a>
+              <a
+                href="https://efici-ncia-tribut-ria.vercel.app/"
+                target="_blank"
+              >
+                {" "}
+                Sua nova realidade
+              </a>
+
             </Button>
           </div>
           <div className="">

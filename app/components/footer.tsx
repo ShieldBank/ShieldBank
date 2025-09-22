@@ -55,7 +55,11 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div id="contatos" className=" flex justify-center gap-10 items-center  col-start-1 col-end-3 row-start-2 row-end-2 max-md:col-start-1 max-sm:items-start  max-sm:mt-20 max-sm:row-start-2 max-sm:row-end-2 ">
+        <div
+          id="contatos"
+          className=" flex justify-center gap-10 items-center  col-start-1 col-end-3 row-start-2 row-end-2 max-md:col-start-1 max-sm:items-start  max-sm:mt-20 max-sm:row-start-2 max-sm:row-end-2 "
+        >
+
           <div className="  grid gap-2 ">
             <motion.h1 className="font-light text-2xl">ATENDIMENTO</motion.h1>
             <p>Segunda a sexta das 9h às 18h (horário de Brasília)</p>
