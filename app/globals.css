@@ -43,10 +43,6 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-}
 /* 001124 */
 :root {
   --radius: 0.625rem;
@@ -133,6 +129,6 @@ body {
     @apply border-border outline-ring/50 font-normal;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground h-screen w-screen;
   }
 }
