@@ -25,6 +25,7 @@ export function Header() {
               alt="Shieldbank"
             />
           </a>
+
           <NavigationMenu className="max-sm:hidden">
             <NavigationMenuList className="flex items-center gap-12 text-[18px] group">
               <div className="flex gap-15">
@@ -37,6 +38,7 @@ export function Header() {
 
                 <NavigationMenuLink
                   href="/produtos/bank"
+
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
                 >
                   Shield Bank
@@ -44,6 +46,7 @@ export function Header() {
 
                 <NavigationMenuLink
                   href="/produtos/shieldpay"
+
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Shield Pay
@@ -58,6 +61,7 @@ export function Header() {
 
                 <NavigationMenuLink
                   href="/#contatos"
+
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
                 >
                   Contato

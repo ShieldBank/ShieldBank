@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import {
   Carousel,
@@ -25,6 +26,7 @@ export function Produtos() {
     {
       img: "/teste.png",
       name: "Inteligência",
+
       url: "/produtos/inteligencia",
       content:
         "Impulsione a eficiência da sua empresa de forma simples e prática.",
@@ -34,6 +36,7 @@ export function Produtos() {
       name: "Rendimentos",
       url: "/produtos/rendimentos",
 
+
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
     },
@@ -42,6 +45,7 @@ export function Produtos() {
       name: "ShieldPay",
       url: "/produtos/shieldpay",
 
+
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
     },
@@ -49,6 +53,7 @@ export function Produtos() {
       img: "/Linkedin.png",
       name: "ShielBank",
       url: "/produtos/bank",
+
 
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",
@@ -75,6 +80,7 @@ export function Produtos() {
     <>
       <div className="w-[100%] bg-amber-50  h-auto text-black  ">
         <div className="p-12 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8 ">
+
           <div className="row-start-1 place-items-center">
             {/* <p className=" text-[#CCAA76]  text-xl tracking-wider ">SERVIÇOS</p> */}
             <h2 className="text-5xl font-light w- mt-2 max-sm:text-3xl">

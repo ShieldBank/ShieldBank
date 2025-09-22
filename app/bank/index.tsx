@@ -33,6 +33,7 @@ export function Bank() {
               <FaCreditCard size={25} />
               <p className="text-3xl text-center font-light ">
                 Cartão de Débito
+
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[25rem] gap-3">
