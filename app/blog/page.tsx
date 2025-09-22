@@ -48,18 +48,29 @@ const NewsCard = ({ title, description, image, date, category, url }) => {
       )}
 
       <div className="flex gap-5 items-start md:items-center md:justify-center py-2">
-        <p className="text-[15px] md:text-[20px] font-bold text-[#CCAA76]"> - </p>
-        <p className="text-[15px] md:text-[15px] text-white font-semibold">{date}</p>
+        <p className="text-[15px] md:text-[20px] font-bold text-[#CCAA76]">
+          {" "}
+          -{" "}
+        </p>
+        <p className="text-[15px] md:text-[15px] text-white font-semibold">
+          {date}
+        </p>
       </div>
 
       <p className="text-xl md:text-[15px] line-clamp-2 text-start">{title}</p>
       {url && (
-        <a href={url} target="_blank" rel="noopener noreferrer" className="text-md md:text-[15px] text-[#CCAA76] hover:underline mt-2">Ler mais</a>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-md md:text-[15px] text-[#CCAA76] hover:underline mt-2"
+        >
+          Ler mais
+        </a>
       )}
     </div>
   );
 };
-
 
 const PageBlog = () => {
   const [headlines, setHeadlines] = useState({
@@ -70,7 +81,9 @@ const PageBlog = () => {
   });
   const [loading, setLoading] = useState(true);
 
-  {/* api data */}
+  {
+    /* api data */
+  }
   useEffect(() => {
     const loadData = async () => {
       try {
@@ -97,16 +110,24 @@ const PageBlog = () => {
     loadData();
   }, []);
 
-  {/* screen of loading */}
+  {
+    /* screen of loading */
+  }
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-background animate-pulse ">
-        <Image src={shieldbank} alt="Shieldbank" className="w-50 h-50  md:w-[250] md:h-[250]"/>
+        <Image
+          src={shieldbank}
+          alt="Shieldbank"
+          className="w-50 h-50  md:w-[250] md:h-[250]"
+        />
       </div>
     );
   }
 
-  {/* function formatar date */}
+  {
+    /* function formatar date */
+  }
   const formatarData = (dataString) => {
     if (!dataString) return "";
     const data = new Date(dataString);
@@ -122,8 +143,6 @@ const PageBlog = () => {
       <Header />
 
       <div className="w-full h-full py-42">
-        
-
         {/* Mensage Home */}
         <div className="bg-background text-white ">
           <motion.div className="max-w-7xl mx-auto text-center mb-10 ">
@@ -141,65 +160,65 @@ const PageBlog = () => {
 
           {/* Home One session News  */}
           <div className="max-w-[414] md:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[40px] items-center px-4">
-    {headlines.tech?.[0] && (
-        <>
-            <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.0, ease: "easeOut" }}
-                className="space-y-3 md:space-y-4 order-2 md:order-1"
-            >
-                <div className="flex items-center gap-3 text-[14px] md:text-[15px] uppercase tracking-wide">
+            {headlines.tech?.[0] && (
+              <>
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1.0, ease: "easeOut" }}
+                  className="space-y-3 md:space-y-4 order-2 md:order-1"
+                >
+                  <div className="flex items-center gap-3 text-[14px] md:text-[15px] uppercase tracking-wide">
                     <span className="text-[#CCAA76] font-semibold">
-                       | Últimas Notícias
+                      | Últimas Notícias
                     </span>
                     <span className="text-gray-400 font-light">
-                        {formatarData(headlines.tech[0]?.publishedAt)}
+                      {formatarData(headlines.tech[0]?.publishedAt)}
                     </span>
-                </div>
-                <h2 className="text-4xl md:text-4xl font-semibold md:font-light">
+                  </div>
+                  <h2 className="text-4xl md:text-4xl font-semibold md:font-light">
                     {headlines.tech[0]?.title}
-                </h2>
-                <p className=" text-gray-300 text-md font-semibold  md:font-normal md:text-lg line-clamp-2 md:line-clamp-3 break-words">
+                  </h2>
+                  <p className=" text-gray-300 text-md font-semibold  md:font-normal md:text-lg line-clamp-2 md:line-clamp-3 break-words">
                     {headlines.tech[0]?.description}
-                </p>
-                <motion.a
-                    href={headlines.tech[0]?.url} target="_blank"
+                  </p>
+                  <motion.a
+                    href={headlines.tech[0]?.url}
+                    target="_blank"
                     className="inline-block text-md md:text-[20px] text-white font-semibold py-2 hover:text-[#CCAA76] border-b border-white pb-1 hover:border-[#CCAA76]"
-                >
+                  >
                     Ler mais
-                </motion.a>
-            </motion.div>
+                  </motion.a>
+                </motion.div>
 
-            <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.0, ease: "easeOut" }}
-                className="relative w-full md:w-150 h-[200px] md:h-[300px] rounded-sm overflow-hidden shadow-lg hover:scale-99 transition-all order-1 md:order-2 hover:rounded-none"
-            >
-                {headlines.tech[0]?.urlToImage ? (
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1.0, ease: "easeOut" }}
+                  className="relative w-full md:w-150 h-[200px] md:h-[300px] rounded-sm overflow-hidden shadow-lg hover:scale-99 transition-all order-1 md:order-2 hover:rounded-none"
+                >
+                  {headlines.tech[0]?.urlToImage ? (
                     <Image
-                        src={headlines.tech[0].urlToImage}
-                        alt={headlines.tech[0].title}
-                        fill
-                        unoptimized
-                        className="object-cover brightness-105 hover:brightness-90 "
+                      src={headlines.tech[0].urlToImage}
+                      alt={headlines.tech[0].title}
+                      fill
+                      unoptimized
+                      className="object-cover brightness-105 hover:brightness-90 "
                     />
-                ) : (
+                  ) : (
                     <p>Sem imagem</p>
-                )}
-            </motion.div>
-        </>
-    )}
+                  )}
+                </motion.div>
+              </>
+            )}
           </div>
-
         </div>
 
-        
-
         {/* Two session News  */}
-        <div className="bg-background text-white mt-20 mb-10"> 
-          <div className="max-w-7xl md:max-w-7xl mx-auto items-start py-10 px-5 text-3xl font-semibold md:font-light text-[#CCAA76]" >| Destaques </div>
+        <div className="bg-background text-white mt-20 mb-10">
+          <div className="max-w-7xl md:max-w-7xl mx-auto items-start py-10 px-5 text-3xl font-semibold md:font-light text-[#CCAA76]">
+            | Destaques{" "}
+          </div>
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center">
             {headlines.b3?.slice(0, 3).map((item, index) => (
               <NewsCard
@@ -233,7 +252,7 @@ const PageBlog = () => {
         {/* Carousel - Discover Our Content */}
         <div className="max-w-[414] md:max-w-7xl mx-auto items-center px-5 mt-20">
           <h2 className="text-3xl font-semibold text-[#CCAA76]  md:text-3xl md:font-light max-w-7xl mx-auto mb-10">
-           | Nossos Conteúdos
+            | Nossos Conteúdos
           </h2>
 
           <motion.div
@@ -341,17 +360,15 @@ const PageBlog = () => {
               </CarouselContent>
 
               <CarouselPrevious className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background" />
-              <CarouselNext className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background"/>
+              <CarouselNext className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background" />
             </Carousel>
           </motion.div>
         </div>
 
-        
         {/* Footer */}
         <Footer />
       </div>
       <AnimationCota moneyDay={headlines.moneyDay} />
-      
     </>
   );
 };
