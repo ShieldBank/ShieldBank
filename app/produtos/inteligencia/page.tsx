@@ -11,13 +11,16 @@ export default function Inteligencia() {
     <>
       <Header />
       <div className=" w-full bg-amber-50 h-auto grid place-items-center  ">
-        <div className="w-[60%] z-1  ">
+        <div className="w-[60%] z-1 max-sm:w-full max-sm:p-5 max-sm:-mt-20 ">
           <p className="mt-50  font-semibold text-[#CCAA76]   text-start text-xl tracking-wider  mb-5  ">
             CONTA SHIELD
           </p>
-          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start ">
+          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start max-sm:text-6xl ">
             Inteligência Shield: <br />
-            eficiência estratégica para maximizar lucros
+            <strong className="text-[#CCAA76]">
+              eficiência estratégica{" "}
+            </strong>{" "}
+            para maximizar lucros
           </h1>
           <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1]">
             Com tecnologia de análise contínua, a Shield transforma dados em
@@ -30,8 +33,8 @@ export default function Inteligencia() {
           </div>
         </div>
 
-        <div className=" z-1 text-black mb-20 w-[70%] flex justify-around mt-20">
-          <div className="w-[30%] text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
+        <div className=" z-1 text-black mb-20 w-[70%] flex justify-around mt-20 max-sm:mt-0 max-sm:flex-col">
+          <div className="w-[30%] max-sm:w-full text-xl leading-[1.6] text-start font-light py-20  max-sm:py-8 tracking-wider">
             <p className="font-light">
               Aumentar a rentabilidade não é apenas sobre vender mais; é sobre
               operar de forma mais inteligente. A Inteligência Shield é o seu
@@ -47,7 +50,7 @@ export default function Inteligencia() {
             <Button
               asChild
               variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:text-[#CCAA76] hover:bg-background "
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:text-[#CCAA76] hover:bg-background max-sm:hidden "
             >
               <a
                 href="https://efici-ncia-tribut-ria.vercel.app/"
@@ -56,7 +59,6 @@ export default function Inteligencia() {
                 {" "}
                 Sua nova realidade
               </a>
-
             </Button>
           </div>
           <div className="">
@@ -67,6 +69,21 @@ export default function Inteligencia() {
               src={inteligenciaIMG}
               alt=""
             />
+          </div>
+          <div className="max-sm:visible max-sm:flex max-sm:place-content-center min-sm:hidden">
+            <Button
+              asChild
+              variant={"outline"}
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:text-[#CCAA76] hover:bg-background "
+            >
+              <a
+                href="https://efici-ncia-tribut-ria.vercel.app/"
+                target="_blank"
+              >
+                {" "}
+                Sua nova realidade
+              </a>
+            </Button>
           </div>
         </div>
       </div>

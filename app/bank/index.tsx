@@ -25,7 +25,7 @@ export function Bank() {
               na palma da mão{" "}
             </p>
           </div>
-          <div className="max-sm:w-[65rem] max-sm:-ml-[19rem] max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25  ">
+          <div className="max-sm:w-[68rem] max-sm:-ml-[21rem] max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25  ">
             <Image className="flex  " width={2000} src={mobile} alt="" />
           </div>
           <div className="flex items-center justify-center gap-10  mb-30 -mt-50 max-sm:-mt-25   max-sm:gap-0  ">
