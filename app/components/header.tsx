@@ -42,6 +42,7 @@ export function Header() {
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
                 >
                   Shield Bank
+
                 </NavigationMenuLink>
 
                 <NavigationMenuLink
@@ -51,6 +52,7 @@ export function Header() {
                 >
                   Shield Pay
                 </NavigationMenuLink>
+
 
                 <NavigationMenuLink
                   href="/blog"

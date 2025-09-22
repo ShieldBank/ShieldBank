@@ -27,6 +27,7 @@ export function Produtos() {
       img: "/teste.png",
       name: "Inteligência",
 
+
       url: "/produtos/inteligencia",
       content:
         "Impulsione a eficiência da sua empresa de forma simples e prática.",
