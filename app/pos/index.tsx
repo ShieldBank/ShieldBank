@@ -25,7 +25,7 @@ export function Pos() {
               }}
               transition={{
                 duration: 6,
-                repeat: Infinity,
+                // repeat: Infinity,
                 repeatType: "loop",
                 ease: "easeInOut",
               }}

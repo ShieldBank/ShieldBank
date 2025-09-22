@@ -22,27 +22,32 @@ export default function Inteligencia() {
   return (
     <>
       <Header />
-      <div className=" w-full bg-amber-50 h-auto grid place-items-center  ">
-        <div className="w-[60%] z-1  ">
-          <p className="mt-50  font-semibold text-[#CCAA22]   text-start text-xl tracking-wider  mb-5  ">
+      <div className=" w-full max-sm:p-10 max-sm:overflow-hidden bg-amber-50 h-auto grid place-items-center   ">
+        <div className="w-[60%] z-1  max-sm:w-full max-sm:-mt-25">
+          <p className="mt-50  font-semibold text-[#CCAA72]   text-start text-xl tracking-wider  mb-5  ">
             SHIELD PAY
           </p>
-          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start ">
+          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light  text-7xl text-start max-sm:text-5xl ">
             Shield Pay: <br />
-            transforme pagamentos complexos em simplicidade financeira
+            transforme <strong className="text-[#CCAA72]">
+              pagamentos
+            </strong>{" "}
+            complexos em{" "}
+            <strong className="text-[#CCAA72]">simplicidade </strong>
+            financeira
           </h1>
-          <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1]">
+          <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1] max-sm:text-xl">
             Tecnologia que verifica quem está do outro lado, guarda seus fundos
             com segurança e libera o pagamento só quando tudo estiver certo. Sem
             burocracia, com transparência e controle.
           </p>
-          <div className=" absolute ml-[50rem] -mt-[35rem]  -z-100  ">
+          <div className=" absolute ml-[50rem] -mt-[35rem]  -z-100 max-sm:hidden  ">
             <Image width={700} src={shieldbackground} alt="" />
           </div>
         </div>
 
-        <div className=" z-1 text-black mb-20 w-[60%] flex justify-around mt-20">
-          <div className="w-[30%] text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
+        <div className=" z-1 text-black mb-0 w-[60%] flex justify-around mt-0  max-sm:flex-col-reverse max-sm:w-full">
+          <div className="w-[30%] max-sm:w-full  text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
             <p className="font-light">
               A Shield Pay nasceu para simplificar a forma como empresas recebem
               e processam pagamentos. Com maquininhas modernas e um sistema
@@ -73,9 +78,10 @@ export default function Inteligencia() {
               </a>
             </Button>
           </div>
-          <div className=" z-1 text-black mb-20  w-[60%] flex justify-around ">
-            <div className="flex  w-[30rem] mb-30 h-[50rem] max-sm:w-[12rem] max-sm:h-[25rem]   ">
-              <VideoPlayer className="overflow-hidden  rounded-lg border mt-10 max-sm:mt-0  ">
+
+          <div className=" z-1 text-black mb-20 max-sm:mb-0  w-[50%] max-sm:w-full max-sm:mt-10 flex justify-around ">
+            <div className="flex   w-[80rem] mb-30 max-sm:mb-0 h-[60rem] max-sm:w-[20rem] max-sm:h-[35rem]   ">
+              <VideoPlayer className="overflow-hidden  rounded-lg border mt-10 max-sm:mt-0   ">
                 <VideoPlayerContent
                   crossOrigin=""
                   muted
@@ -85,7 +91,7 @@ export default function Inteligencia() {
                   }}
                   autoPlay
                   slot="media"
-                  src="/shieldpay.mp4"
+                  src="/shieldPayReels.mp4"
                 />
                 <VideoPlayerControlBar>
                   <VideoPlayerPlayButton />
@@ -101,6 +107,7 @@ export default function Inteligencia() {
             </div>
           </div>
         </div>
+        {/* <div className="flex text-start  border-[0.5px] w-[30rem] mt-2 mb-4 border-['##0c0b0b52'] opacity-90"></div> */}
       </div>
       <Footer />
     </>
