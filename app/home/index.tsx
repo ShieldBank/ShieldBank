@@ -35,14 +35,14 @@ export function App() {
                 variant={"outline"}
                 className="w-44 p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground "
               >
-                <a href="/login">Abra sua conta</a>
+                <a href="/login">Seja Shield</a>
               </Button>
               <Button
                 asChild
                 variant={"outline"}
                 className="w-60 bg-[#CCAA76] border-0 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-45 "
               >
-                <a href="/login">Conheça nossos produtos</a>
+                <a href="/login">Conheça Nossos Produtos</a>
               </Button>
             </motion.button>
           </div>

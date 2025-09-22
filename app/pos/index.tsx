@@ -14,7 +14,24 @@ export function Pos() {
       <div className=" w-full  h-auto  max-sm:h-[62%]  overflow-hidden flex  ">
         <motion.div className="h-full grid grid-cols-2 place-content-center place-items-center p-20 max-sm:p-0 w-[100%]">
           <div className="ml-50">
-            <Image width={400} height={200} quality={90} src={pos} alt="" />
+            <motion.div
+              style={{ backgroundColor: "transparent" }}
+              initial={{ rotateX: 0, rotateY: 0, y: 0, opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              animate={{
+                rotateX: [0, 10, -10, 0],
+                rotateY: [0, 10, -10, 0],
+                y: [0, -20, 20, 0],
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            >
+              <Image width={400} height={200} quality={90} src={pos} alt="" />
+            </motion.div>
           </div>
           <div className="text-amber-50 w-xl ">
             <p className=" text-[#CCAA76]  text-xl tracking-wider font-semibold mb-10 ">
@@ -36,16 +53,16 @@ export function Pos() {
             <div className="flex gap-2 mt-12">
               <p className="flex gap-2 text-[1rem]">
                 <FaCreditCard size={25} color="#CCAA76" />
-                Conta digital gratuita
+                Conta Digital Gratuita
               </p>
               <p className="flex gap-2 text-[1rem]">
                 {" "}
                 <HiOutlineReceiptTax size={25} color="#CCAA76" />
-                Taxas sob medida
+                Taxas Personalizadas
               </p>
               <p className="flex gap-2 text-[1rem]">
                 <FaHeadset size={25} color="#CCAA76" />
-                Atendimento rápido e eficiente
+                Atendimento Rápido e Eficiente
               </p>
             </div>
             <div className="mt-10 justify-center flex gap-10">

@@ -163,12 +163,13 @@ export function Content() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center w-[25rem] h-[40rem] max-sm:w-[12rem] max-sm:h-[25rem]   ">
+            <div className="flex justify-center w-[25rem] mb-30 h-[40rem] max-sm:w-[12rem] max-sm:h-[25rem]   ">
               <VideoPlayer className="overflow-hidden rounded-lg border mt-10 max-sm:mt-0  ">
                 <VideoPlayerContent
                   crossOrigin=""
                   muted
                   preload="auto"
+                  autoPlay
                   slot="media"
                   src="/shieldBank.mp4"
                 />
