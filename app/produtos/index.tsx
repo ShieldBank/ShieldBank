@@ -73,8 +73,8 @@ export function Produtos() {
   }, [api]);
   return (
     <>
-      <div className="w-[100%] bg-amber-50  h-[70%] text-black  ">
-        <div className="p-28 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8 ">
+      <div className="w-[100%] bg-amber-50  h-auto text-black  ">
+        <div className="p-12 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8 ">
           <div className="row-start-1 place-items-center">
             {/* <p className=" text-[#CCAA76]  text-xl tracking-wider ">SERVIÇOS</p> */}
             <h2 className="text-5xl font-light w- mt-2 max-sm:text-3xl">
