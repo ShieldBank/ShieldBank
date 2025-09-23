@@ -24,8 +24,7 @@ import {
 
 import {
   fetchTechnologyNews,
-  fetchB3News,
-  fetchMarketTrendsNews,
+  fetchB3News
 } from "../components/news";
 
 import { Footer } from "../components/footer";
@@ -113,7 +112,66 @@ interface TypeCard {
   url: string;
 }
 
-const NewsCard = ({ title, description, image, date, url }: TypeCard) => {
+
+
+const PageBlog = () => {
+  const [headlines, setHeadlines] = useState<BlogArray>({
+    tech: [] as any ,
+    b3: [] as any,
+    moneyDay: {} as any,
+  });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const [tech, b3, moneyDay] = await Promise.all([
+          fetchTechnologyNews(),
+          fetchB3News(),
+          moneyCota(),
+        ]);
+
+        setHeadlines({
+          tech: tech || [],
+          b3: b3 || [],
+          moneyDay: moneyDay || {},
+        });
+      } catch (error) {
+        console.error("Falha ao carregar os dados:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadData();
+  }, []);
+
+  {
+    /* screen of loading */
+  }
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-background animate-pulse ">
+        <Image
+          src={shieldbank}
+          alt="Shieldbank"
+          className="w-50 h-50  md:w-[250] md:h-[250]"
+        />
+      </div>
+    );
+  }
+
+  const formatarData = (dataString: string | number) => {
+    if (!dataString) return "";
+    const data = new Date(dataString);
+    return data.toLocaleDateString("pt-BR", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  };
+
+  const NewsCard = ({ title, description, image, date, url }: TypeCard) => {
   return (
     <div className="flex flex-col items-start justify-center text-center px-5">
       {image ? (
@@ -154,133 +212,6 @@ const NewsCard = ({ title, description, image, date, url }: TypeCard) => {
     </div>
   );
 };
-
-const PageBlog = () => {
-  const [headlines, setHeadlines] = useState<BlogArray>({
-    tech: [
-      {
-        author: "",
-        content: "",
-        description: "",
-        publishedAt: "",
-        source: {
-          id: 0 || null,
-          name: "",
-        },
-        title: "",
-        url: "",
-        urlToImage: "",
-      },
-    ],
-    b3: [
-      {
-        author: "",
-        content: "",
-        description: "",
-        publishedAt: "",
-        source: {
-          id: 0 || null,
-          name: "",
-        },
-        title: "",
-        url: "",
-        urlToImage: "",
-      },
-    ],
-
-    moneyDay: {
-      BTCBRL: {
-        ask: "",
-        bid: "",
-        code: "",
-        codein: "",
-        create_date: "",
-        high: "",
-        low: "",
-        name: "",
-        pctChange: "",
-        timestamp: "",
-        varBid: "",
-      },
-      EURBRL: {
-        ask: "",
-        bid: "",
-        code: "",
-        codein: "",
-        create_date: "",
-        high: "",
-        low: "",
-        name: "",
-        pctChange: "",
-        timestamp: "",
-        varBid: "",
-      },
-      USDBRL: {
-        ask: "",
-        bid: "",
-        code: "",
-        codein: "",
-        create_date: "",
-        high: "",
-        low: "",
-        name: "",
-        pctChange: "",
-        timestamp: "",
-        varBid: "",
-      },
-    },
-  });
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const [tech, b3, moneyDay] = await Promise.all([
-          fetchTechnologyNews(),
-          fetchB3News(),
-          fetchMarketTrendsNews(),
-          moneyCota(),
-        ]);
-
-        setHeadlines({
-          tech: tech || [],
-          b3: b3 || [],
-          moneyDay: moneyDay || null,
-        });
-      } catch (error) {
-        console.error("Falha ao carregar os dados:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadData();
-  }, []);
-
-  {
-    /* screen of loading */
-  }
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen bg-background animate-pulse ">
-        <Image
-          src={shieldbank}
-          alt="Shieldbank"
-          className="w-50 h-50  md:w-[250] md:h-[250]"
-        />
-      </div>
-    );
-  }
-
-  const formatarData = (dataString: string | number) => {
-    if (!dataString) return "";
-    const data = new Date(dataString);
-    return data.toLocaleDateString("pt-BR", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  };
 
   return (
     <>
