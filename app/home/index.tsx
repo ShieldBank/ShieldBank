@@ -14,10 +14,10 @@ export function App() {
           //   duration: 0.05, // deixa mais rápido
           //   ease: "easeIn", // ou "linear", "easeOut", "easeInOut"
           // }}
-          className="h-full flex items-center p-20 max-sm:p-0"
+          className="h-full flex items-center p-20 max-sm:p-5"
         >
-          <div className="w-full mt-10 flex flex-col  items-center">
-            <p className="text-center mb-10 mt-25 max-sm:mb-2  max-sm:text-[0.8rem] ">
+          <div className="w-full mt-10 max-sm:mt-0 flex flex-col  items-center">
+            <p className="text-center mb-10 mt-25 max-sm:mt-10 max-sm:mb-2  max-sm:text-[0.8rem] ">
               Potencialize suas finanças: descubra quanto sua empresa pode
               <strong> economizar </strong>
               por mês com a <strong>ShieldBank</strong>
