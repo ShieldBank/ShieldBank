@@ -69,11 +69,13 @@ export default function Inteligencia() {
               confiança para você e seus clientes.
             </p>
             <Button
-              asChild
-              variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
+              variant={"default"}
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
             >
-              <a href="https://wa.me/5511978802370/?text=Olá, Quero saber mais sobre as soluções de Pagamentos Shield Pay!" target="_blank">
+              <a
+                href="https://wa.me/5511978802370/?text=Olá, Quero saber mais sobre as soluções de Pagamentos Shield Pay!"
+                target="_blank"
+              >
                 Conheça Shield Pay{" "}
               </a>
             </Button>

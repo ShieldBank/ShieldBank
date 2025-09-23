@@ -49,8 +49,8 @@ export default function Inteligencia() {
             </p>
             <Button
               asChild
-              variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:text-[#CCAA76] hover:bg-background max-sm:hidden "
+              variant={"default"}
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
             >
               <a
                 href="https://efici-ncia-tribut-ria.vercel.app/"
@@ -72,7 +72,7 @@ export default function Inteligencia() {
           <div className="max-sm:visible max-sm:flex max-sm:place-content-center min-sm:hidden">
             <Button
               asChild
-              variant={"outline"}
+              variant={"default"}
               className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:text-[#CCAA76] hover:bg-background "
             >
               <a

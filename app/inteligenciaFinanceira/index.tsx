@@ -13,8 +13,8 @@ export function Inteligencia() {
           <div className="flex justify-center max-sm:justify-start mt-10 max-sm:mt-5 ">
             <Button
               asChild
-              variant={"outline"}
-              className="text-2xl p-6 hover:bg-[#CCAA76] hover:border-0 hover:animate-pulse  hover:text-foreground  max-sm:p-4 max-sm:text-xl"
+              variant={"default"}
+              className="text-2xl border border-amber-50 bg-transparent p-6 hover:bg-[#CCAA76] hover:border-0 hover:animate-pulse  hover:text-foreground  max-sm:p-4 max-sm:text-xl"
             >
               <a
                 href="https://efici-ncia-tribut-ria.vercel.app/"

@@ -26,7 +26,7 @@ export function Pos() {
                   hidden: {},
                   visible: {
                     transition: {
-                      staggerChildren: 0.2,
+                      staggerChildren: 0.1,
                     },
                   },
                 }}
@@ -126,21 +126,19 @@ export function Pos() {
             </div>
             <div className="mt-10 justify-center flex gap-10">
               <Button
-                asChild
-                variant={"outline"}
-                className="w-60 bg-[#CCAA76] border-0 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-40 "
+                variant={"default"}
+                className="w-60 bg-transparent border border-amber-50 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-40 "
               >
                 <a
                   className="text-[1.4rem] max-sm:text-[1rem]"
                   href="https://shieldbank.posportal.com.br/"
                   target="_blank"
                 >
-                  SHIELD PAY
+                  Portal Shield
                 </a>
               </Button>
               <Button
-                asChild
-                variant={"outline"}
+                variant={"default"}
                 className="w-60  bg-[#CCAA76] border-0 text-amber-50  p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-40 "
               >
                 <a
@@ -148,7 +146,7 @@ export function Pos() {
                   href="https://shieldpay.wepay.app.br/"
                   target="_blank"
                 >
-                  PORTAL SHIELD
+                  Portal Pay
                 </a>
               </Button>
             </div>
