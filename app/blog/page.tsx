@@ -61,7 +61,7 @@ interface BlogArray {
       urlToImage: string;
     }
   ];
-  moneyDay: [
+  moneyDay: 
     {
       BTCBRL: {
         ask: string;
@@ -103,7 +103,7 @@ interface BlogArray {
         varBid: string;
       };
     }
-  ];
+  ;
 }
 [];
 
@@ -190,7 +190,7 @@ const PageBlog = () => {
       },
     ],
 
-    moneyDay: [
+    moneyDay: 
       {
         BTCBRL: {
           ask: "",
@@ -232,25 +232,25 @@ const PageBlog = () => {
           varBid: "",
         },
       },
-    ],
+    
   });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [tech, b3, moneyDay] = await Promise.all([
-          fetchTechnologyNews(),
-          fetchB3News(),
-          fetchMarketTrendsNews(),
-          moneyCota(),
-        ]);
+        const [tech, b3, marketTrends, moneyDay] = await Promise.all([
+         fetchTechnologyNews(),
+         fetchB3News(),
+         fetchMarketTrendsNews(),
+         moneyCota(),
+       ]);
 
-        setHeadlines({
-          tech: tech || [],
-          b3: b3 || [],
-          moneyDay: moneyDay || null,
-        });
+      setHeadlines({
+      tech: tech || [],
+      b3: b3 || [],
+      moneyDay: moneyDay
+    });
       } catch (error) {
         console.error("Falha ao carregar os dados:", error);
       } finally {
