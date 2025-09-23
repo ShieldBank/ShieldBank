@@ -2,15 +2,18 @@ import axios from "axios";
 
 // const token = '771874c73ae34339a1c902b70d93c978';
 // const token = "2e43869325e04a5cbc4d8cf9b8188684";
-const token = "72340279fa7d4d229ccedbf7be3fb190";
+// const token = "72340279fa7d4d229ccedbf7be3fb190";
+// const urlBase = "https://newsapi.org/v2/everything";
+// const language = "pt";
+const token = "d1c806b7b0d22cead5f5b432e8156e36"
 
-const urlBase = "https://newsapi.org/v2/everything";
-const language = "pt";
+const urlBase = "https://gnews.io/api/v4/search";
+const lang = "pt";
 const matter = "publishedAt";
 
 // function to fetch news based on a query
 const news = async (query: string) => {
-  const url = `${urlBase}?q=${query}&language=${language}&sortBy=${matter}&apiKey=${token}`;
+  const url = `${urlBase}?q=${query}&lang=${lang}&sortBy=${matter}&apikey=${token}`;
 
   try {
     const response = await axios.get(url);
