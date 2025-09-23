@@ -57,11 +57,15 @@ export default function ShieldBank() {
               inteligente..
             </p>
             <Button
-              asChild
-              variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold max-sm:hidden bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
+              variant={"default"}
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
             >
-              <a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!" target="_blank">Vem Ser Shield</a>
+              <a
+                href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
+                target="_blank"
+              >
+                Vem Ser Shield
+              </a>
             </Button>
           </div>
           <div className="flex  mt-5 w-[25rem]  h-[35rem]  max-sm:h-[30rem] max-sm:w-full max-sm:place-content-center  ">
@@ -89,12 +93,15 @@ export default function ShieldBank() {
           <div className="max-sm:flex max-sm:place-content-center max-sm:place-items-center max-sm:visible min-sm:hidden">
             <Button
               asChild
-              variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold   max-sm:w-40  bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
+              variant={"default"}
+              className="mt-10  text-xl p-6 font-semibold   max-sm:w-40  bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
             >
-              <a 
-               href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
-               target="_blank">Vem Ser Shield</a>
+              <a
+                href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
+                target="_blank"
+              >
+                Vem Ser Shield
+              </a>
             </Button>
           </div>
         </div>
@@ -103,8 +110,7 @@ export default function ShieldBank() {
         <div className=" z-1 text-black mb-20 -mt-10 w-[60%] flex justify-around max-sm:w-full max-sm:flex-col-reverse max-sm:p-5 max-sm:-mt-30">
           <div className="max-sm:visible max-sm:flex max-sm:place-content-center min-sm:hidden">
             <Button
-              asChild
-              variant={"outline"}
+              variant={"default"}
               className="mt-10 text-xl p-6 font-semibold  bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
             >
               <a href="/acessar-conta">Conheça Nosso App</a>
@@ -140,9 +146,8 @@ export default function ShieldBank() {
               aproveitar cada oportunidade de forma inteligente.
             </p>
             <Button
-              asChild
-              variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold max-sm:hidden bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
+              variant={"default"}
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
             >
               <a href="/acessar-conta">conheça nosso app</a>
             </Button>

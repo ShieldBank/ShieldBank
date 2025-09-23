@@ -52,12 +52,14 @@ export function Bank() {
           <div className="flex justify-center mb-10 -mt-20 max-sm: ">
             <Button
               asChild
-              variant={"outline"}
-              className="w-60 bg-[#001124] text-amber-50 border-1 p-6 max-sm:p-4.5 hover:bg-[#CCAA76] hover:border-0 hover:text-[#001124] max-sm:w-40 "
+              variant={"default"}
+              className="w-60 bg-[#001124] text-amber-50 border-1 p-6 max-sm:p-4.5 hover:bg-[#CCAA76]  hover:border-0 hover:text-[#fdfdfd] max-sm:w-40 "
             >
-              <a className="text-[1.4rem] max-sm:text-xl"
-               href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
-               target="_blank">
+              <a
+                className="text-[1.4rem] max-sm:text-xl"
+                href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
+                target="_blank"
+              >
                 Seja Shield
               </a>
             </Button>

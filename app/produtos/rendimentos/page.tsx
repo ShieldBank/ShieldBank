@@ -45,12 +45,15 @@ export default function Investimentos() {
               mais sólido, onde a rentabilidade e a segurança andam lado a lado.
             </p>
             <Button
-              asChild
-              variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold max-sm:hidden bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
+              variant={"default"}
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
             >
-              <a href="https://wa.me/5511978802370/?text=Olá, Quero criar meu Plano de Rendimentos com a Shield!"
-               target="_blank">Crie seu Plano de Rendimento</a>
+              <a
+                href="https://wa.me/5511978802370/?text=Olá, Quero criar meu Plano de Rendimentos com a Shield!"
+                target="_blank"
+              >
+                Crie seu Plano de Rendimento
+              </a>
             </Button>
           </div>
           <div className="">
@@ -64,9 +67,8 @@ export default function Investimentos() {
           </div>
           <div className="max-sm:visible min-sm:hidden max-sm:flex max-sm:place-content-center">
             <Button
-              asChild
-              variant={"outline"}
-              className="mt-10 text-xl p-6 font-semibold  bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
+              variant={"default"}
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
             >
               <a href="/">Crie seu Plano de Rendimento</a>
             </Button>

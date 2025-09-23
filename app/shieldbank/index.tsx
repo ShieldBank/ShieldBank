@@ -157,8 +157,8 @@ export function Content() {
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <CarouselPrevious className="hover:bg-[#13110f] hover:text-amber-50 ml-0 " />
-                    <CarouselNext className="hover:bg-[#CCAA76] hover:text-amber-50 mr-0" />
+                    <CarouselPrevious className="bg-[#13110f] hover:bg-[#CCAA76] hover:text-amber-50 ml-0 " />
+                    <CarouselNext className="bg-[#13110f] hover:bg-[#CCAA76] hover:text-amber-50 mr-0" />
                   </Carousel>
                 </div>
               </div>
