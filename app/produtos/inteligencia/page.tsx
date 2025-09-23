@@ -18,7 +18,7 @@ export default function Inteligencia() {
           <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start max-sm:text-6xl ">
             Inteligência Shield: <br />
             <strong className="text-[#CCAA76]">
-              eficiência estratégica{" "}
+              Eficiência estratégica{" "}
             </strong>{" "}
             para maximizar lucros
           </h1>
@@ -28,6 +28,7 @@ export default function Inteligencia() {
             recursos e aumente sua rentabilidade com decisões mais inteligentes
             e seguras.
           </p>
+
           <div className=" absolute ml-[50rem] -mt-[35rem]  -z-100  ">
             <Image width={700} src={shieldbackground} alt="" />
           </div>
@@ -36,16 +37,20 @@ export default function Inteligencia() {
         <div className=" z-1 text-black mb-20 w-[70%] flex justify-around mt-20 max-sm:mt-0 max-sm:flex-col">
           <div className="w-[30%] max-sm:w-full text-xl leading-[1.6] text-start font-light py-20  max-sm:py-8 tracking-wider">
             <p className="font-light">
-              Aumentar a rentabilidade não é apenas sobre vender mais; é sobre
-              operar de forma mais inteligente. A Inteligência Shield é o seu
-              parceiro nesse processo. Ao integrar nossa tecnologia à sua
-              operação, você ganha a capacidade de reduzir custos ocultos,
-              otimizar processos e descobrir novas fontes de receita que antes
-              eram invisíveis. Nossos clientes relatam um aumento significativo
-              na lucratividade e uma melhoria na agilidade de resposta às
-              mudanças do mercado. O Shield transforma sua empresa em uma
-              máquina de eficiência, onde cada decisão é uma oportunidade de
-              crescimento.
+              Aumentar a rentabilidade não significa apenas vender mais, mas sim
+              operar de forma mais inteligente. A Inteligência Shield é a
+              parceira ideal nesse processo: ao integrar nossa tecnologia à sua
+              operação, sua empresa ganha a capacidade de identificar custos
+              ocultos, otimizar processos e revelar novas fontes de receita
+              antes invisíveis.
+            </p>
+            <br />
+            <p className="font-light">
+              Nossos clientes já comprovam os resultados: maior lucratividade,
+              processos mais ágeis e respostas rápidas às mudanças do mercado.
+              Com a Shield, sua empresa se torna uma verdadeira máquina de
+              eficiência, onde cada decisão representa uma oportunidade de
+              crescimento sustentável.
             </p>
             <Button
               asChild

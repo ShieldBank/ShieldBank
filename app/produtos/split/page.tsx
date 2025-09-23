@@ -24,7 +24,7 @@ export default function Split() {
           <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1]">
             Transforme a divisão de valores das suas vendas com segurança e
             precisão, permitindo que você foque no crescimento do negócio
-            enquanto nossa Tecnologia cuida dos repasses.
+            enquanto nossa tecnologia cuida dos repasses.
           </p>
           <div className=" absolute ml-[50rem] -mt-[35rem]  -z-100  ">
             <Image width={700} src={shieldbackground} alt="" />
@@ -34,17 +34,17 @@ export default function Split() {
         <div className=" z-1 text-black mb-20 w-[70%] max-sm:mt-0 flex max-sm:flex-col justify-around mt-20">
           <div className="w-[30%] max-sm:w-full  text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
             <p className="font-light">
-              Defina regras personalizadas com o Split de Pagamentos e faça
-              repasses automáticos para seus sócios, fornecedores ou parceiros.
-              Na prática, isso significa que quando uma transação é concluída, o
-              sistema já separa as porcentagens ou valores definidos e envia
-              para cada conta.
+              Com o Split de Pagamentos, você define regras personalizadas e
+              realiza repasses automáticos para sócios, fornecedores ou
+              parceiros. Na prática, assim que uma transação é concluída, o
+              sistema separa os valores ou porcentagens pré-definidos e envia
+              diretamente para cada conta.
               <br />
               <br />
-              Assim, você elimina processos manuais, evita erros de cálculo e
-              garante que cada parte receba exatamente o que lhe pertence. Mais
-              eficiência no seu fluxo de caixa, mais agilidade no dia a dia e
-              mais confiança para quem faz negócios com você.
+              Dessa forma, você elimina processos manuais, reduz erros de
+              cálculo e garante que cada parte receba exatamente o que lhe
+              pertence. Mais eficiência no fluxo de caixa, mais agilidade no dia
+              a dia e mais confiança para quem faz negócios com você.
             </p>
             <Button
               variant={"default"}

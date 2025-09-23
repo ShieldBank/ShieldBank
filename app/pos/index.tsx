@@ -26,7 +26,7 @@ export function Pos() {
                   hidden: {},
                   visible: {
                     transition: {
-                      staggerChildren: 0.1,
+                      staggerChildren: 0.3,
                     },
                   },
                 }}
@@ -100,13 +100,11 @@ export function Pos() {
 
             <span className="font-light text-xl ">
               <h2 className="text-3xl font-light mb-10 max-sm:mb-4">
-                Aumente suas <strong>vendas</strong> com a nossa máquina de
-                cartão!
+                Aumente suas <strong>vendas</strong> com a nossa máquininha!
               </h2>
               <p className="font-light">
-                Com a nossa maquininha, você aceita múltiplas bandeiras,
-                antecipa seus recebíveis e ainda conta com soluções que
-                impulsionam o crescimento do seu negócio.
+                Aceite múltiplas bandeiras, antecipe seus recebíveis e aproveite
+                soluções que impulsionam o crescimento do seu negócio.
               </p>
             </span>
             <div className="flex gap-2 mt-12 max-sm:flex-col">
@@ -151,10 +149,10 @@ export function Pos() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-end absolute ml-[80rem]  z-0 max-sm:ml-[10rem] ">
+          <div className="flex justify-end absolute ml-[70rem]  z-0 max-sm:ml-[10rem] opacity-60 ">
             <Image
               className="max-sm:opacity-60"
-              width={700}
+              width={1000}
               src={shieldbackground}
               alt=""
             />
