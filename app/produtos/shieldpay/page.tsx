@@ -29,7 +29,7 @@ export default function Inteligencia() {
           </p>
           <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light  text-7xl text-start max-sm:text-5xl ">
             Shield Pay: <br />
-            transforme <strong className="text-[#CCAA72]">
+            Transforme <strong className="text-[#CCAA72]">
               pagamentos
             </strong>{" "}
             complexos em{" "}
@@ -37,9 +37,9 @@ export default function Inteligencia() {
             financeira
           </h1>
           <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1] max-sm:text-xl">
-            Tecnologia que verifica quem está do outro lado, guarda seus fundos
-            com segurança e libera o pagamento só quando tudo estiver certo. Sem
-            burocracia, com transparência e controle.
+            Tecnologia que valida a contraparte, protege seus recursos e libera
+            o pagamento apenas quando tudo estiver correto. Sem burocracia, com
+            total transparência e controle.
           </p>
           <div className=" absolute ml-[50rem] -mt-[35rem]  -z-100 max-sm:hidden  ">
             <Image width={700} src={shieldbackground} alt="" />
@@ -51,20 +51,20 @@ export default function Inteligencia() {
             <p className="font-light">
               A Shield Pay nasceu para simplificar a forma como empresas recebem
               e processam pagamentos. Com maquininhas modernas e um sistema
-              inteligente, oferecemos transações rápidas, seguras e com taxas
-              reduzidas, ajudando seu negócio a economizar mais a cada venda.
+              inteligente, proporcionamos transações rápidas, seguras e com
+              taxas competitivas, ajudando seu negócio a economizar mais a cada
+              venda.
             </p>
             <br />
             <p className="font-light">
-              Nossa tecnologia garante custos competitivos e transparentes, sem
-              tarifas escondidas. Assim, você aumenta sua margem de lucro,
-              controla melhor os gastos e impulsiona o crescimento da sua
-              empresa.
+              Nossa tecnologia assegura custos claros e justos, sem tarifas
+              ocultas. Assim, você amplia sua margem de lucro, melhora o
+              controle financeiro e impulsiona o crescimento da sua empresa.
             </p>
             <br />
 
             <p className="font-light">
-              Com a Shield Pay, cada pagamento vira uma oportunidade de
+              Com a Shield Pay, cada pagamento se transforma em oportunidade de
               rentabilidade: mais transparência, mais economia e muito mais
               confiança para você e seus clientes.
             </p>

@@ -107,8 +107,8 @@ export function Content() {
                   SHIELD BANK
                 </p>
                 <p className="font-light text-xl  ">
-                  Como podemos potencializar seus <strong> resultados</strong> e
-                  simplificar sua vida empresarial.
+                  Potencializando seus <strong> resultados</strong> e
+                  simplificando sua vida empresarial.
                 </p>
               </div>
               <div>
@@ -116,7 +116,8 @@ export function Content() {
                   CONTA DIGITAL
                 </p>
                 <h2 className="text-xl font-light  mt-2">
-                  Conheça nossos <strong> serviços</strong>
+                  Explore nossos <strong> serviços </strong>e simplifique sua
+                  rotina financeira.
                 </h2>
                 <div className=" grid place-items-center place-content-center z-1 max-sm:hidden">
                   <Carousel

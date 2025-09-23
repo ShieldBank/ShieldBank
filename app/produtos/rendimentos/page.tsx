@@ -16,14 +16,14 @@ export default function Investimentos() {
           </p>
           <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start  max-sm:text-6xl ">
             Rendimentos Shield: <br />
-            <strong className="text-[#CCAA76]  ">Otimize</strong> Cada Decisão{" "}
+            <strong className="text-[#CCAA76]  ">Otimize</strong> cada decisão{" "}
             <strong className="text-[#CCAA76]  ">Financeira</strong>
           </h1>
           <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1]">
-            Invista com a segurança de um plano bem definido e a certeza de que
-            cada passo foi calculado. Com a Shield Bank, você transforma seu
-            capital em um motor de crescimento sólido, agindo com precisão para
-            maximizar cada oportunidade.
+            Invista com a segurança de um plano estruturado e a confiança de que
+            cada passo é estrategicamente calculado. Com a Shield Bank, seu
+            capital se transforma em um motor de crescimento sólido, orientado
+            pela precisão e pela maximização das oportunidades.
           </p>
           <div className=" absolute ml-[50rem] -mt-[35rem]  -z-100  ">
             <Image width={700} src={shieldbackground} alt="" />
@@ -33,16 +33,16 @@ export default function Investimentos() {
         <div className=" z-1 text-black mb-20 w-[70%] max-sm:mt-0 flex max-sm:flex-col justify-around mt-20">
           <div className="w-[30%] max-sm:w-full  text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
             <p className="font-light">
-              Transforme a complexidade dos rendimentos em um caminho claro e
-              seguro para o seu crescimento. Nosso propósito é fazer o seu
-              dinheiro trabalhar de forma mais inteligente para você,
-              identificando e aproveitando oportunidades.
+              Simplificamos a complexidade dos rendimentos, oferecendo clareza e
+              segurança para o seu crescimento. Nosso propósito é fazer o seu
+              dinheiro trabalhar de forma mais inteligente, identificando,
+              avaliando e aproveitando as melhores oportunidades.
               <br />
               <br />
-              Tenha as ferramentas para construir um portfólio robusto,
-              resiliente e alinhado aos seus objetivos. Com a Shield Bank, cada
-              decisão é um passo calculado em direção a um futuro financeiro
-              mais sólido, onde a rentabilidade e a segurança andam lado a lado.
+              Conte com ferramentas que permitem a construção de um portfólio
+              robusto, resiliente e alinhado aos seus objetivos. Na Shield Bank,
+              cada decisão é planejada para conduzir você a um futuro financeiro
+              mais sólido, onde rentabilidade e segurança caminham juntas.
             </p>
             <Button
               variant={"default"}

@@ -18,9 +18,9 @@ export function App() {
         >
           <div className="w-full mt-10 flex flex-col  items-center">
             <p className="text-center mb-10 mt-25 max-sm:mb-2  max-sm:text-[0.8rem] ">
-              Potencialize suas finanças: descubra o quanto sua empresa pode{" "}
-              <strong>economizar </strong>
-              mensalmente com a <strong>ShieldBank</strong>
+              Potencialize suas finanças: descubra quanto sua empresa pode
+              <strong> economizar </strong>
+              por mês com a <strong>ShieldBank</strong>
             </p>
             <h1 className="text-8xl text-center font-light max-sm:text-6xl">
               Tecnologia{" "}

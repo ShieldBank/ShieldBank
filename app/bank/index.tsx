@@ -17,7 +17,7 @@ export function Bank() {
                 {" "}
                 Inteligência Financeira{" "}
               </strong>{" "}
-              ao alcance de um toque{" "}
+              ao alcance de um toque.{" "}
             </h1>
             <p className="text-3xl text-start ml-100 font-light   max-sm:ml-0 max-sm:mt-5  max-sm:text-2xl  max-sm:text-center ">
               Tudo que você precisa para{" "}

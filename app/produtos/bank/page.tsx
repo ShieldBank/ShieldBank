@@ -32,12 +32,12 @@ export default function ShieldBank() {
           </p>
           <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start max-sm:text-7xl">
             Shield Bank: <br />
-            uma nova forma de ser
+            Uma nova forma de ser
             <strong className="text-[#CCAA76]"> banco</strong>
           </h1>
           <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1]">
-            organizamos o seu financeiro com sistema de peças interligadas,
-            repasse, saidas, tudo em seu controle
+            Organizamos sua vida financeira com um sistema integrado, que
+            conecta entradas, repasses e saídas, tudo sob o seu controle.
           </p>
           <div className=" absolute ml-[50rem] -mt-[35rem]  -z-100  ">
             <Image width={700} src={shieldbackground} alt="" />
@@ -48,14 +48,13 @@ export default function ShieldBank() {
           <div className="w-[30%]  max-sm:w-[100%] max-sm:p-5 text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
             <p className="font-light">
               A Shield Bank nasceu para transformar a forma como empresas e
-              pessoas lidam com o mercado financeiro. Mais do que oferecer
-              soluções de pagamento, nós unimos tecnologia, segurança e
-              inteligência estratégica para criar experiências simples,
-              eficientes e transparentes. Nosso propósito é ser um parceiro de
-              confiança no crescimento do seu negócio, ajudando você a ganhar
-              tempo, reduzir custos e aproveitar cada oportunidade de forma
-              inteligente..
+              pessoas se relacionam com o mercado financeiro. Mais do que
+              soluções de pagamento, unimos tecnologia, segurança e inteligência
+              estratégica para oferecer experiências simples, eficientes e
+              transparentes.
             </p>
+            <br />
+
             <Button
               variant={"default"}
               className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
