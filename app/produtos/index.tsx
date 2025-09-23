@@ -57,8 +57,8 @@ export function Produtos() {
     },
     {
       img: "/Youtube.png",
-      name: "Recebimentos",
-      url: "/produtos/inteligencia",
+      name: "Split de Pagamentos",
+      url: "/produtos/split",
 
       content:
         "Amplie as formas de recebimento da sua empresa de acordo com suas necessidades.",

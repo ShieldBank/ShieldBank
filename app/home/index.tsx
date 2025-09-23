@@ -39,7 +39,7 @@ export function App() {
                 variant={"outline"}
                 className="w-auto p-6 hover:bg-[#CCAA76] hover:border-0 hover:text-foreground text-2xl max-sm:text-[1rem] max-sm:w-30"
               >
-                <a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!">
+                <a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!" target="_blank">
                   Seja Shield
                 </a>
               </Button>

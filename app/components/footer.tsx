@@ -14,27 +14,20 @@ export function Footer() {
             <motion.h1 className="font-light text-2xl">
               NOSSOS PRODUTOS
             </motion.h1>
-            <motion.p>ShieldPay</motion.p>
-            <motion.p>ShieldBank</motion.p>
-            <motion.p>
-              <a href="">Investimentos</a>
-            </motion.p>
-            <motion.p>
-              <a href="">Inteligência Tributaria</a>
-            </motion.p>
-            <motion.p>
-              {" "}
-              <a href="">Blog</a>
-            </motion.p>
+            <motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" ><a href="/produtos/inteligencia">Inteligência Tributária</a></motion.p>
+            <motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" ><a href="/produtos/rendimentos">Rendimentos</a></motion.p>
+            <motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" ><a href="/produtos/shieldpay">Shield Pay</a></motion.p >
+            <motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" > <a href="/produtos/bank">Shield Bank</a> </motion.p>
+            <motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" ><a href="/produtos/split">Split de Pagamentos</a></motion.p>
           </div>
 
           <div className="flex flex-col gap-2 font-light max-md:flex max-md:flex-col max-sm:text-[0.9rem] ">
-            <motion.h1 className="font-light text-2xl ">SOBRE NÓS</motion.h1>
-            <motion.p>Quem Somos</motion.p>
-            <motion.p>Sala de Imprensa</motion.p>
-
-            <motion.p>Blog</motion.p>
-            <motion.p>Trabalhe Conosco</motion.p>
+            <motion.h1 className="font-light text-2xl ">Sobre Nós</motion.h1>
+            <a href="/"><motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" >Quem Somos</motion.p ></a>
+            <a href="/blog"><motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" >Blog</motion.p></a>
+            <a href="https://shieldbank.vagas.solides.com.br/" target="_blank"><motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" >Trabalhe Conosco</motion.p></a>
+            <a href="/acessar-conta"><motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" >Acessar Conta</motion.p></a>
+            <a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"  target="_blank" className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" > Seja Shield </a>
           </div>
           <div className=" flex flex-col gap-5 max-sm:items-center     ">
             <Image
@@ -47,12 +40,14 @@ export function Footer() {
               src={logoAppStore}
               alt=""
             />
-            <div className="flex gap-10 justify-center w-[15rem]    max-sm:gap-5 max-sm:w-[10rem]  ">
-              <FaInstagram size={25} />
-              <FaTiktok size={25} />
-              <FaYoutube size={25} />
-              <FaLinkedin size={25} />
-            </div>
+
+            <div className="flex gap-10 justify-center w-[15rem] max-sm:gap-5 max-sm:w-[10rem]">
+             <a href="https://www.instagram.com/shield_bank" target="_blank"><FaInstagram  className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" size={25}/></a>
+             <a href="https://www.tiktok.com/search?q=shield%20bank&t=1758038399624" target="_blank"><FaTiktok  className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" size={25}/></a>
+             <a href="https://www.youtube.com/@shield_bank" target="_blank" ><FaYoutube className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" size={25}/></a>
+             <a href="https://www.linkedin.com/company/shield-bank/posts/?feedView=all" target="_blank"><FaLinkedin  className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" size={25}/></a>
+           </div>
+
           </div>
         </div>
         <div
@@ -67,22 +62,22 @@ export function Footer() {
             <div className="flex max-sm:flex-col gap-20">
               <div className="">
                 <p>Whatsapp</p>
-                <a href="tel:11978802370">(11) 97880-2370 </a>
+                <a href="https://wa.me/5511978802370/"  target="_blank" className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]">(11) 97880-2370 </a>
               </div>
 
               <div>
                 <p>Todas as regiões </p>
                 <p>
-                  <a href="">0800 000 2651</a>
+                  <a className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]" href="">0800 000 2651</a>
                 </p>
               </div>
               <div>
                 <p>E-mail</p>
                 <p>
-                  <a
-                    href="mailto:atendimento@shieldbank.com.br
-
-"
+                  <a 
+                    href="mailto:atendimento@shieldbank.com.br"
+                    className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]"
+                    
                   >
                     atendimento@shieldbank.com.br
                   </a>
@@ -90,12 +85,7 @@ export function Footer() {
               </div>
             </div>
           </div>
-          {/* <div>
-            <motion.h1 className="font-light">SAC</motion.h1>
-          </div>
-          <div>
-            <motion.h1 className="font-light">OUVIDORIA</motion.h1>
-          </div> */}
+         
         </div>
         <div className=" max-sm:text-[0.9rem] col-start-1 col-end-4 row-start-3 row-end-3  ">
           <Image className="w-[8rem] " src={shieldbank} alt="" />
