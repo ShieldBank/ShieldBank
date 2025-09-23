@@ -98,8 +98,7 @@ export function Pos() {
               MÁQUINA DE CARTÃO
             </p>
 
-            <p className="font-light text-xl ">
-              {" "}
+            <span className="font-light text-xl ">
               <h2 className="text-3xl font-light mb-10 max-sm:mb-4">
                 Aumente suas <strong>vendas</strong> com a nossa máquina de
                 cartão!
@@ -109,7 +108,7 @@ export function Pos() {
                 antecipa seus recebíveis e ainda conta com soluções que
                 impulsionam o crescimento do seu negócio.
               </p>
-            </p>
+            </span>
             <div className="flex gap-2 mt-12 max-sm:flex-col">
               <p className="flex gap-2 text-[1rem] max-sm:text-[0.9rem]">
                 <FaCreditCard size={25} color="#CCAA76" />
