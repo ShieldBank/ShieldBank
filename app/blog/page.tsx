@@ -61,49 +61,47 @@ interface BlogArray {
       urlToImage: string;
     }
   ];
-  moneyDay: 
-    {
-      BTCBRL: {
-        ask: string;
-        bid: string;
-        code: string;
-        codein: string;
-        create_date: string;
-        high: string;
-        low: string;
-        name: string;
-        pctChange: string;
-        timestamp: string;
-        varBid: string;
-      };
-      EURBRL: {
-        ask: string;
-        bid: string;
-        code: string;
-        codein: string;
-        create_date: string;
-        high: string;
-        low: string;
-        name: string;
-        pctChange: string;
-        timestamp: string;
-        varBid: string;
-      };
-      USDBRL: {
-        ask: string;
-        bid: string;
-        code: string;
-        codein: string;
-        create_date: string;
-        high: string;
-        low: string;
-        name: string;
-        pctChange: string;
-        timestamp: string;
-        varBid: string;
-      };
-    }
-  ;
+  moneyDay: {
+    BTCBRL: {
+      ask: string;
+      bid: string;
+      code: string;
+      codein: string;
+      create_date: string;
+      high: string;
+      low: string;
+      name: string;
+      pctChange: string;
+      timestamp: string;
+      varBid: string;
+    };
+    EURBRL: {
+      ask: string;
+      bid: string;
+      code: string;
+      codein: string;
+      create_date: string;
+      high: string;
+      low: string;
+      name: string;
+      pctChange: string;
+      timestamp: string;
+      varBid: string;
+    };
+    USDBRL: {
+      ask: string;
+      bid: string;
+      code: string;
+      codein: string;
+      create_date: string;
+      high: string;
+      low: string;
+      name: string;
+      pctChange: string;
+      timestamp: string;
+      varBid: string;
+    };
+  };
 }
 [];
 
@@ -190,67 +188,65 @@ const PageBlog = () => {
       },
     ],
 
-    moneyDay: 
-      {
-        BTCBRL: {
-          ask: "",
-          bid: "",
-          code: "",
-          codein: "",
-          create_date: "",
-          high: "",
-          low: "",
-          name: "",
-          pctChange: "",
-          timestamp: "",
-          varBid: "",
-        },
-        EURBRL: {
-          ask: "",
-          bid: "",
-          code: "",
-          codein: "",
-          create_date: "",
-          high: "",
-          low: "",
-          name: "",
-          pctChange: "",
-          timestamp: "",
-          varBid: "",
-        },
-        USDBRL: {
-          ask: "",
-          bid: "",
-          code: "",
-          codein: "",
-          create_date: "",
-          high: "",
-          low: "",
-          name: "",
-          pctChange: "",
-          timestamp: "",
-          varBid: "",
-        },
+    moneyDay: {
+      BTCBRL: {
+        ask: "",
+        bid: "",
+        code: "",
+        codein: "",
+        create_date: "",
+        high: "",
+        low: "",
+        name: "",
+        pctChange: "",
+        timestamp: "",
+        varBid: "",
       },
-    
+      EURBRL: {
+        ask: "",
+        bid: "",
+        code: "",
+        codein: "",
+        create_date: "",
+        high: "",
+        low: "",
+        name: "",
+        pctChange: "",
+        timestamp: "",
+        varBid: "",
+      },
+      USDBRL: {
+        ask: "",
+        bid: "",
+        code: "",
+        codein: "",
+        create_date: "",
+        high: "",
+        low: "",
+        name: "",
+        pctChange: "",
+        timestamp: "",
+        varBid: "",
+      },
+    },
   });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [tech, b3, marketTrends, moneyDay] = await Promise.all([
-         fetchTechnologyNews(),
-         fetchB3News(),
-         fetchMarketTrendsNews(),
-         moneyCota(),
-       ]);
+        const [tech, b3, moneyDay] = await Promise.all([
+          fetchTechnologyNews(),
+          fetchB3News(),
+          fetchMarketTrendsNews(),
+          moneyCota(),
+        ]);
 
-      setHeadlines({
-      tech: tech || [],
-      b3: b3 || [],
-      moneyDay: moneyDay
-    });
+        setHeadlines({
+          tech: tech || [],
+          b3: b3 || [],
+          moneyDay: moneyDay || null,
+        });
       } catch (error) {
         console.error("Falha ao carregar os dados:", error);
       } finally {
