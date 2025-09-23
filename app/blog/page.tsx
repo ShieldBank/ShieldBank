@@ -32,32 +32,34 @@ import { Footer } from "../components/footer";
 interface BlogArray {
   b3: [
     {
-      author: string;
-      content: string;
-      description: string;
-      publishedAt: string;
-      source: {
-        id: number | null;
-        name: string;
-      };
+      id: number | string;
       title: string;
+      description: string;
+      content: string;
+      source: {
+        id: number | string;
+        name: string;
+        url:string;
+      };
       url: string;
-      urlToImage: string;
+      publishedAt: string;
+      image: string;
     }
   ];
   tech: [
     {
-      author: string;
-      content: string;
-      description: string;
-      publishedAt: string;
-      source: {
-        id: number | null;
-        name: string;
-      };
+      id: number | string;
       title: string;
+      description: string;
+      content: string;
+      source: {
+        id: number | string;
+        name: string;
+        url:string;
+      };
       url: string;
-      urlToImage: string;
+      publishedAt: string;
+      image: string;
     }
   ];
   moneyDay: {
@@ -271,9 +273,9 @@ const PageBlog = () => {
                   transition={{ duration: 1.0, ease: "easeOut" }}
                   className="relative w-full md:w-150 h-[200px] md:h-[300px] rounded-sm overflow-hidden shadow-lg hover:scale-99 transition-all order-1 md:order-2 hover:rounded-none"
                 >
-                  {headlines.tech[0]?.urlToImage ? (
+                  {headlines.tech[0]?.url ? (
                     <Image
-                      src={headlines.tech[0].urlToImage}
+                      src={headlines.tech[0].image}
                       alt={headlines.tech[0].title}
                       fill
                       unoptimized
@@ -300,7 +302,7 @@ const PageBlog = () => {
                 key={index}
                 title={item.title}
                 description={item.description}
-                image={item.urlToImage}
+                image={item.image}
                 date={formatarData(item.publishedAt)}
                 url={item.url}
               />
@@ -317,7 +319,7 @@ const PageBlog = () => {
                 key={index}
                 title={item.title}
                 description={item.description}
-                image={item.urlToImage}
+                image={item.image}
                 date={formatarData(item.publishedAt)}
                 url={item.url}
               />
