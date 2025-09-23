@@ -61,7 +61,7 @@ export default function ShieldBank() {
               variant={"outline"}
               className="mt-10 text-xl p-6 font-semibold max-sm:hidden bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
             >
-              <a href="/acessar-conta">Vem Ser Shield</a>
+              <a href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!" target="_blank">Vem Ser Shield</a>
             </Button>
           </div>
           <div className="flex  mt-5 w-[25rem]  h-[35rem]  max-sm:h-[30rem] max-sm:w-full max-sm:place-content-center  ">
@@ -92,7 +92,9 @@ export default function ShieldBank() {
               variant={"outline"}
               className="mt-10 text-xl p-6 font-semibold   max-sm:w-40  bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
             >
-              <a href="/acessar-conta">Vem Ser Shield</a>
+              <a 
+               href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
+               target="_blank">Vem Ser Shield</a>
             </Button>
           </div>
         </div>
@@ -105,7 +107,7 @@ export default function ShieldBank() {
               variant={"outline"}
               className="mt-10 text-xl p-6 font-semibold  bg-[#CCAA76] text-foreground hover:border-0 hover:text-foreground hover:bg-background "
             >
-              <a href="/acessar-conta">conheça nosso app</a>
+              <a href="/acessar-conta">Conheça Nosso App</a>
             </Button>
           </div>
           <div className="flex  w-[25rem] mb-30 max-sm:mb-0 h-[35rem]  max-sm:h-[25rem] max-sm:w-full max-sm:place-content-center max-sm:mt-0 ">
