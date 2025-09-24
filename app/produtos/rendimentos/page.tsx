@@ -65,9 +65,11 @@ export default function Investimentos() {
           <div className="max-sm:visible min-sm:hidden max-sm:flex max-sm:place-content-center">
             <Button
               variant={"default"}
-              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]   "
             >
-              <a href="/">Crie seu Plano de Rendimento</a>
+              <a href="https://investimentos-sigma.vercel.app/">
+                Crie seu Plano de Rendimento
+              </a>
             </Button>
           </div>
         </div>

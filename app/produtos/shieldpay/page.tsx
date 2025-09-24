@@ -81,7 +81,7 @@ export default function Inteligencia() {
             </Button>
           </div>
 
-          <div className=" z-1 text-black mb-20 max-sm:mb-0  w-[50%] max-sm:w-full max-sm:mt-10 flex justify-around ">
+          <div className=" z-1 text-black mb-20  max-sm:mb-0  w-[50%] max-sm:w-full max-sm:mt-10 flex justify-around ">
             <div className="flex   w-[80rem] mb-30 max-sm:mb-0 h-[60rem] max-sm:w-[20rem] max-sm:h-[35rem]   ">
               <VideoPlayer className="overflow-hidden  rounded-lg border mt-10 max-sm:mt-0   ">
                 <VideoPlayerContent
@@ -108,6 +108,19 @@ export default function Inteligencia() {
               </VideoPlayer>
             </div>
           </div>
+        </div>
+        <div className="max-sm:visible min-sm:hidden max-sm:flex max-sm:place-content-center max-sm:-mt-20">
+          <Button
+            variant={"default"}
+            className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  "
+          >
+            <a
+              href="https://wa.me/5511978802370/?text=Olá, Quero saber mais sobre as soluções de Pagamentos Shield Pay!"
+              target="_blank"
+            >
+              Conheça Shield Pay{" "}
+            </a>
+          </Button>
         </div>
         {/* <div className="flex text-start  border-[0.5px] w-[30rem] mt-2 mb-4 border-['##0c0b0b52'] opacity-90"></div> */}
       </div>

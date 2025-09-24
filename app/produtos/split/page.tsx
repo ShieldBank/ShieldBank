@@ -70,9 +70,12 @@ export default function Split() {
           <div className="max-sm:visible min-sm:hidden max-sm:flex max-sm:place-content-center">
             <Button
               variant={"default"}
-              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
+              className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]   "
             >
-              <a href="/">Crie seu Plano de Rendimento</a>
+              <a href="https://wa.me/5511978802370/?text=Olá, estou interessado sobre a Tecnologia Split de Pagamentos!">
+                {" "}
+                Quero automatizar meus repasses
+              </a>
             </Button>
           </div>
         </div>
