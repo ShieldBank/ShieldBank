@@ -12,7 +12,7 @@ import { Pos } from "./pos";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen ">
+    <div className="w-full h-screen overflow-x: auto ">
       <Header />
       <App />
       <Inteligencia />

@@ -128,6 +128,6 @@
     @apply border-border outline-ring/50 font-normal;
   }
   body {
-    @apply bg-background text-foreground h-screen w-screen;
+    @apply bg-background text-foreground h-screen w-full;
   }
 }
