@@ -97,7 +97,7 @@ export function Pos() {
           </div>
           <div className="flex justify-end absolute right-0  z-0 max-sm:right-[0.5rem] opacity-60 ">
             <Image
-              className="max-sm:opacity-60 max-sm:w-[20rem]"
+              className="max-sm:opacity-100 max-sm:w-[20rem]"
               src={shieldbackground}
               alt=""
             />
