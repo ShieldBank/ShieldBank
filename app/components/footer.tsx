@@ -8,7 +8,7 @@ import shieldbank from "../assets//shieldbank.png";
 export function Footer() {
   return (
     <>
-      <div className="w-full h-[90rem] grid grid-cols-3 grid-rows-3 max-md:grid-cols-1  p-20  max-sm:m-0 max-sm:p-10">
+      <div className="w-full max-sm:h-[90rem] h-[52rem] grid grid-cols-3 grid-rows-3 max-md:grid-cols-1  p-20  max-sm:m-0 max-sm:p-10">
         <div className=" flex justify-center max-sm:gap-12 max-sm:mt-50 gap-70 col-start-1 col-end-4 row-start-1 row-end-1 max-sm:flex-col-reverse  ">
           <div className="flex flex-col gap-2 font-light max-sm:text-[0.9rem] ">
             <motion.h1 className="font-light text-2xl">
@@ -111,7 +111,7 @@ export function Footer() {
         </div>
         <div
           id="contatos"
-          className=" flex max-sm:mt-60  justify-center gap-10 items-center  col-start-1 col-end-3 row-start-2 row-end-2 max-md:col-start-1 max-sm:items-start  max-sm:row-start-2 max-sm:row-end-2 "
+          className=" flex max-sm:mt-60 mt-20 justify-center gap-10 items-center  col-start-1 col-end-3 row-start-2 row-end-2 max-md:col-start-1 max-sm:items-start  max-sm:row-start-2 max-sm:row-end-2 "
         >
           <div className="  grid gap-2  max-sm:grid-cols-1">
             <motion.h1 className="font-light text-2xl">ATENDIMENTO</motion.h1>
@@ -155,7 +155,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className=" max-sm:text-[0.9rem] max-sm:mt-40  col-start-1 col-end-4 row-start-3 row-end-3  ">
+        <div className=" max-sm:text-[0.9rem] max-sm:mt-40  col-start-1 col-end-4 row-start-3 row-end-3 mt-5  ">
           <Image className="w-[8rem] " src={shieldbank} alt="" />
           <p>CNPJ: 29.774.053/0001-41 </p>
           <br />

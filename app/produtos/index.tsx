@@ -78,7 +78,7 @@ export function Produtos() {
       <div id="produtos" className="w-[100%] bg-amber-50  h-auto text-black  ">
         <div className="p-12 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8   ">
           <div className="row-start-1 place-items-center relative">
-            <h2 className="text-5xl font-light mt-2 max-sm:text-4xl max-sm:mt-1 max-sm:mb-20">
+            <h2 className="text-5xl font-light mt-2 max-sm:text-4xl max-sm:text-center    max-sm:mt-1 max-sm:mb-20">
               Nossos Produtos
             </h2>
 
