@@ -6,7 +6,7 @@ import { Button } from "../components/ui/button";
 export function App() {
   return (
     <>
-      <div className=" w-full  h-[75%] max-sm:h-[62%]  overflow-hidden flex  ">
+      <div className=" w-full  h-[75%] max-sm:h-[66%]  overflow-hidden flex  ">
         <div
           // initial={{ opacity: 0 }}
           // animate={{ opacity: 1 }}
@@ -17,7 +17,7 @@ export function App() {
           className="h-full flex items-center p-20 max-sm:p-5"
         >
           <div className="w-full mt-10 max-sm:mt-0 flex flex-col  items-center">
-            <p className="text-center mb-10 mt-25 max-sm:mt-10 max-sm:mb-2  max-sm:text-[0.8rem] ">
+            <p className="text-center mb-10 mt-25 max-sm:mt-35 max-sm:mb-2  max-sm:text-[0.8rem] ">
               Potencialize suas finanças: descubra quanto sua empresa pode
               <strong> economizar </strong>
               por mês com a <strong>ShieldBank</strong>
@@ -27,7 +27,7 @@ export function App() {
               <strong className="text-[#CCAA76]"> personalizada</strong> em
               inteligência financeira
             </h1>
-            <span className="text-center mt-10 flex gap-12 max-sm:gap-8">
+            <span className="text-center mt-10  flex gap-12 max-sm:gap-8">
               <Button
                 variant={"default"}
                 className="w-auto p-6 hover:bg-[#CCAA76] bg-transparent border border-amber-50 hover:border-0 hover:text-foreground text-2xl max-sm:text-[1rem] max-sm:w-30"
