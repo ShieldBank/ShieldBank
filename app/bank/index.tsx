@@ -25,8 +25,13 @@ export function Bank() {
               na palma da sua mão.{" "}
             </p>
           </div>
-          <div className="max-sm:w-[68rem] max-sm:-ml-[21rem] max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25  ">
-            <Image className="flex  " width={2000} src={mobile} alt="" />
+          <div className="  max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25  ">
+            <Image
+              className="flex h-auto  max-w-5xl"
+              width={2000}
+              src={mobile}
+              alt=""
+            />
           </div>
           <div className="flex items-center justify-center gap-10  mb-30 -mt-50 max-sm:-mt-25   max-sm:gap-0  ">
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3  ">
