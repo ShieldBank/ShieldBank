@@ -12,10 +12,10 @@ import shieldbackground from "../assets/shield-bank-servicos.svg";
 export function Pos() {
   return (
     <>
-      <div className=" w-full  h-auto  max-sm:h-[62%]  overflow-hidden flex  ">
+      <div className=" w-full  h-auto  max-sm:h-[62%]   overflow-x-hidden flex  ">
         <motion.div className="h-full grid grid-cols-2 place-content-center place-items-center p-20 max-sm:grid-cols-1   max-sm:p-0 w-[100%]">
           <div className=" max-sm:hidden ">
-            <div className="flex gap-10 w-full overflow-hidden">
+            <div className="flex gap-10 w-full ">
               <div className="ml-60">
                 <motion.div
                   variants={{
@@ -98,7 +98,6 @@ export function Pos() {
           <div className="flex justify-end absolute right-0  z-0 max-sm:right-[0.5rem] opacity-60 ">
             <Image
               className="max-sm:opacity-60 max-sm:w-[20rem]"
-              width={1000}
               src={shieldbackground}
               alt=""
             />
