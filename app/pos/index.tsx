@@ -95,9 +95,9 @@ export function Pos() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-end absolute ml-[70rem]  z-0 max-sm:ml-[10rem] opacity-60 ">
+          <div className="flex justify-end absolute right-0  z-0 max-sm:right-[0.5rem] opacity-60 ">
             <Image
-              className="max-sm:opacity-60"
+              className="max-sm:opacity-60 max-sm:w-[20rem]"
               width={1000}
               src={shieldbackground}
               alt=""
