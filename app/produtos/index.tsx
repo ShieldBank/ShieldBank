@@ -77,16 +77,15 @@ export function Produtos() {
     <>
       <div id="produtos" className="w-[100%] bg-amber-50  h-auto text-black  ">
         <div className="p-12 grid grid-rows-1 grid-cols-3 max-sm:grid-cols-1 max-sm:p-8   ">
-          <div className="row-start-1 place-items-center ">
-            {/* <p className=" text-[#CCAA76]  text-xl tracking-wider ">SERVIÇOS</p> */}
-            <h2 className="text-5xl font-light w- mt-2 max-sm:text-4xl max-sm:mt-1 max-sm:mb-20">
+          <div className="row-start-1 place-items-center relative">
+            <h2 className="text-5xl font-light mt-2 max-sm:text-4xl max-sm:mt-1 max-sm:mb-20">
               Nossos Produtos
             </h2>
+
             <Image
-              className="max-sm:w-150 max-sm:absolute max-sm:-mt-30 max-sm:mr-4 max-sm:z-0 max-sm:opacity-50"
-              width={500}
+              className=" absolute right-[-1] top-0  w-full max-w-[600px] h-auto max-sm:w-[410px] max-sm:opacity-50 "
               src={shield}
-              alt=""
+              alt="Shield background"
             />
           </div>
           <div className="items-baseline col-start-2 col-end-4 max-sm:col-start-1  max-sm:mt-10">
