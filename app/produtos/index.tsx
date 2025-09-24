@@ -83,7 +83,7 @@ export function Produtos() {
             </h2>
 
             <Image
-              className=" absolute  top-0  w-full max-w-[600px] h-auto max-sm:w-[410px] max-sm:opacity-50 "
+              className=" absolute right-1 top-0  w-full max-w-[600px] h-auto max-sm:w-[410px] max-sm:opacity-50 "
               src={shield}
               alt="Shield background"
             />
