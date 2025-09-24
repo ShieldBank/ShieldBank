@@ -48,10 +48,7 @@ export default function Investimentos() {
               variant={"default"}
               className="mt-10 text-xl p-6 font-semibold bg-background text-foreground hover:border-0 hover:bg-[#CCAA76]  max-sm:hidden "
             >
-              <a
-                href="https://wa.me/5511978802370/?text=Olá, Quero criar meu Plano de Rendimentos com a Shield!"
-                target="_blank"
-              >
+              <a href="https://investimentos-sigma.vercel.app/" target="_blank">
                 Crie seu Plano de Rendimento
               </a>
             </Button>
