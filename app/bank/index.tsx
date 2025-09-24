@@ -27,7 +27,7 @@ export function Bank() {
           </div>
           <div className="  max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25  ">
             <Image
-              className="flex h-auto  max-w-5xl"
+              className="flex h-auto  max-sm:max-w-5xl"
               width={2000}
               src={mobile}
               alt=""
