@@ -25,7 +25,7 @@ export function Bank() {
               na palma da sua mão.{" "}
             </p>
           </div>
-          <div className="  max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25  ">
+          <div className="  max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25 overflow-x-hidden ">
             <Image
               className="flex h-auto  max-sm:max-w-5xl"
               width={2000}
@@ -36,20 +36,20 @@ export function Bank() {
           <div className="flex items-center justify-center gap-10  mb-30 -mt-50 max-sm:-mt-25   max-sm:gap-0  ">
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3  ">
               <FaCreditCard size={25} />
-              <p className="text-xl text-center font-light max-sm:text-[1rem]">
+              <p className="text-xl text-center font-light max-sm:text-[0.9rem]">
                 Cartão de Débito
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[25rem] gap-3  ">
               <FaMobileAlt size={25} />
-              <p className="text-xl text-center font-light max-sm:text-[1rem] ">
+              <p className="text-xl text-center font-light max-sm:text-[0.9rem] ">
                 {" "}
                 Conta Completa: Pagamentos, Recebimentos, Pix e Mais
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3 ">
               <IoStatsChart size={25} />
-              <p className="text-xl text-center font-light max-sm:text-[1rem]">
+              <p className="text-xl text-center font-light max-sm:text-[0.9rem]">
                 Plataforma de investimentos
               </p>{" "}
             </div>
