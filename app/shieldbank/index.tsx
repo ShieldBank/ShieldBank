@@ -99,7 +99,7 @@ export function Content() {
         <motion.div className=" ">
           <div className="text-black grid grid-cols-2   place-content-center place-items-center  max-sm:place-self-end  max-sm:px-0 px-30   ">
             <div
-              className="flex flex-col  p-16 font-normal gap-1 max-sm:p-5 max-sm:mt-20
+              className="flex flex-col  p-16 font-normal gap-1 max-sm:p-1.5 max-sm:mt-20
             "
             >
               <div className="mb-20">
@@ -164,7 +164,8 @@ export function Content() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center  w-[25rem] mb-30 h-[40rem] max-sm:w-[12rem] max-sm:h-[20rem]  max-sm:-mb-10  ">
+
+            <div className="flex justify-center  w-[25rem] mb-30 h-[40rem] max-sm:w-full max-sm:h-[20rem]  max-sm:-mb-10 p-1.5 ">
               <VideoPlayer className="overflow-hidden rounded-lg border mt-10 max-sm:mt-0  ">
                 <VideoPlayerContent
                   crossOrigin=""
