@@ -139,7 +139,6 @@ const PageBlog = () => {
           moneyDay: moneyDay || {},
         });
       } catch (error) {
-        console.error("Falha ao carregar os dados:", error);
       } finally {
         setLoading(false);
       }
@@ -215,6 +214,14 @@ const PageBlog = () => {
   );
 };
 
+const homeNumberNews = Math.round( Math.random() * 10);
+
+const startNumberCards = Math.round( Math.random() * 7);
+const endNumberCards = startNumberCards + 3;
+
+const TwostartNumberCards = Math.round( Math.random() * 7);
+const TwoendNumberCards = TwostartNumberCards + 3; 
+
   return (
     <>
       <Header />
@@ -236,7 +243,7 @@ const PageBlog = () => {
           </motion.div>
 
           <div className="max-w-[414] md:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[40px] items-center px-4">
-            {headlines.tech?.[0] && (
+            {headlines.tech?.[homeNumberNews] && (
               <>
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
@@ -249,17 +256,17 @@ const PageBlog = () => {
                       | Últimas Notícias
                     </span>
                     <span className="text-gray-400 font-light">
-                      {formatarData(headlines.tech[0]?.publishedAt)}
+                      {formatarData(headlines.tech[homeNumberNews]?.publishedAt)}
                     </span>
                   </div>
                   <h2 className="text-4xl md:text-4xl font-semibold md:font-light">
-                    {headlines.tech[0]?.title}
+                    {headlines.tech[homeNumberNews]?.title}
                   </h2>
                   <p className=" text-gray-300 text-md font-semibold  md:font-normal md:text-lg line-clamp-2 md:line-clamp-3 break-words">
-                    {headlines.tech[0]?.description}
+                    {headlines.tech[homeNumberNews]?.description}
                   </p>
                   <motion.a
-                    href={headlines.tech[0]?.url}
+                    href={headlines.tech[homeNumberNews]?.url}
                     target="_blank"
                     className="inline-block text-md md:text-[20px] text-white font-semibold py-2 hover:text-[#CCAA76] border-b border-white pb-1 hover:border-[#CCAA76]"
                   >
@@ -275,8 +282,8 @@ const PageBlog = () => {
                 >
                   {headlines.tech[0]?.url ? (
                     <Image
-                      src={headlines.tech[0].image}
-                      alt={headlines.tech[0].title}
+                      src={headlines.tech[homeNumberNews].image}
+                      alt={headlines.tech[homeNumberNews].title}
                       fill
                       unoptimized
                       className="object-cover brightness-105 hover:brightness-90 "
@@ -297,7 +304,7 @@ const PageBlog = () => {
           </div>
 
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center">
-            {headlines.b3?.slice(0, 3).map((item, index) => (
+            {headlines.b3?.slice(startNumberCards, endNumberCards).map((item, index) => (
               <NewsCard
                 key={index}
                 title={item.title}
@@ -314,7 +321,7 @@ const PageBlog = () => {
 
         <div className="bg-background text-white">
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center">
-            {headlines.tech?.slice(1, 4).map((item, index) => (
+            {headlines.tech?.slice(TwostartNumberCards, TwoendNumberCards).map((item, index) => (
               <NewsCard
                 key={index}
                 title={item.title}

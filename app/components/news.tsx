@@ -1,42 +1,37 @@
 import axios from "axios";
 
-// const token = '771874c73ae34339a1c902b70d93c978';
-// const token = "2e43869325e04a5cbc4d8cf9b8188684";
-// const token = "72340279fa7d4d229ccedbf7be3fb190";
-// const urlBase = "https://newsapi.org/v2/everything";
-// const language = "pt";
-const token = "d1c806b7b0d22cead5f5b432e8156e36"
+// const token = "d1c806b7b0d22cead5f5b432e8156e36"
+const token = "b014ea9f6b56d5b440f1db52dd5c48f5";
+
+// const token = "f658eda930684da2b70b41255d121054"
 
 const urlBase = "https://gnews.io/api/v4/search";
 const lang = "pt";
 const matter = "publishedAt";
+const pageNews = Math.floor(Math.random() * 4) + 1;;
 
 // function to fetch news based on a query
-const news = async (query: string) => {
-  const url = `${urlBase}?q=${query}&lang=${lang}&sortBy=${matter}&apikey=${token}`;
+const news = async (query: string, page: number = pageNews, max: number = 100) => {
+  const url = `${urlBase}?q=${query}&lang=${lang}&sortBy=${matter}&max=${max}&page=${page}&apikey=${token}`;
 
   try {
     const response = await axios.get(url);
-    console.log("Passei aqui ", response);
     return response.data.articles;
   } catch (error: any) {
     console.log(
-      "Erro: ",
-      error.response.data,
-      error.response.status,
+      "Erro: ", 
+      error.response?.data,
+      error.response?.status,
       error.message
     );
   }
-}; // export functions to fetch specific categories of news
+};
+ // export functions to fetch specific categories of news
 
 export const fetchTechnologyNews = () => {
-  return news("Tecnologia Financeira");
+  return news("tecnologia");
 };
 
 export const fetchB3News = () => {
-  return news("B3 bolsa de valores");
-};
-
-export const fetchMarketTrendsNews = () => {
-  return news("tendências de mercado financeiro");
+  return news("b3");
 };

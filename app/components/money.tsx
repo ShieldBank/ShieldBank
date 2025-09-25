@@ -8,7 +8,6 @@ export const moneyCota = async () => {
 
   try {
     const response = await axios.get(url);
-    console.log("Cotação Autal", response.data);
     return response.data;
   } catch (error: any) {
     console.log(
