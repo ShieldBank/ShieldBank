@@ -1,10 +1,11 @@
 import axios from "axios";
 
-const token = "d1c806b7b0d22cead5f5b432e8156e36"
+// const token = "d1c806b7b0d22cead5f5b432e8156e36"
 // const token = "b014ea9f6b56d5b440f1db52dd5c48f5";
-
 // const token = "f658eda930684da2b70b41255d121054"
 
+
+const token = "02e0e3ec88ec61b388d896e397c05145"
 const urlBase = "https://gnews.io/api/v4/search";
 const lang = "pt";
 const matter = "publishedAt";
