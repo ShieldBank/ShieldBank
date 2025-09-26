@@ -335,26 +335,26 @@ const TwoendNumberCards = TwostartNumberCards + 3;
         </div>
 
         {/* Carousel - Discover Our Content */}
-        <div className="max-w-[414] md:max-w-7xl mx-auto items-center px-5 mt-20">
+        <div className="max-w-full md:max-w-7xl mx-auto items-center px-5 mt-20 ">
           <h2 className="text-3xl font-semibold text-[#CCAA76]  md:text-3xl md:font-light max-w-7xl mx-auto mb-10">
             | Nossos Conteúdos
           </h2>
 
           <motion.div
-            className="max-w-[414] md:max-w-7xl mx-auto"
+            className="max-w-full md:max-w-7xl mx-auto"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <Carousel
-              className="max-w-[300] md:max-w-full  mx-auto  "
+              className="relative max-w-full md:max-w-full mx-auto"
               opts={{
                 loop: true,
               }}
             >
-              <CarouselContent className="max-w-[414] mx-auto md:max-w-7xl r">
-                <CarouselItem className=" basis-1/1 sm:basis-1/1 lg:basis-1/4">
-                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none items-cente">
+              <CarouselContent className="max-w-full mx-auto md:max-w-full">
+                <CarouselItem className="basis-full sm:basis-1/1 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
                     <a
                       href="https://www.instagram.com/shield_bank"
                       target="_blank"
@@ -362,7 +362,7 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                       <Image
                         src={blogInstagram}
                         alt="Finanças"
-                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-full md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -370,8 +370,8 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                     </div>
                   </Card>
                 </CarouselItem>
-                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
-                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                <CarouselItem className="basis-full sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
                     <a
                       href="https://www.linkedin.com/company/shield-bank/posts/?feedView=all"
                       target="_blank"
@@ -379,7 +379,7 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                       <Image
                         src={blogLinkedin}
                         alt="Finanças"
-                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-full md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -388,8 +388,8 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                   </Card>
                 </CarouselItem>
 
-                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
-                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                <CarouselItem className="basis-full sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
                     <a
                       href="https://www.tiktok.com/search?q=shield%20bank&t=1758038399624"
                       target="_blank"
@@ -397,7 +397,7 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                       <Image
                         src={blogTiktok}
                         alt="Finanças"
-                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-full md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -406,8 +406,8 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                   </Card>
                 </CarouselItem>
 
-                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
-                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                <CarouselItem className="basis-full sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
                     <a
                       href="https://www.youtube.com/@shield_bank"
                       target="_blank"
@@ -415,7 +415,7 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                       <Image
                         src={blogYoutube}
                         alt="Finanças"
-                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-full md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -424,8 +424,8 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                   </Card>
                 </CarouselItem>
 
-                <CarouselItem className=" basis-1/1 sm:basis-1/2 lg:basis-1/4">
-                  <Card className="relative overflow-hidden rounded-sm shadow-lg bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
+                <CarouselItem className="basis-full sm:basis-1/2 lg:basis-1/4">
+                  <Card className="relative overflow-hidden rounded-sm  bg-background h-90 border-0 transition-all duration-300 hover:rounded-none">
                     <a
                       href="https://efici-ncia-tribut-ria.vercel.app"
                       target="_blank"
@@ -433,7 +433,7 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                       <Image
                         src={blogInteligenciaTributaria}
                         alt="Finanças"
-                        className="absolute inset-0 w-[300] md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
+                        className="absolute inset-0 w-full md:w-full md:h-full object-cover transition-all duration-300 hover:brightness-50"
                       />
                     </a>
                     <div className="absolute top-2 left-2 text-sm font-semibold text-white flex gap-2 drop-shadow-md">
@@ -444,8 +444,8 @@ const TwoendNumberCards = TwostartNumberCards + 3;
                 </CarouselItem>
               </CarouselContent>
 
-              <CarouselPrevious className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background" />
-              <CarouselNext className="text-[#CCAA76] border-[#CCAA76] bg-background hover:text-white hover:border-white hover:bg-background" />
+              <CarouselPrevious className="absolute top-2/2 md:top-1/2 -translate-y-1/2 z-50 text-[#CCAA76] border border-[#CCAA76] bg-background hover:text-white hover:border-white left-[38%] md:-left-12 "  />
+              <CarouselNext className="absolute top-2/2 md:top-1/2 -translate-y-1/2 z-50 text-[#CCAA76] border border-[#CCAA76] bg-background hover:text-white hover:border-white right-[38%] md:-right-12"  />
             </Carousel>
           </motion.div>
         </div>
