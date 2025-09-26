@@ -54,7 +54,13 @@ export function Header() {
                 >
                   Shield Pay
                 </NavigationMenuLink>
-
+                <NavigationMenuLink
+                  href="https://investimentos-sigma.vercel.app/"
+                  target="_blank"
+                  className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
+                >
+                  Rendimento
+                </NavigationMenuLink>
                 <NavigationMenuLink
                   href="/blog"
                   className="group-hover:text-gray-400 hover:!text-white text-white transition-colors"
@@ -112,6 +118,11 @@ export function Header() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <a href="/produtos/shieldpay">Shield Pay</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <a href="https://investimentos-sigma.vercel.app/">
+                    Rendimento
+                  </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <a href="/blog">Blog</a>
