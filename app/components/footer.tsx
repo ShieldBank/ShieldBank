@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-
 import logoAppStore from "../assets/apple.svg";
 import logoGooglePLay from "../assets/google-play.svg";
 import { FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
@@ -11,9 +10,7 @@ export function Footer() {
       <div className="w-full max-sm:h-[90rem] h-[52rem] grid grid-cols-3 grid-rows-3 max-md:grid-cols-1  p-20  max-sm:m-0 max-sm:p-10">
         <div className=" flex justify-center max-sm:gap-12 max-sm:mt-50 gap-70 col-start-1 col-end-4 row-start-1 row-end-1 max-sm:flex-col-reverse  ">
           <div className="flex flex-col gap-2 font-light max-sm:text-[0.9rem] ">
-            <motion.h1 className="font-light text-2xl">
-              NOSSOS PRODUTOS
-            </motion.h1>
+            <h1 className="font-light text-2xl">NOSSOS PRODUTOS</h1>
             <motion.p className="transition-transform duration-200 hover:scale-125 hover:text-[#CCAA76]">
               <a href="/produtos/inteligencia">Inteligência Tributária</a>
             </motion.p>

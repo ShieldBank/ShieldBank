@@ -40,6 +40,12 @@ export function Header() {
                 >
                   Quem Somos
                 </NavigationMenuLink>
+                <NavigationMenuLink
+                  href="/produtos/representantes"
+                  className="group-hover:text-gray-400 hover:!text-white text-white transition-colors   "
+                >
+                  Representantes
+                </NavigationMenuLink>
 
                 <NavigationMenuLink
                   href="/produtos/bank"
