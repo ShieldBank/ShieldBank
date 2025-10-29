@@ -120,6 +120,9 @@ export function Header() {
                   <a href="/">Quem Somos</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
+                  <a href="/produtos/representantes">Representantes</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
                   <a href="/produtos/bank">Shield Bank</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
