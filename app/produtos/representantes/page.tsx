@@ -663,33 +663,33 @@ export default function Representantes() {
           {repe &&
             repe.map((e) => (
               <>
-                <Table className="mt-10">
+                <Table className="mt-10 max-sm:w-full ">
                   <TableCaption className="mt-10">
                     Parceiros ShieldBank @2025
                   </TableCaption>
-
+                  49215
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="w-[100px] text-2xl text-[#000000] font-normal">
+                      <TableHead className="w-[100px] max-sm:text-[1.2rem] text-2xl text-[#000000] font-normal">
                         Representante
                       </TableHead>
-                      <TableHead className="w-[100px] text-2xl text-[#000000] font-normal">
+                      <TableHead className="w-[100px] max-sm:text-[1.2rem] text-2xl text-[#000000] font-normal">
                         Marketplace
                       </TableHead>
-                      <TableHead className="w-[100px] text-2xl text-[#000000] font-normal">
+                      <TableHead className="w-[100px] max-sm:text-[1.2rem] text-2xl text-[#000000] font-normal">
                         Status
                       </TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     <TableRow key={e.id}>
-                      <TableCell className=" text-[1rem] text-[#000000]">
+                      <TableCell className=" text-[0.9rem] text-[#000000]">
                         {e.Representante}
                       </TableCell>
-                      <TableCell className=" text-[1rem] text-[#000000]">
+                      <TableCell className=" text-[0.9rem] text-[#000000]">
                         {e.Marketplace}
                       </TableCell>
-                      <TableCell className=" text-[1rem] text-[#000000]">
+                      <TableCell className=" text-[0.9rem] text-[#000000]">
                         Ativo
                       </TableCell>
                     </TableRow>
@@ -699,6 +699,7 @@ export default function Representantes() {
             ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
