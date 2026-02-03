@@ -66,15 +66,20 @@ export default function ShieldBank() {
               </a>
             </Button>
           </div>
-          <div className="flex mt-5 w-[40rem] h-[25rem] max-sm:h-[10rem] max-sm:w-full justify-center">
-            <iframe
-              className="rounded-lg w-full h-full"
-              src="https://www.youtube.com/embed/lXILLRUS7Rw?autoplay=1&mute=1&loop=1&playlist=lXILLRUS7Rw&controls=0&modestbranding=1"
-              title="Shield Video"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            />
-          </div>
+         <div className="mt-5 w-full max-w-[40rem] mx-auto px-4 sm:px-0">
+  <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg">
+    <iframe
+      className="absolute inset-0 w-full h-full"
+      src="https://www.youtube.com/embed/lXILLRUS7Rw?autoplay=0&controls=1"
+      title="Shield Video"
+      frameBorder="0"
+      allow="encrypted-media"
+      allowFullScreen
+    />
+  </div>
+</div>
+
+
 
           <div className="max-sm:flex max-sm:place-content-center max-sm:place-items-center max-sm:visible min-sm:hidden">
             <Button

@@ -640,70 +640,112 @@ export default function Representantes() {
   }, [data]);
 
   return (
-    <>
-      <Header />
-      <div className="w-full min-h-screen bg-amber-50 grid place-items-center px-4">
-  <div className="w-[60%] z-1 max-sm:w-full max-sm:p-4 max-sm:mt-0">
-    <h1 className="tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start max-sm:text-5xl max-sm:text-center">
-      Representantes <br />
-      <strong className="text-[#CCAA76]">Shield Bank</strong>
-    </h1>
+  <>
+    <Header />
 
-    <p className="mt-10 text-xl text-black font-light tracking-wider leading-[1.3] max-sm:text-base max-sm:text-center max-sm:mt-6">
-      Insira o código exclusivo fornecido pelo parceiro no campo abaixo.
-      Nossa plataforma verificará instantaneamente a validade da parceria
-      e exibirá seu status atual.
-    </p>
+    <div className="w-full min-h-screen bg-amber-50 px-4 py-20 overflow-x-hidden">
+      <div className="w-full max-w-5xl mx-auto">
 
-    <input
-      className="border border-slate-950 text-[#000000] w-full p-3 rounded-xl mt-10 max-sm:mt-6"
-      placeholder="Insira o id do parceiro"
-      onChange={(e) => setData(e.target.value)}
-      value={data}
-    />
+        <h1 className="tracking-[-0.02em] text-black leading-[1.1] font-light text-7xl max-sm:text-4xl text-center sm:text-left">
+          Representantes <br />
+          <strong className="text-[#CCAA76]">Shield Bank</strong>
+        </h1>
 
-    {repe &&
-      repe.map((e) => (
-        <div className="mt-10 overflow-x-auto">
-          <Table className="min-w-[600px] max-sm:min-w-full">
-            <TableCaption className="mt-4 text-sm">
-              Parceiros ShieldBank @2025
-            </TableCaption>
+        <p className="mt-8 text-xl max-sm:text-base text-black font-light tracking-wide leading-relaxed text-center sm:text-left">
+          Insira o código exclusivo fornecido pelo parceiro no campo abaixo.
+          Nossa plataforma verificará instantaneamente a validade da parceria
+          e exibirá seu status atual.
+        </p>
 
-            <TableHeader>
-              <TableRow>
-                <TableHead className="text-xl max-sm:text-base text-[#000000] font-normal">
-                  Representante
-                </TableHead>
-                <TableHead className="text-xl max-sm:text-base text-[#000000] font-normal">
-                  Marketplace
-                </TableHead>
-                <TableHead className="text-xl max-sm:text-base text-[#000000] font-normal">
-                  Status
-                </TableHead>
-              </TableRow>
-            </TableHeader>
+        <input
+          className="border border-slate-950 text-black w-full p-4 rounded-xl mt-8 focus:outline-none focus:ring-1 focus:ring-[#CCAA76]"
+          placeholder="Insira o ID do parceiro"
+          onChange={(e) => setData(e.target.value)}
+          value={data}
+        />
 
-            <TableBody>
-              <TableRow key={e.id}>
-                <TableCell className="text-sm text-[#000000]">
-                  {e.Representante}
-                </TableCell>
-                <TableCell className="text-sm text-[#000000]">
-                  {e.Marketplace}
-                </TableCell>
-                <TableCell className="text-sm text-[#000000]">
-                  Ativo
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </div>
-      ))}
-  </div>
+        {repe && repe.length > 0 && (
+          <>
+            <div className="hidden sm:block mt-12 overflow-x-auto">
+              <Table className="w-full">
+                <TableCaption className="mt-4 text-sm text-gray-600">
+                  Parceiros ShieldBank © 2025
+                </TableCaption>
+
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="text-lg text-black font-normal">
+                      Representante
+                    </TableHead>
+                    <TableHead className="text-lg text-black font-normal">
+                      Marketplace
+                    </TableHead>
+                    <TableHead className="text-lg text-black font-normal">
+                      Status
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+
+                <TableBody>
+                  {repe.map((e) => (
+                    <TableRow key={e.id}>
+                      <TableCell className="text-black">
+                        {e.Representante}
+                      </TableCell>
+                      <TableCell className="text-black">
+                        {e.Marketplace}
+                      </TableCell>
+                      <TableCell className="text-green-600 font-medium">
+                        Ativo
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+
+            <div className="sm:hidden mt-10 space-y-4">
+              {repe.map((e) => (
+                <div
+                  key={e.id}
+                  className="bg-white rounded-2xl p-5 shadow-md border border-gray-200"
+                >
+                  <div className="mb-3">
+                    <span className="text-xs text-gray-500 uppercase">
+                      Representante
+                    </span>
+                    <p className="text-black font-medium">
+                      {e.Representante}
+                    </p>
+                  </div>
+
+                  <div className="mb-3">
+                    <span className="text-xs text-gray-500 uppercase">
+                      Marketplace
+                    </span>
+                    <p className="text-black font-medium">
+                      {e.Marketplace}
+                    </p>
+                  </div>
+
+                  <div>
+                    <span className="text-xs text-gray-500 uppercase">
+                      Status
+                    </span>
+                    <p className="text-green-600 font-semibold">
+                      Ativo
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </div>
+    </div>
 
-      <Footer />
-    </>
-  );
+    <Footer />
+  </>
+);
+
 }
