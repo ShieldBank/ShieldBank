@@ -643,7 +643,7 @@ export default function Representantes() {
   <>
     <Header />
 
-    <div className="w-full min-h-screen bg-amber-50 px-4 py-20 overflow-x-hidden">
+    <div className="w-full min-h-screen bg-amber-50 px-4 pt-32 pb-12 overflow-x-hidden">
       <div className="w-full max-w-5xl mx-auto">
 
         <h1 className="tracking-[-0.02em] text-black leading-[1.1] font-light text-7xl max-sm:text-4xl text-center sm:text-left">
