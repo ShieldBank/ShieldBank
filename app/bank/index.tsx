@@ -58,10 +58,10 @@ export function Bank() {
             <Button
               asChild
               variant={"default"}
-              className="w-60 bg-[#001124] text-amber-50 border-1 p-6 max-sm:p-4.5 hover:bg-[#CCAA76]  hover:border-0 hover:text-[#fdfdfd] max-sm:w-40 "
+              className="w-60 bg-[#001124] text-amber-50 border-1 p-6 max-sm:p-4.5 hover:bg-[#CCAA76]  hover:border-0 hover:text-[#fdfdfd] max-sm:w-80 "
             >
               <a
-                className="text-[1.2rem] max-sm:text-xl"
+                className="text-[1.2rem] max-sm:text-sm"
                 href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
                 target="_blank"
               >
