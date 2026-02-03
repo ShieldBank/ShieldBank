@@ -26,16 +26,15 @@ export default function ShieldBank() {
     <>
       <Header />
       <div className=" w-full bg-amber-50 h-auto grid place-items-center max-sm:overflow-hidden   ">
-        <div className="w-[60%] z-1 max-sm:w-full  max-sm:p-5 max-sm:-mt-20">
-          <p className="mt-50  font-semibold text-[#CCAA76]  text-start text-xl tracking-wider   mb-5  ">
+        <div className="w-[67%] z-1 max-sm:w-full  max-sm:p-5 max-sm:-mt-20">
+          <p className="mt-50  font-semibold text-[#CCAA76]  text-start text-xl tracking-wider mb-2  ">
             SHIELD BANK
           </p>
-          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start max-sm:text-7xl">
-            Shield Bank: <br />
-            Uma nova forma de ser
+          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-6xl text-start max-sm:text-7xl">
+            Uma nova forma <br /> de ser
             <strong className="text-[#CCAA76]"> banco</strong>
           </h1>
-          <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1]">
+          <p className=" mt-10 max-w-2xl text-xl text-black font-light tracking-wider">
             Organizamos sua vida financeira com um sistema integrado, que
             conecta entradas, repasses e saídas, tudo sob o seu controle.
           </p>
@@ -45,7 +44,7 @@ export default function ShieldBank() {
         </div>
 
         <div className=" z-1 text-black w-[70%] max-sm:flex-col max-sm:w-full flex justify-around mt-10">
-          <div className="w-[30%]  max-sm:w-[100%] max-sm:p-5 text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
+          <div className="w-[30%]  max-sm:w-[100%] max-sm:p-5 text-base text-start font-light py-20 tracking-wider">
             <p className="font-light">
               A Shield Bank nasceu para transformar a forma como empresas e
               pessoas se relacionam com o mercado financeiro. Mais do que
@@ -67,28 +66,16 @@ export default function ShieldBank() {
               </a>
             </Button>
           </div>
-          <div className="flex  mt-5 w-[25rem]  h-[35rem]  max-sm:h-[30rem] max-sm:w-full max-sm:place-content-center  ">
-            <VideoPlayer className="overflow-hidden  rounded-lg border mt-10 max-sm:mt-0 max-sm:w-[20rem]   ">
-              <VideoPlayerContent
-                crossOrigin=""
-                muted
-                preload="auto"
-                autoPlay
-                slot="media"
-                src="/Shield_vertical_institucional.mp4"
-              />
-              <VideoPlayerControlBar>
-                <VideoPlayerPlayButton />
-
-                <VideoPlayerSeekBackwardButton />
-                <VideoPlayerSeekForwardButton />
-                <VideoPlayerTimeRange />
-                <VideoPlayerTimeDisplay showDuration />
-                <VideoPlayerMuteButton />
-                <VideoPlayerVolumeRange />
-              </VideoPlayerControlBar>
-            </VideoPlayer>
+          <div className="flex mt-5 w-[40rem] h-[25rem] max-sm:h-[10rem] max-sm:w-full justify-center">
+            <iframe
+              className="rounded-lg w-full h-full"
+              src="https://www.youtube.com/embed/lXILLRUS7Rw?autoplay=1&mute=1&loop=1&playlist=lXILLRUS7Rw&controls=0&modestbranding=1"
+              title="Shield Video"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
           </div>
+
           <div className="max-sm:flex max-sm:place-content-center max-sm:place-items-center max-sm:visible min-sm:hidden">
             <Button
               asChild
@@ -115,7 +102,7 @@ export default function ShieldBank() {
               <a href="/acessar-conta">Conheça Nosso App</a>
             </Button>
           </div>
-          <div className="flex  w-[25rem] mb-30 max-sm:mb-0 h-[35rem]  max-sm:h-[25rem] max-sm:w-full max-sm:place-content-center max-sm:mt-0 ">
+          <div className="flex  w-[25rem] mb-30 max-sm:mb-0 h-[30rem]  max-sm:h-[25rem] max-sm:w-full max-sm:place-content-center max-sm:mt-0 ">
             <VideoPlayer className="overflow-hidden  rounded-lg border mt-10  max-sm:-mt-10 max-sm:w-70 ">
               <VideoPlayerContent
                 crossOrigin=""
@@ -138,8 +125,8 @@ export default function ShieldBank() {
             </VideoPlayer>
           </div>
 
-          <div className="w-[30%] max-sm:w-full text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
-            <p className="font-light">
+          <div className="w-[30%] max-sm:w-full text-base leading-[1.6] text-start font-light py-20 tracking-wider">
+            <p className="font-light mt-15">
               Nosso propósito é ser um parceiro de confiança no crescimento do
               seu negócio, ajudando você a ganhar tempo, reduzir custos e
               aproveitar cada oportunidade de forma inteligente.

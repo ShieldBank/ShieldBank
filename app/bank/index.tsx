@@ -44,13 +44,13 @@ export function Bank() {
               <FaMobileAlt size={25} />
               <p className="text-xl text-center font-light max-sm:text-[0.9rem] ">
                 {" "}
-                Conta Completa: Pagamentos, Recebimentos, Pix e Mais
+                Conta Completa
               </p>
             </div>
             <div className=" flex flex-col items-center justify-center w-[15rem] gap-3 ">
               <IoStatsChart size={25} />
               <p className="text-xl text-center font-light max-sm:text-[0.9rem]">
-                Plataforma de investimentos
+                Investimentos
               </p>{" "}
             </div>
           </div>
@@ -61,11 +61,11 @@ export function Bank() {
               className="w-60 bg-[#001124] text-amber-50 border-1 p-6 max-sm:p-4.5 hover:bg-[#CCAA76]  hover:border-0 hover:text-[#fdfdfd] max-sm:w-40 "
             >
               <a
-                className="text-[1.4rem] max-sm:text-xl"
+                className="text-[1.2rem] max-sm:text-xl"
                 href="https://wa.me/5511978802370/?text=Olá, Quero abrir minha conta Shield!"
                 target="_blank"
               >
-                Seja Shield
+                Conheça nossos produtos
               </a>
             </Button>
           </div>
