@@ -24,11 +24,10 @@ export default function Inteligencia() {
       <Header />
       <div className=" w-full max-sm:p-10 max-sm:overflow-hidden bg-amber-50 h-auto grid place-items-center   ">
         <div className="w-[60%] z-1  max-sm:w-full max-sm:-mt-25">
-          <p className="mt-50  font-semibold text-[#CCAA72]   text-start text-xl tracking-wider  mb-5  ">
+          <p className="mt-50  font-semibold text-[#CCAA72]   text-start text-xl tracking-wider  mb-2  ">
             SHIELD PAY
           </p>
-          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light  text-7xl text-start max-sm:text-5xl ">
-            Shield Pay: <br />
+          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light  text-6xl text-start max-sm:text-5xl ">
             Transforme <strong className="text-[#CCAA72]">
               pagamentos
             </strong>{" "}
@@ -36,7 +35,7 @@ export default function Inteligencia() {
             <strong className="text-[#CCAA72]">simplicidade </strong>
             financeira
           </h1>
-          <p className=" mt-10 text-2xl text-black font-light tracking-wider leading-[1.1] max-sm:text-xl">
+          <p className="max-w-2xl mt-10 text-xl text-black font-light tracking-wider leading-[1.1] max-sm:text-xl">
             Tecnologia que valida a contraparte, protege seus recursos e libera
             o pagamento apenas quando tudo estiver correto. Sem burocracia, com
             total transparência e controle.
@@ -46,8 +45,8 @@ export default function Inteligencia() {
           </div>
         </div>
 
-        <div className=" z-1 text-black mb-0 w-[60%] flex justify-around mt-0  max-sm:flex-col-reverse max-sm:w-full">
-          <div className="w-[30%] max-sm:w-full  text-xl leading-[1.6] text-start font-light py-20 tracking-wider">
+        <div className=" z-1 text-black mb-0 w-[67%] flex justify-around mt-10  max-sm:flex-col-reverse max-sm:w-full">
+          <div className="w-[30%] max-sm:w-full  text-base text-start font-light py-10 tracking-wider">
             <p className="font-light">
               A Shield Pay nasceu para simplificar a forma como empresas recebem
               e processam pagamentos. Com maquininhas modernas e um sistema
@@ -82,7 +81,7 @@ export default function Inteligencia() {
           </div>
 
           <div className=" z-1 text-black mb-20  max-sm:mb-0  w-[50%] max-sm:w-full max-sm:mt-10 flex justify-around ">
-            <div className="flex   w-[80rem] mb-30 max-sm:mb-0 h-[60rem] max-sm:w-[20rem] max-sm:h-[35rem]   ">
+            <div className="flex   w-[25rem] mb-30 max-sm:mb-0 h-[40rem] max-sm:w-[20rem] max-sm:h-[35rem]   ">
               <VideoPlayer className="overflow-hidden  rounded-lg border mt-10 max-sm:mt-0   ">
                 <VideoPlayerContent
                   crossOrigin=""

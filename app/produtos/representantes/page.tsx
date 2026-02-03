@@ -642,63 +642,67 @@ export default function Representantes() {
   return (
     <>
       <Header />
-      <div className=" w-full h-full bg-amber-50 grid place-items-center ">
-        <div className="w-[60%] z-1 max-sm:w-full   max-sm:p-5    max-sm:-mt-20">
-          <h1 className=" tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start  max-sm:text-6xl ">
-            Representantes <br />
-            <strong className="text-[#CCAA76]">Shield Bank</strong>
-          </h1>
-          <p className=" mt-10 text-xl text-black font-light tracking-wider leading-[1.1]">
-            Insira o código exclusivo fornecido pelo parceiro no campo abaixo.
-            Nossa plataforma verificará instantaneamente a validade da parceria
-            e exibirá seu status atual.
-          </p>
-          <input
-            className=" border border-slate-950 text-[#000000] w-full p-2 rounded-xl mt-10"
-            placeholder="Insira o id do parceiro"
-            onChange={(e) => setData(e.target.value)}
-            value={data}
-          />
+      <div className="w-full min-h-screen bg-amber-50 grid place-items-center px-4">
+  <div className="w-[60%] z-1 max-sm:w-full max-sm:p-4 max-sm:mt-0">
+    <h1 className="tracking-[-0.02em] text-black leading-[1.1] font-light text-8xl text-start max-sm:text-5xl max-sm:text-center">
+      Representantes <br />
+      <strong className="text-[#CCAA76]">Shield Bank</strong>
+    </h1>
 
-          {repe &&
-            repe.map((e) => (
-              <>
-                <Table className="mt-10 max-sm:w-full ">
-                  <TableCaption className="mt-10">
-                    Parceiros ShieldBank @2025
-                  </TableCaption>
-                  49215
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="w-[100px] max-sm:text-[1.2rem] text-2xl text-[#000000] font-normal">
-                        Representante
-                      </TableHead>
-                      <TableHead className="w-[100px] max-sm:text-[1.2rem] text-2xl text-[#000000] font-normal">
-                        Marketplace
-                      </TableHead>
-                      <TableHead className="w-[100px] max-sm:text-[1.2rem] text-2xl text-[#000000] font-normal">
-                        Status
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow key={e.id}>
-                      <TableCell className=" text-[0.9rem] text-[#000000]">
-                        {e.Representante}
-                      </TableCell>
-                      <TableCell className=" text-[0.9rem] text-[#000000]">
-                        {e.Marketplace}
-                      </TableCell>
-                      <TableCell className=" text-[0.9rem] text-[#000000]">
-                        Ativo
-                      </TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </>
-            ))}
+    <p className="mt-10 text-xl text-black font-light tracking-wider leading-[1.3] max-sm:text-base max-sm:text-center max-sm:mt-6">
+      Insira o código exclusivo fornecido pelo parceiro no campo abaixo.
+      Nossa plataforma verificará instantaneamente a validade da parceria
+      e exibirá seu status atual.
+    </p>
+
+    <input
+      className="border border-slate-950 text-[#000000] w-full p-3 rounded-xl mt-10 max-sm:mt-6"
+      placeholder="Insira o id do parceiro"
+      onChange={(e) => setData(e.target.value)}
+      value={data}
+    />
+
+    {repe &&
+      repe.map((e) => (
+        <div className="mt-10 overflow-x-auto">
+          <Table className="min-w-[600px] max-sm:min-w-full">
+            <TableCaption className="mt-4 text-sm">
+              Parceiros ShieldBank @2025
+            </TableCaption>
+
+            <TableHeader>
+              <TableRow>
+                <TableHead className="text-xl max-sm:text-base text-[#000000] font-normal">
+                  Representante
+                </TableHead>
+                <TableHead className="text-xl max-sm:text-base text-[#000000] font-normal">
+                  Marketplace
+                </TableHead>
+                <TableHead className="text-xl max-sm:text-base text-[#000000] font-normal">
+                  Status
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+
+            <TableBody>
+              <TableRow key={e.id}>
+                <TableCell className="text-sm text-[#000000]">
+                  {e.Representante}
+                </TableCell>
+                <TableCell className="text-sm text-[#000000]">
+                  {e.Marketplace}
+                </TableCell>
+                <TableCell className="text-sm text-[#000000]">
+                  Ativo
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
         </div>
+      ))}
+  </div>
       </div>
+
       <Footer />
     </>
   );

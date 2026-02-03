@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
-import pos1 from "../assets/maquina-de-cartao-shield.png";
+import pos1 from "../assets/maquina-de-cartao-shield-p2.png";
 
 import Image from "next/image";
 import { FaCreditCard, FaHeadset } from "react-icons/fa";
@@ -13,7 +13,6 @@ export function Pos() {
   return (
     <div className="w-full h-auto overflow-x-hidden flex max-sm:px-[5px] max-sm:py-[5px]">
       <motion.div className="h-full grid grid-cols-2 place-content-center place-items-center p-20 max-sm:grid-cols-1 max-sm:p-[5px]">
-        
         <div className="max-sm:hidden">
           <div className="flex gap-10 w-full justify-center">
             <motion.div
@@ -53,25 +52,27 @@ export function Pos() {
             </p>
           </span>
 
-          <div className="flex gap-2 mt-12 max-sm:flex-col">
+          <div className="flex flex-col gap-5 mt-12">
             <p className="flex gap-2 text-[1rem] max-sm:text-[0.9rem]">
               <FaCreditCard size={25} color="#CCAA76" />
               Conta Digital Gratuita
             </p>
+
             <p className="flex gap-2 text-[1rem] max-sm:text-[0.9rem]">
               <HiOutlineReceiptTax size={25} color="#CCAA76" />
               Taxas Personalizadas
             </p>
+
             <p className="flex gap-2 text-[1rem] max-sm:text-[0.9rem]">
               <FaHeadset size={25} color="#CCAA76" />
               Atendimento Rápido e Eficiente
             </p>
           </div>
 
-          <div className="mt-10 justify-center flex gap-10">
+          <div className="mt-10 justify-start flex gap-10">
             <Button
               variant={"default"}
-              className="w-60 bg-transparent border border-amber-50 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-35 max-sm:p-3"
+              className="w-40 bg-transparent border border-amber-50 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-35 max-sm:p-3"
             >
               <a
                 className="text-[1.4rem] max-sm:text-[1rem]"
@@ -83,7 +84,7 @@ export function Pos() {
             </Button>
             <Button
               variant={"default"}
-              className="w-60 bg-[#CCAA76] border-0 text-amber-50 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-35 max-sm:p-3"
+              className="w-40 bg-[#CCAA76] border-0 text-amber-50 p-6 hover:bg-foreground hover:border-0 hover:text-[#CCAA76] max-sm:w-35 max-sm:p-3"
             >
               <a
                 className="text-[1.4rem] max-sm:text-[1rem]"
@@ -96,13 +97,14 @@ export function Pos() {
           </div>
         </div>
 
-        <div className="flex justify-end absolute right-0 z-0 max-sm:right-[5px] opacity-60">
+        {/* <div className="flex justify-end absolute right-0 z-0 max-sm:right-[5px] opacity-60">
           <Image
             className="max-sm:opacity-100 max-sm:w-[20rem]"
             src={shieldbackground}
             alt=""
           />
-        </div>
+        </div> */}
+        
       </motion.div>
     </div>
   );
