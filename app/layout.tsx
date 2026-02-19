@@ -1,24 +1,16 @@
 import type { Metadata } from "next";
 import { Montserrat, Roboto } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-
   weight: ["100", "300", "400", "500", "700", "900"],
 });
 
@@ -34,7 +26,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={` ${montserrat.variable} antialiased`}>{children}</body>
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-36EDMEVGYS"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-36EDMEVGYS');
+          `}
+        </Script>
+      </head>
+
+      <body className={`${montserrat.variable} ${roboto.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
