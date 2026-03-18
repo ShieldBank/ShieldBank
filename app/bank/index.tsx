@@ -4,31 +4,31 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaCreditCard, FaMobileAlt } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
-import mobile from "../assets/TELAS-SHIELD.png";
+import mobile from "../assets/Mockup-Contas_Site.png";
 import { Button } from "../components/ui/button";
 export function Bank() {
   return (
     <>
       <div className=" w-full bg-amber-50   text-black mt-30 h-auto max-sm:h-auto  overflow-hidden   flex justify-center items-center ">
         <motion.div className="max-sm:w-full max-sm:h-auto">
-          <div className="   ">
-            <h1 className="text-4xl max-sm:text-4xl  max-sm:text-center max-sm:ml-0 font-light text-start ml-100 mt-20 ">
+          <div className="items-center">
+            <h1 className="text-4xl max-sm:text-4xl  max-sm:text-center max-sm:ml-0 font-light text-start ml-50 mt-20 ">
               <strong className="text-[#CCAA76]">
                 {" "}
                 Inteligência Financeira{" "}
               </strong>{" "}
               ao alcance de um toque.{" "}
             </h1>
-            <p className="text-3xl text-start ml-100 font-light   max-sm:ml-0 max-sm:mt-5  max-sm:text-2xl  max-sm:text-center ">
+            <p className="text-3xl text-start ml-50 font-light   max-sm:ml-0 max-sm:mt-5  max-sm:text-2xl  max-sm:text-center ">
               Tudo que você precisa para{" "}
               <strong className="text-[#CCAA76]"> gerir suas finanças</strong>,
               na palma da sua mão.{" "}
             </p>
           </div>
-          <div className="  max-sm:items-center justify-center items-center flex -mt-50 max-sm:-mt-25 overflow-x-hidden ">
+          <div className="flex justify-center items-center mt-3 mb-60 max-sm:mb-30 px-4 overflow-x-hidden">
             <Image
-              className="flex h-auto  max-sm:max-w-5xl"
-              width={2000}
+              className="h-auto w-full max-w-xl md:max-w-lg lg:max-w-xl max-sm:max-w-xs"
+              width={1000}
               src={mobile}
               alt=""
             />
