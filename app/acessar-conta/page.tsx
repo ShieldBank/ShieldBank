@@ -12,7 +12,7 @@ import iconWebBanking from "../assets/iconWebBank.png";
 
 export default function AcessarContaPage() {
   return (
-    <div className="min-h-screen bg-background text-white flex flex-col">
+    <div className="min-h-screen bg-background text-white flex flex-col overflow-x-hidden">
       <Header />
 
       {/* animation for the initial message */}
@@ -23,7 +23,7 @@ export default function AcessarContaPage() {
         className="flex flex-col items-center mb-12 text-center px-4"
       >
         {/* mensage initial */}
-        <p className="text-lg md:text-xl font-light mt-40">
+        <p className="w-full  mx-auto text-center text-lg md:text-xl font-light mt-40">
           Acesse sua conta
           <strong className="font-semibold text-[#CCAA76]">
             {" "}
@@ -34,16 +34,16 @@ export default function AcessarContaPage() {
       </motion.div>
 
       {/* cards apps */}
-      <div className="md:max-w-8xl mx-auto grid md:grid-cols-3 gap-10 px-4 relative mb-20">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-4 relative mb-20">
         {/* Linha entre o 1º e 2º card */}
-        <div className="hidden md:block absolute top-0 bottom-0 left-1/3 w-px bg-[#CCAA76] -translate-x-5"></div>
+        <div className="hidden md:block absolute top-0 bottom-0 left-1/3 w-px bg-[#CCAA76] -translate-x-0"></div>
 
         {/* Linha entre o 2º e 3º card */}
-        <div className="hidden md:block absolute top-0 bottom-0 left-2/3 w-px bg-[#CCAA76] -translate-x-5"></div>
+        <div className="hidden md:block absolute top-0 bottom-0 left-2/3 w-px bg-[#CCAA76] -translate-x-0"></div>
 
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="flex flex-col items-center  rounded-xl shadow-lg shadow-black p-8"
+          className="flex flex-col items-center rounded-xl shadow-lg shadow-black p-8 w-full"
         >
           <Image
             src={logoBank}
@@ -52,12 +52,12 @@ export default function AcessarContaPage() {
             height={150}
             className="mb-10 bg-background rounded-xl shadow-lg shadow-black"
           />
-          <div className="flex gap-5">
+          <div className="flex justify-center gap-4 w-full">
             <div>
               <a
                 href="https://apps.apple.com/br/app/shield-bank/id6739310287"
                 target="_blank"
-                className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
+                className="block w-full text-center text-white bg-background border border-[#CCAA76] px-6 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
               >
                 Acessar
               </a>
@@ -77,7 +77,7 @@ export default function AcessarContaPage() {
               <a
                 href="https://play.google.com/store/apps/details?id=br.com.shieldbank.v2&hl=pt_BR&pli=1"
                 target="_blank"
-                className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
+                className="block w-full text-center text-white bg-background border border-[#CCAA76] px-6 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
               >
                 Acessar
               </a>
@@ -97,7 +97,7 @@ export default function AcessarContaPage() {
 
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="flex flex-col items-center  rounded-xl shadow-lg shadow-black p-8 "
+          className="flex flex-col items-center rounded-xl shadow-lg shadow-black p-8 w-full"
         >
           <Image
             src={shieldBankPrivate}
@@ -106,12 +106,12 @@ export default function AcessarContaPage() {
             height={150}
             className="mb-10 bg-background rounded-xl shadow-lg shadow-black py-4 px-4 mt-3"
           />
-          <div className="flex gap-5">
+          <div className="flex justify-center gap-2 w-full">
             <div>
               <a
                 href="https://apps.apple.com/br/app/shield-private/id6788125810"
                 target="_blank"
-                className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
+                className="block w-full text-center text-white bg-background border border-[#CCAA76] px-5 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
               >
                 Acessar
               </a>
@@ -131,7 +131,7 @@ export default function AcessarContaPage() {
               <a
                 href="https://play.google.com/store/apps/details?id=br.com.shield.private"
                 target="_blank"
-                className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
+                className="block w-full text-center text-white bg-background border border-[#CCAA76] px-5 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
               >
                 Acessar
               </a>
@@ -151,7 +151,7 @@ export default function AcessarContaPage() {
               <a
                 href="https://private.shieldbank.com.br/login/"
                 target="_blank"
-                className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
+                className="block w-full text-center text-white bg-background border border-[#CCAA76] px-5 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
               >
                 Acessar
               </a>
@@ -171,7 +171,7 @@ export default function AcessarContaPage() {
 
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="flex flex-col items-center  rounded-xl shadow-lg shadow-black p-8"
+          className="flex flex-col items-center rounded-xl shadow-lg shadow-black p-8 w-full"
         >
           <Image
             src={shieldpayBank}
@@ -180,12 +180,12 @@ export default function AcessarContaPage() {
             height={150}
             className="mb-10 bg-background rounded-xl shadow-lg shadow-black py-4 px-4 mt-3"
           />
-          <div className="flex gap-5">
+          <div className="flex justify-center gap-4 w-full">
             <div>
               <a
                 href="https://apps.apple.com/br/app/shield-pay-conta-digital/id6444707849"
                 target="_blank"
-                className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
+                className="block w-full text-center text-white bg-background border border-[#CCAA76] px-6 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
               >
                 Acessar
               </a>
@@ -205,7 +205,7 @@ export default function AcessarContaPage() {
               <a
                 href="https://play.google.com/store/apps/details?id=br.com.shieldbank.digital_account&hl=pt_BR"
                 target="_blank"
-                className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
+                className="block w-full text-center text-white bg-background border border-[#CCAA76] px-6 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
               >
                 Acessar
               </a>
