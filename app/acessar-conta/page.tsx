@@ -8,6 +8,7 @@ import shieldpayBank from "../assets/shieldpayBank.png";
 import shieldBankPrivate from "../assets/ShieldBankPrivate.png";
 import iconGoogle from "../assets/iconGoogle.png";
 import iconApple from "../assets/iconApple.png";
+import iconWebBanking from "../assets/iconWebBank.png";
 
 export default function AcessarContaPage() {
   return (
@@ -33,12 +34,12 @@ export default function AcessarContaPage() {
       </motion.div>
 
       {/* cards apps */}
-      <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 px-4 relative mb-20">
+      <div className="md:max-w-8xl mx-auto grid md:grid-cols-3 gap-10 px-4 relative mb-20">
         {/* Linha entre o 1º e 2º card */}
-        <div className="hidden md:block absolute top-0 bottom-0 left-1/3 w-px bg-[#CCAA76] -translate-x-1/2"></div>
+        <div className="hidden md:block absolute top-0 bottom-0 left-1/3 w-px bg-[#CCAA76] -translate-x-5"></div>
 
         {/* Linha entre o 2º e 3º card */}
-        <div className="hidden md:block absolute top-0 bottom-0 left-2/3 w-px bg-[#CCAA76] -translate-x-1/2"></div>
+        <div className="hidden md:block absolute top-0 bottom-0 left-2/3 w-px bg-[#CCAA76] -translate-x-5"></div>
 
         <motion.div
           whileHover={{ scale: 1.03 }}
@@ -96,7 +97,7 @@ export default function AcessarContaPage() {
 
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="flex flex-col items-center  rounded-xl shadow-lg shadow-black p-8"
+          className="flex flex-col items-center  rounded-xl shadow-lg shadow-black p-8 "
         >
           <Image
             src={shieldBankPrivate}
@@ -128,7 +129,7 @@ export default function AcessarContaPage() {
 
             <div>
               <a
-                href="https://apps.apple.com/br/app/shield-private/id6788125810"
+                href="https://play.google.com/store/apps/details?id=br.com.shield.private"
                 target="_blank"
                 className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
               >
@@ -139,6 +140,26 @@ export default function AcessarContaPage() {
                 <Image
                   src={iconGoogle}
                   alt="Google Play"
+                  width={120}
+                  height={40}
+                  className="cursor-pointer hover:opacity-80 transition-opacity mt-5"
+                />
+              </div>
+            </div>
+
+            <div>
+              <a
+                href="https://private.shieldbank.com.br/login/"
+                target="_blank"
+                className="text-white bg-background border-1 border-[#CCAA76] px-10 py-2 rounded-md mb-6 hover:bg-[#CCAA76] hover:border-background hover:text-background transition"
+              >
+                Acessar
+              </a>
+
+              <div className="Items-center">
+                <Image
+                  src={iconWebBanking}
+                  alt="Web Banking"
                   width={120}
                   height={40}
                   className="cursor-pointer hover:opacity-80 transition-opacity mt-5"
