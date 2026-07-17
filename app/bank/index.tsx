@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaCreditCard, FaMobileAlt } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
-import mobile from "../assets/Mockup-Contas_Site.png";
+import mobile from "../assets/moockup-celulares-shield-2.png";
 import { Button } from "../components/ui/button";
 export function Bank() {
   return (
@@ -12,14 +12,14 @@ export function Bank() {
       <div className=" w-full bg-amber-50   text-black mt-30 h-auto max-sm:h-auto  overflow-hidden   flex justify-center items-center ">
         <motion.div className="max-sm:w-full max-sm:h-auto">
           <div className="items-center">
-            <h1 className="text-4xl max-sm:text-4xl  max-sm:text-center max-sm:ml-0 font-light text-start ml-50 mt-20 ">
+            <h1 className="text-4xl max-sm:text-4xl  max-sm:text-center max-sm:ml-0 font-light text-center mt-20 ">
               <strong className="text-[#CCAA76]">
                 {" "}
                 Inteligência Financeira{" "}
               </strong>{" "}
               ao alcance de um toque.{" "}
             </h1>
-            <p className="text-3xl text-start ml-50 font-light   max-sm:ml-0 max-sm:mt-5  max-sm:text-2xl  max-sm:text-center ">
+            <p className="text-3xl text-center font-light   max-sm:ml-0 max-sm:mt-5  max-sm:text-2xl  max-sm:text-center ">
               Tudo que você precisa para{" "}
               <strong className="text-[#CCAA76]"> gerir suas finanças</strong>,
               na palma da sua mão.{" "}
